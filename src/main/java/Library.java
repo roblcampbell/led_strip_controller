@@ -9,4 +9,8 @@ public class Library {
 		// test
         return true;
     }
+
+    public static void main(String[] args) {
+        System.out.println("Library main() here");
+    }
 }
