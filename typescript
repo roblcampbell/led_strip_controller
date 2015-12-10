@@ -1,0 +1,1387 @@
+Script started on Fri 30 Oct 2015 22:27:36 UTC
+]0;pi@pi2: ~/Projects/led_strip_controller[01;32mpi@pi2[00m [01;34m~/Projects/led_strip_controller $[00m ./script
+bash: ./script: No such file or directory
+]0;pi@pi2: ~/Projects/led_strip_controller[01;32mpi@pi2[00m [01;34m~/Projects/led_strip_controller $[00m ls
+[0m[01;32mbuild.gradle[0m  [01;32mgradlew.bat[0m               [01;32msettings.gradle[0m
+[34;42mgradle[0m        [01;32mled_strip_controller.iml[0m  [34;42msrc[0m
+[01;32mgradlew[0m       script.sh                 typescript
+]0;pi@pi2: ~/Projects/led_strip_controller[01;32mpi@pi2[00m [01;34m~/Projects/led_strip_controller $[00m ./script.sh
+bash: ./script.sh: Permission denied
+]0;pi@pi2: ~/Projects/led_strip_controller[01;32mpi@pi2[00m [01;34m~/Projects/led_strip_controller $[00m chmod[K[K[K[K[Kls 0la[K[K[K-la
+total 60
+drwxrwxrwx 7 pi     pi      4096 Oct 30 22:27 [0m[34;42m.[0m
+drwxrwxr-x 4 pi     pi      4096 Oct 30 21:43 [01;34m..[0m
+-rwxrw-rw- 1 nobody nogroup 1602 Oct 30 05:00 [01;32mbuild.gradle[0m
+drwxrwxrwx 7 nobody nogroup 4096 Oct 30 22:18 [34;42m.git[0m
+-rwxrw-rw- 1 nobody nogroup   36 Oct 30 01:56 [01;32m.gitignore[0m
+drwxrwxrwx 3 nobody nogroup 4096 Oct 30 22:18 [34;42mgradle[0m
+drwxrwxrwx 3 nobody nogroup 4096 Oct 30 22:18 [34;42m.gradle[0m
+-rwxrwxrwx 1 nobody nogroup 5244 Oct 30 01:56 [01;32mgradlew[0m
+-rwxrw-rw- 1 nobody nogroup 2476 Oct 30 01:56 [01;32mgradlew.bat[0m
+drwxrwxrwx 4 nobody nogroup 4096 Oct 30 22:18 [34;42m.idea[0m
+-rwxrw-rw- 1 nobody nogroup 1598 Oct 30 04:58 [01;32mled_strip_controller.iml[0m
+-rw-r--r-- 1 pi     pi         4 Oct 30 22:27 script.sh
+-rwxrw-rw- 1 nobody nogroup  674 Oct 30 01:56 [01;32msettings.gradle[0m
+drwxrwxrwx 4 nobody nogroup 4096 Oct 30 22:18 [34;42msrc[0m
+-rw-r--r-- 1 pi     pi         0 Oct 30 22:27 typescript
+]0;pi@pi2: ~/Projects/led_strip_controller[01;32mpi@pi2[00m [01;34m~/Projects/led_strip_controller $[00m chmod 777 sch[Kript.sh 
+]0;pi@pi2: ~/Projects/led_strip_controller[01;32mpi@pi2[00m [01;34m~/Projects/led_strip_controller $[00m chmod 777 script.sh ls -la[K./script.sh
+build.gradle  gradlew.bat		settings.gradle
+gradle	      led_strip_controller.iml	src
+gradlew       script.sh			typescript
+]0;pi@pi2: ~/Projects/led_strip_controller[01;32mpi@pi2[00m [01;34m~/Projects/led_strip_controller $[00m mv gradlew gradlew.sh
+]0;pi@pi2: ~/Projects/led_strip_controller[01;32mpi@pi2[00m [01;34m~/Projects/led_strip_controller $[00m ls
+[0m[01;32mbuild.gradle[0m  [01;32mgradlew.sh[0m                [01;32msettings.gradle[0m
+[34;42mgradle[0m        [01;32mled_strip_controller.iml[0m  [34;42msrc[0m
+[01;32mgradlew.bat[0m   [01;32mscript.sh[0m                 typescript
+]0;pi@pi2: ~/Projects/led_strip_controller[01;32mpi@pi2[00m [01;34m~/Projects/led_strip_controller $[00m ./gradlew.sh 
+/usr/bin/env: bash: No such file or directory
+]0;pi@pi2: ~/Projects/led_strip_controller[01;32mpi@pi2[00m [01;34m~/Projects/led_strip_controller $[00m 
+]0;pi@pi2: ~/Projects/led_strip_controller[01;32mpi@pi2[00m [01;34m~/Projects/led_strip_controller $[00m 
+]0;pi@pi2: ~/Projects/led_strip_controller[01;32mpi@pi2[00m [01;34m~/Projects/led_strip_controller $[00m mv gradlew.sh gradlew
+]0;pi@pi2: ~/Projects/led_strip_controller[01;32mpi@pi2[00m [01;34m~/Projects/led_strip_controller $[00m ls
+[0m[01;32mbuild.gradle[0m  [01;32mgradlew.bat[0m               [01;32msettings.gradle[0m
+[34;42mgradle[0m        [01;32mled_strip_controller.iml[0m  [34;42msrc[0m
+[01;32mgradlew[0m       [01;32mscript.sh[0m                 typescript
+]0;pi@pi2: ~/Projects/led_strip_controller[01;32mpi@pi2[00m [01;34m~/Projects/led_strip_controller $[00m ls -la
+total 60
+drwxrwxrwx 7 pi     pi      4096 Oct 30 22:28 [0m[34;42m.[0m
+drwxrwxr-x 4 pi     pi      4096 Oct 30 21:43 [01;34m..[0m
+-rwxrw-rw- 1 nobody nogroup 1602 Oct 30 05:00 [01;32mbuild.gradle[0m
+drwxrwxrwx 7 nobody nogroup 4096 Oct 30 22:18 [34;42m.git[0m
+-rwxrw-rw- 1 nobody nogroup   36 Oct 30 01:56 [01;32m.gitignore[0m
+drwxrwxrwx 3 nobody nogroup 4096 Oct 30 22:18 [34;42mgradle[0m
+drwxrwxrwx 3 nobody nogroup 4096 Oct 30 22:18 [34;42m.gradle[0m
+-rwxrwxrwx 1 nobody nogroup 5244 Oct 30 01:56 [01;32mgradlew[0m
+-rwxrw-rw- 1 nobody nogroup 2476 Oct 30 01:56 [01;32mgradlew.bat[0m
+drwxrwxrwx 4 nobody nogroup 4096 Oct 30 22:18 [34;42m.idea[0m
+-rwxrw-rw- 1 nobody nogroup 1598 Oct 30 04:58 [01;32mled_strip_controller.iml[0m
+-rwxrwxrwx 1 pi     pi         4 Oct 30 22:27 [01;32mscript.sh[0m
+-rwxrw-rw- 1 nobody nogroup  674 Oct 30 01:56 [01;32msettings.gradle[0m
+drwxrwxrwx 4 nobody nogroup 4096 Oct 30 22:18 [34;42msrc[0m
+-rw-r--r-- 1 pi     pi         0 Oct 30 22:27 typescript
+]0;pi@pi2: ~/Projects/led_strip_controller[01;32mpi@pi2[00m [01;34m~/Projects/led_strip_controller $[00m sh gradlew
+gradlew: 2: gradlew: : not found
+gradlew: 8: gradlew: : not found
+gradlew: 11: gradlew: : not found
+gradlew: 14: gradlew: : not found
+gradlew: 17: gradlew: : not found
+
+gradlew: 20: gradlew: }: not found
+gradlew: 21: gradlew: : not found
+gradlew: 23: gradlew: echo: not found
+
+gradlew: 25: gradlew: echo: not found
+]0;pi@pi2: ~/Projects/led_strip_controller[01;32mpi@pi2[00m [01;34m~/Projects/led_strip_controller $[00m ./gradlwew[K[K[Kew -v
+/usr/bin/env: bash: No such file or directory
+]0;pi@pi2: ~/Projects/led_strip_controller[01;32mpi@pi2[00m [01;34m~/Projects/led_strip_controller $[00m ls
+[0m[01;32mbuild.gradle[0m  [01;32mgradlew.bat[0m               [01;32msettings.gradle[0m
+[34;42mgradle[0m        [01;32mled_strip_controller.iml[0m  [34;42msrc[0m
+[01;32mgradlew[0m       [01;32mscript.sh[0m                 typescript
+]0;pi@pi2: ~/Projects/led_strip_controller[01;32mpi@pi2[00m [01;34m~/Projects/led_strip_controller $[00m apt-get install gradle
+E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
+E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
+]0;pi@pi2: ~/Projects/led_strip_controller[01;32mpi@pi2[00m [01;34m~/Projects/led_strip_controller $[00m sudo apt-get install gradle
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 1%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 81%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following extra packages will be installed:
+  ant ant-optional antlr aspectj bnd bsh ca-certificates-java checkstyle
+  default-jre default-jre-headless fop gnome-mime-data groovy
+  icc-profiles-free icedtea-7-jre-jamvm ivy java-wrappers junit junit4
+  libaether-java libantlr-java libaopalliance-java libapache-pom-java
+  libasm3-java libasm4-java libaspectj-java libasync-http-client-java
+  libatinject-jsr330-api-java libatk-wrapper-java libatk-wrapper-java-jni
+  libavalon-framework-java libbatik-java libbcel-java libbcpg-java
+  libbcprov-java libbindex-java libbonobo2-0 libbonobo2-common libbsf-java
+  libbsh-java libcanberra0 libcdi-api-java libcglib3-java libclassworlds-java
+  libcodenarc-groovy-java libcommons-beanutils-java libcommons-cli-java
+  libcommons-codec-java libcommons-collections3-java
+  libcommons-configuration-java libcommons-dbcp-java libcommons-digester-java
+  libcommons-httpclient-java libcommons-io-java libcommons-jexl2-java
+  libcommons-jxpath-java libcommons-lang-java libcommons-logging-java
+  libcommons-net2-java libcommons-parent-java libcommons-pool-java
+  libcommons-vfs-java libconstantine-java libdom4j-java libdoxia-java
+  libeasymock-java libecj-java libfop-java libganymed-ssh2-java libgconf2-4
+  libgeronimo-interceptor-3.0-spec-java libgeronimo-jpa-2.0-spec-java
+  libgeronimo-jta-1.1-spec-java libgeronimo-osgi-support-java
+  libgmetrics-groovy-java libgnome-2-0 libgnome2-0 libgnome2-bin
+  libgnome2-common libgnomevfs2-0 libgnomevfs2-common libgnomevfs2-extra
+  libgoogle-gson-java libgradle-core-java libgradle-plugins-java libguava-java
+  libhamcrest-java libhawtjni-runtime-java libhttpclient-java libhttpcore-java
+  libisorelax-java libitext1-java libjackrabbit-java libjaffl-java
+  libjansi-java libjansi-native-java libjarjar-java libjatl-java libjaxen-java
+  libjaxp1.3-java libjcifs-java libjcip-annotations-java libjcommander-java
+  libjdom1-java libjetty-extra libjetty-extra-java libjetty-java libjffi-java
+  libjffi-jni libjline-java libjna-java libjna-jni libjnr-posix-java
+  libjnr-x86asm-java libjsch-agent-proxy-java libjsch-java libjsoup-java
+  libjsr305-java libjzlib-java libkryo-java liblog4j1.2-java liblogback-java
+  libmail-java libmaven-ant-tasks-java libmaven-parent-java libmaven-scm-java
+  libmaven2-core-java libminlog-java libmockobjects-java libmodello-java
+  libmsv-java libmx4j-java libnative-platform-java libnative-platform-jni
+  libnekohtml-java libnetbeans-cvsclient-java libnetty-java libobjenesis-java
+  liborbit-2-0 libosgi-compendium-java libosgi-core-java
+  libosgi-foundation-ee-java libplexus-ant-factory-java
+  libplexus-archiver-java libplexus-bsh-factory-java libplexus-build-api-java
+  libplexus-cipher-java libplexus-classworlds-java libplexus-classworlds2-java
+  libplexus-cli-java libplexus-container-default-java
+  libplexus-containers-java libplexus-containers1.5-java libplexus-i18n-java
+  libplexus-interactivity-api-java libplexus-interpolation-java
+  libplexus-io-java libplexus-sec-dispatcher-java libplexus-utils-java
+  libplexus-utils2-java libpolyglot-maven-java libqdox-java libreflectasm-java
+  libregexp-java librelaxng-datatype-java librhino-java libsaxon-java
+  libservlet2.5-java libservlet3.0-java libservlet3.1-java libsisu-guice-java
+  libsisu-ioc-java libslf4j-java libtomcat7-java libwagon-java libwagon2-java
+  libxalan2-java libxbean-java libxerces2-java libxml-commons-external-java
+  libxml-commons-resolver1.1-java libxmlgraphics-commons-java libxom-java
+  libxpp2-java libxpp3-java libxstream-java libyaml-snake-java maven
+  openjdk-7-jre openjdk-7-jre-headless rhino testng tzdata-java
+Suggested packages:
+  ant-doc ant-gcj ant-optional-gcj javacc jython libcommons-net-java
+  libjdepend-java liboro-java eclipse-jdt eclipse-rcp bsh-doc fop-doc
+  groovy-doc ivy-doc junit-doc libaopalliance-java-doc
+  libasync-http-client-java-doc libatinject-jsr330-api-java-doc
+  libavalon-framework-java-doc libbcel-java-doc libbcpg-java-doc
+  libbcprov-java-doc libbonobo2-bin libcanberra-gtk0 libcanberra-pulse
+  libclassworlds-java-doc libcodenarc-groovy-java-doc
+  libcommons-beanutils-java-doc libcommons-collections3-java-doc
+  libcommons-dbcp-java-doc libcommons-digester-java-doc
+  libcommons-httpclient-java-doc libcommons-io-java-doc
+  libcommons-jexl2-java-doc libcommons-jxpath-java-doc
+  libcommons-lang-java-doc libcommons-logging-java-doc
+  libexcalibur-logkit-java libcommons-net2-java-doc libcommons-vfs-java-doc
+  libdom4j-java-doc libdoxia-java-doc libeasymock-java-doc ecj libecj-java-gcj
+  libgeronimo-jpa-2.0-spec-java-doc libgeronimo-jta-java-doc
+  libgeronimo-osgi-support-java-doc libgmetrics-groovy-java-doc
+  libgnomevfs2-bin libgoogle-gson-java-doc gradle-doc scala
+  libjaxp1.3-java-gcj libjcifs-java-doc libjcommander-java-doc
+  libjdom1-java-doc jetty libjetty-java-doc libjline-java-doc libjna-java-doc
+  libjsoup-java-doc libjsr305-java-doc liblog4j1.2-java-doc glassfish-javaee
+  libjanino-java libmail-java-doc libmaven-scm-java-doc libmodello-java-doc
+  maven2 libhessian-java libnekohtml-java-doc libobjenesis-java-doc
+  libosgi-compendium-java-doc libosgi-core-java-doc
+  libosgi-foundation-ee-java-doc libplexus-build-api-java-doc
+  libplexus-cipher-java-doc libplexus-classworlds-java-doc
+  libplexus-classworlds2-java-doc libplexus-cli-java-doc
+  libplexus-container-default-java-doc libplexus-i18n-java-doc
+  libplexus-interactivity-api-java-doc libplexus-interpolation-java-doc
+  libplexus-sec-dispatcher-java-doc libplexus-utils-java-doc
+  libplexus-utils2-java-doc libpolyglot-maven-java-doc libqdox-java-doc
+  libsaxon-java-doc tomcat7 libwagon-java-doc libxalan2-java-doc libxsltc-java
+  libspring-core-java libspring-beans-java libspring-context-java
+  libspring-web-java libequinox-osgi-java libxerces2-java-doc
+  libxerces2-java-gcj libxml-commons-resolver1.1-java-doc
+  libxmlgraphics-commons-java-doc libxom-java-doc libjdom2-java
+  libjettison-java libjoda-time-java libkxml2-java libstax-java
+  libstax2-api-java libwoodstox-java icedtea-7-plugin sun-java6-fonts
+  fonts-ipafont-gothic fonts-ipafont-mincho ttf-wqy-microhei ttf-wqy-zenhei
+  fonts-indic librhino-java-doc
+The following NEW packages will be installed:
+  ant ant-optional antlr aspectj bnd bsh ca-certificates-java checkstyle
+  default-jre default-jre-headless fop gnome-mime-data gradle groovy
+  icc-profiles-free icedtea-7-jre-jamvm ivy java-wrappers junit junit4
+  libaether-java libantlr-java libaopalliance-java libapache-pom-java
+  libasm3-java libasm4-java libaspectj-java libasync-http-client-java
+  libatinject-jsr330-api-java libatk-wrapper-java libatk-wrapper-java-jni
+  libavalon-framework-java libbatik-java libbcel-java libbcpg-java
+  libbcprov-java libbindex-java libbonobo2-0 libbonobo2-common libbsf-java
+  libbsh-java libcanberra0 libcdi-api-java libcglib3-java libclassworlds-java
+  libcodenarc-groovy-java libcommons-beanutils-java libcommons-cli-java
+  libcommons-codec-java libcommons-collections3-java
+  libcommons-configuration-java libcommons-dbcp-java libcommons-digester-java
+  libcommons-httpclient-java libcommons-io-java libcommons-jexl2-java
+  libcommons-jxpath-java libcommons-lang-java libcommons-logging-java
+  libcommons-net2-java libcommons-parent-java libcommons-pool-java
+  libcommons-vfs-java libconstantine-java libdom4j-java libdoxia-java
+  libeasymock-java libecj-java libfop-java libganymed-ssh2-java libgconf2-4
+  libgeronimo-interceptor-3.0-spec-java libgeronimo-jpa-2.0-spec-java
+  libgeronimo-jta-1.1-spec-java libgeronimo-osgi-support-java
+  libgmetrics-groovy-java libgnome-2-0 libgnome2-0 libgnome2-bin
+  libgnome2-common libgnomevfs2-0 libgnomevfs2-common libgnomevfs2-extra
+  libgoogle-gson-java libgradle-core-java libgradle-plugins-java libguava-java
+  libhamcrest-java libhawtjni-runtime-java libhttpclient-java libhttpcore-java
+  libisorelax-java libitext1-java libjackrabbit-java libjaffl-java
+  libjansi-java libjansi-native-java libjarjar-java libjatl-java libjaxen-java
+  libjaxp1.3-java libjcifs-java libjcip-annotations-java libjcommander-java
+  libjdom1-java libjetty-extra libjetty-extra-java libjetty-java libjffi-java
+  libjffi-jni libjline-java libjna-java libjna-jni libjnr-posix-java
+  libjnr-x86asm-java libjsch-agent-proxy-java libjsch-java libjsoup-java
+  libjsr305-java libjzlib-java libkryo-java liblog4j1.2-java liblogback-java
+  libmail-java libmaven-ant-tasks-java libmaven-parent-java libmaven-scm-java
+  libmaven2-core-java libminlog-java libmockobjects-java libmodello-java
+  libmsv-java libmx4j-java libnative-platform-java libnative-platform-jni
+  libnekohtml-java libnetbeans-cvsclient-java libnetty-java libobjenesis-java
+  liborbit-2-0 libosgi-compendium-java libosgi-core-java
+  libosgi-foundation-ee-java libplexus-ant-factory-java
+  libplexus-archiver-java libplexus-bsh-factory-java libplexus-build-api-java
+  libplexus-cipher-java libplexus-classworlds-java libplexus-classworlds2-java
+  libplexus-cli-java libplexus-container-default-java
+  libplexus-containers-java libplexus-containers1.5-java libplexus-i18n-java
+  libplexus-interactivity-api-java libplexus-interpolation-java
+  libplexus-io-java libplexus-sec-dispatcher-java libplexus-utils-java
+  libplexus-utils2-java libpolyglot-maven-java libqdox-java libreflectasm-java
+  libregexp-java librelaxng-datatype-java librhino-java libsaxon-java
+  libservlet2.5-java libservlet3.0-java libservlet3.1-java libsisu-guice-java
+  libsisu-ioc-java libslf4j-java libtomcat7-java libwagon-java libwagon2-java
+  libxalan2-java libxbean-java libxerces2-java libxml-commons-external-java
+  libxml-commons-resolver1.1-java libxmlgraphics-commons-java libxom-java
+  libxpp2-java libxpp3-java libxstream-java libyaml-snake-java maven
+  openjdk-7-jre openjdk-7-jre-headless rhino testng tzdata-java
+0 upgraded, 194 newly installed, 0 to remove and 15 not upgraded.
+Need to get 145 MB of archives.
+After this operation, 228 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+0% [Working]            0% [Waiting for headers]                        0% [Working]            0% [Waiting for headers]                        Get:1 http://mirrordirector.raspbian.org/raspbian/ jessie/main libatk-wrapper-java all 0.30.5-1 [30.3 kB]
+                        0% [1 libatk-wrapper-java 0 B/30.3 kB 0%] [Waiting for headers]                                                               0% [1 libatk-wrapper-java 21.4 kB/30.3 kB 70%] [Waiting for headers]                                                                    0% [Waiting for headers]                        0% [Waiting for headers] [Waiting for headers]                                              Get:2 http://mirrordirector.raspbian.org/raspbian/ jessie/main libatk-wrapper-java-jni armhf 0.30.5-1 [20.6 kB]
+                                              0% [2 libatk-wrapper-java-jni 0 B/20.6 kB 0%] [Waiting for headers]                                                                   0% [Waiting for headers]                        Get:3 http://mirrordirector.raspbian.org/raspbian/ jessie/main libbonobo2-common all 2.32.1-3 [243 kB]
+                        0% [3 libbonobo2-common 0 B/243 kB 0%] [Waiting for headers]                                                            0% [3 libbonobo2-common 19.9 kB/243 kB 8%] [Waiting for headers]0% [3 libbonobo2-common 234 kB/243 kB 96%] [Waiting for headers]                                                                0% [Waiting for headers]                        Get:4 http://mirrordirector.raspbian.org/raspbian/ jessie/main liborbit-2-0 armhf 1:2.14.19-0.3 [196 kB]
+                        0% [4 liborbit-2-0 0 B/196 kB 0%] [Waiting for headers]                                                       0% [4 liborbit-2-0 77.8 kB/196 kB 40%] [Waiting for headers]                                                            0% [Waiting for headers]                        Get:5 http://mirrordirector.raspbian.org/raspbian/ jessie/main libbonobo2-0 armhf 2.32.1-3 [236 kB]
+                        0% [5 libbonobo2-0 0 B/236 kB 0%] [Waiting for headers]                                                       0% [5 libbonobo2-0 159 kB/236 kB 67%] [Waiting for headers]                                                           1% [Waiting for headers]                        Get:6 http://mirrordirector.raspbian.org/raspbian/ jessie/main libcanberra0 armhf 0.30-2.1 [35.3 kB]
+                        1% [6 libcanberra0 0 B/35.3 kB 0%] [Waiting for headers]                                                        1% [Waiting for headers]                        1% [Waiting for headers] [Waiting for headers]                                              Get:7 http://mirrordirector.raspbian.org/raspbian/ jessie/main gnome-mime-data all 2.18.0-1 [725 kB]
+                                              1% [7 gnome-mime-data 0 B/725 kB 0%] [Waiting for headers]                                                          1% [7 gnome-mime-data 320 kB/725 kB 44%] [Waiting for headers]                                                              1% [Waiting for headers]                        1% [Waiting for headers] [Waiting for headers]                                              Get:8 http://mirrordirector.raspbian.org/raspbian/ jessie/main libgnomevfs2-common all 1:2.24.4-6 [763 kB]
+                                              1% [8 libgnomevfs2-common 0 B/763 kB 0%] [Waiting for headers]                                                              1% [8 libgnomevfs2-common 340 kB/763 kB 45%] [Waiting for headers]                                                                  2% [Waiting for headers]                        2% [Waiting for headers] [Waiting for headers]                                              Get:9 http://mirrordirector.raspbian.org/raspbian/ jessie/main libgnomevfs2-0 armhf 1:2.24.4-6 [450 kB]
+                                              2% [9 libgnomevfs2-0 0 B/450 kB 0%] [Waiting for headers]                                                         2% [9 libgnomevfs2-0 303 kB/450 kB 67%] [Waiting for headers]                                                             2% [Waiting for headers]                        Get:10 http://mirrordirector.raspbian.org/raspbian/ jessie/main libgnome2-common all 2.32.1-5 [936 kB]
+                        2% [10 libgnome2-common 0 B/936 kB 0%] [Waiting for headers]                                                            2% [10 libgnome2-common 149 kB/936 kB 16%] [Waiting for headers]2% [10 libgnome2-common 771 kB/936 kB 82%] [Waiting for headers]                                                                3% [Waiting for headers]                        Get:11 http://mirrordirector.raspbian.org/raspbian/ jessie/main libgnome-2-0 armhf 2.32.1-5 [463 kB]
+                        3% [11 libgnome-2-0 0 B/463 kB 0%] [Waiting for headers]                                                        3% [11 libgnome-2-0 279 kB/463 kB 60%] [Waiting for headers]                                                            3% [Waiting for headers]                        Get:12 http://mirrordirector.raspbian.org/raspbian/ jessie/main default-jre-headless armhf 2:1.7-52 [9,114 B]
+                        3% [12 default-jre-headless 0 B/9,114 B 0%] [Waiting for headers]                                                                 3% [Waiting for headers]                        3% [Waiting for headers] [Waiting for headers]                                              Get:13 http://mirrordirector.raspbian.org/raspbian/ jessie/main ca-certificates-java all 20140324 [13.7 kB]
+                                              3% [13 ca-certificates-java 0 B/13.7 kB 0%] [Waiting for headers]                                                                 3% [Waiting for headers]                        Get:14 http://mirrordirector.raspbian.org/raspbian/ jessie/main tzdata-java all 2015f-0+deb8u1 [80.2 kB]
+                        3% [14 tzdata-java 0 B/80.2 kB 0%] [Waiting for headers]                                                        3% [Waiting for headers]                        3% [Waiting for headers] [Waiting for headers]                                              Get:15 http://mirrordirector.raspbian.org/raspbian/ jessie/main openjdk-7-jre-headless armhf 7u79-2.5.6-1~deb8u1+rpi1 [37.6 MB]
+                                              3% [15 openjdk-7-jre-headless 2,539 B/37.6 MB 0%] [Waiting for headers]                                                                       3% [15 openjdk-7-jre-headless 708 kB/37.6 MB 2%] [Waiting for headers]                                                                      4% [15 openjdk-7-jre-headless 1,539 kB/37.6 MB 4%] [Waiting for headers]5% [15 openjdk-7-jre-headless 2,477 kB/37.6 MB 7%] [Waiting for headers]                                                                        5% [15 openjdk-7-jre-headless 3,313 kB/37.6 MB 9%]                                                  6% [15 openjdk-7-jre-headless 4,355 kB/37.6 MB 12%]         1,415 kB/s 1min 36s7% [15 openjdk-7-jre-headless 5,928 kB/37.6 MB 16%]         1,415 kB/s 1min 35s8% [15 openjdk-7-jre-headless 6,892 kB/37.6 MB 18%]         1,415 kB/s 1min 34s8% [15 openjdk-7-jre-headless 7,833 kB/37.6 MB 21%]         1,415 kB/s 1min 33s9% [15 openjdk-7-jre-headless 8,987 kB/37.6 MB 24%]         1,415 kB/s 1min 32s10% [15 openjdk-7-jre-headless 9,816 kB/37.6 MB 26%]        1,415 kB/s 1min 32s10% [15 openjdk-7-jre-headless 10.4 MB/37.6 MB 28%]         1,415 kB/s 1min 31s10% [15 openjdk-7-jre-headless 10.8 MB/37.6 MB 29%]         1,415 kB/s 1min 31s11% [15 openjdk-7-jre-headless 11.2 MB/37.6 MB 30%]         1,415 kB/s 1min 31s11% [15 openjdk-7-jre-headless 11.8 MB/37.6 MB 31%]         1,415 kB/s 1min 31s12% [15 openjdk-7-jre-headless 12.6 MB/37.6 MB 33%]         1,415 kB/s 1min 30s                                                                               12% [15 openjdk-7-jre-headless 13.4 MB/37.6 MB 36%] [Waiting for headers]13% [15 openjdk-7-jre-headless 14.3 MB/37.6 MB 38%] [Waiting for headers]                                                                         13% [15 openjdk-7-jre-headless 15.2 MB/37.6 MB 40%]         1,415 kB/s 1min 28s14% [15 openjdk-7-jre-headless 16.3 MB/37.6 MB 43%]         1,415 kB/s 1min 27s15% [15 openjdk-7-jre-headless 17.4 MB/37.6 MB 46%]         1,415 kB/s 1min 27s16% [15 openjdk-7-jre-headless 18.3 MB/37.6 MB 49%]         1,415 kB/s 1min 26s16% [15 openjdk-7-jre-headless 19.3 MB/37.6 MB 51%]         1,415 kB/s 1min 25s17% [15 openjdk-7-jre-headless 20.2 MB/37.6 MB 54%]         1,415 kB/s 1min 25s18% [15 openjdk-7-jre-headless 21.2 MB/37.6 MB 56%]         1,415 kB/s 1min 24s18% [15 openjdk-7-jre-headless 22.1 MB/37.6 MB 59%]         1,415 kB/s 1min 23s19% [15 openjdk-7-jre-headless 23.0 MB/37.6 MB 61%]         1,415 kB/s 1min 23s                                                                               20% [15 openjdk-7-jre-headless 24.5 MB/37.6 MB 65%] [Waiting for headers]                                                                         Get:16 http://mirrordirector.raspbian.org/raspbian/ jessie/main default-jre armhf 2:1.7-52 [966 B]
+                                                                         20% [15 openjdk-7-jre-headless 24.5 MB/37.6 MB 65%] [16 default-jre 0 B/966 B 020% [15 openjdk-7-jre-headless 24.5 MB/37.6 MB 65%]              3,236 kB/s 35s20% [15 openjdk-7-jre-headless 24.7 MB/37.6 MB 66%]              3,236 kB/s 35s20% [15 openjdk-7-jre-headless 24.9 MB/37.6 MB 66%]              3,236 kB/s 35s20% [15 openjdk-7-jre-headless 25.4 MB/37.6 MB 68%]              3,236 kB/s 35s21% [15 openjdk-7-jre-headless 25.7 MB/37.6 MB 68%]              3,236 kB/s 35s                                                                               21% [15 openjdk-7-jre-headless 25.9 MB/37.6 MB 69%] [Waiting for headers]21% [15 openjdk-7-jre-headless 26.3 MB/37.6 MB 70%] [Waiting for headers]21% [15 openjdk-7-jre-headless 26.6 MB/37.6 MB 71%] [Waiting for headers]22% [15 openjdk-7-jre-headless 27.2 MB/37.6 MB 72%] [Waiting for headers]22% [15 openjdk-7-jre-headless 27.8 MB/37.6 MB 74%] [Waiting for headers]22% [15 openjdk-7-jre-headless 28.3 MB/37.6 MB 75%] [Waiting for headers]23% [15 openjdk-7-jre-headless 29.0 MB/37.6 MB 77%] [Waiting for headers]                                                                         23% [15 openjdk-7-jre-headless 29.7 MB/37.6 MB 79%]              3,236 kB/s 34s                                                                               24% [15 openjdk-7-jre-headless 30.3 MB/37.6 MB 81%] [Waiting for headers]24% [15 openjdk-7-jre-headless 31.0 MB/37.6 MB 82%] [Waiting for headers]25% [15 openjdk-7-jre-headless 31.7 MB/37.6 MB 84%] [Waiting for headers]25% [15 openjdk-7-jre-headless 32.4 MB/37.6 MB 86%] [Waiting for headers]26% [15 openjdk-7-jre-headless 33.1 MB/37.6 MB 88%] [Waiting for headers]26% [15 openjdk-7-jre-headless 33.8 MB/37.6 MB 90%] [Waiting for headers]27% [15 openjdk-7-jre-headless 34.5 MB/37.6 MB 92%] [Waiting for headers]27% [15 openjdk-7-jre-headless 35.2 MB/37.6 MB 94%] [Waiting for headers]28% [15 openjdk-7-jre-headless 35.9 MB/37.6 MB 95%] [Waiting for headers]28% [15 openjdk-7-jre-headless 36.6 MB/37.6 MB 97%] [Waiting for headers]29% [15 openjdk-7-jre-headless 37.3 MB/37.6 MB 99%] [Waiting for headers]                                                                         29% [Waiting for headers]                                        3,236 kB/s 31s29% [Waiting for headers] [Waiting for headers]                  3,236 kB/s 31s                                                                               Get:17 http://mirrordirector.raspbian.org/raspbian/ jessie/main libyaml-snake-java all 1.12-2 [241 kB]
+29% [17 libyaml-snake-java 0 B/241 kB 0%] [Waiting for headers]  3,236 kB/s 31s29% [Waiting for headers]                                        3,236 kB/s 31s29% [Waiting for headers] [Waiting for headers]                  3,236 kB/s 31s                                                                               Get:18 http://mirrordirector.raspbian.org/raspbian/ jessie/main ant all 1.9.4-3 [1,888 kB]
+29% [18 ant 0 B/1,888 kB 0%] [Waiting for headers]               2,207 kB/s 46s29% [18 ant 269 kB/1,888 kB 14%] [Waiting for headers]           2,207 kB/s 46s30% [18 ant 848 kB/1,888 kB 45%] [Waiting for headers]           2,207 kB/s 46s30% [18 ant 1,478 kB/1,888 kB 78%] [Waiting for headers]         2,207 kB/s 45s30% [Waiting for headers]                                        2,207 kB/s 45s                                                                               Get:19 http://mirrordirector.raspbian.org/raspbian/ jessie/main ant-optional all 1.9.4-3 [316 kB]
+30% [19 ant-optional 0 B/316 kB 0%] [Waiting for headers]        2,207 kB/s 45s31% [Waiting for headers]                                        2,207 kB/s 45s31% [Waiting for headers] [Waiting for headers]                  2,207 kB/s 45s                                                                               Get:20 http://mirrordirector.raspbian.org/raspbian/ jessie/main libantlr-java all 2.7.7+dfsg-6 [433 kB]
+31% [20 libantlr-java 0 B/433 kB 0%] [Waiting for headers]       2,207 kB/s 45s31% [20 libantlr-java 433 kB/433 kB 100%] [Waiting for headers]  2,207 kB/s 45s31% [Waiting for headers]                                        2,207 kB/s 45s                                                                               Get:21 http://mirrordirector.raspbian.org/raspbian/ jessie/main antlr all 2.7.7+dfsg-6 [13.2 kB]
+31% [21 antlr 0 B/13.2 kB 0%] [Waiting for headers]              2,207 kB/s 45s31% [Waiting for headers]                                        2,207 kB/s 45s                                                                               Get:22 http://mirrordirector.raspbian.org/raspbian/ jessie/main libaspectj-java all 1.8.3-2 [12.7 MB]
+31% [22 libaspectj-java 0 B/12.7 MB 0%] [Waiting for headers]    2,207 kB/s 45s                                                                               31% [22 libaspectj-java 127 kB/12.7 MB 1%] [Waiting for headers]31% [22 libaspectj-java 761 kB/12.7 MB 6%] [Waiting for headers]                                                                32% [22 libaspectj-java 1,456 kB/12.7 MB 11%] [Waiting for headers]32% [22 libaspectj-java 2,075 kB/12.7 MB 16%] [Waiting for headers]33% [22 libaspectj-java 2,705 kB/12.7 MB 21%] [Waiting for headers]33% [22 libaspectj-java 3,441 kB/12.7 MB 27%] [Waiting for headers]34% [22 libaspectj-java 4,194 kB/12.7 MB 33%] [Waiting for headers]34% [22 libaspectj-java 4,293 kB/12.7 MB 34%] [Waiting for headers]34% [22 libaspectj-java 4,293 kB/12.7 MB 34%] [Waiting for headers]34% [22 libaspectj-java 4,601 kB/12.7 MB 36%] [Waiting for headers]35% [22 libaspectj-java 5,388 kB/12.7 MB 42%] [Waiting for headers]35% [22 libaspectj-java 6,305 kB/12.7 MB 49%] [Waiting for headers]36% [22 libaspectj-java 7,223 kB/12.7 MB 57%] [Waiting for headers]                                                                   37% [22 libaspectj-java 8,140 kB/12.7 MB 64%]                    2,207 kB/s 41s37% [22 libaspectj-java 9,058 kB/12.7 MB 71%]                    2,207 kB/s 41s38% [22 libaspectj-java 10.0 MB/12.7 MB 79%]                     2,207 kB/s 40s38% [22 libaspectj-java 10.6 MB/12.7 MB 83%]                     2,207 kB/s 40s39% [22 libaspectj-java 11.5 MB/12.7 MB 90%]                     2,207 kB/s 40s39% [22 libaspectj-java 12.4 MB/12.7 MB 97%]                     2,207 kB/s 39s40% [Waiting for headers]                                        2,207 kB/s 39s                                                                               Get:23 http://mirrordirector.raspbian.org/raspbian/ jessie/main aspectj all 1.8.3-2 [63.6 kB]
+40% [23 aspectj 0 B/63.6 kB 0%] [Waiting for headers]            2,207 kB/s 39s40% [Waiting for headers]                                        2,207 kB/s 39s40% [Waiting for headers] [Waiting for headers]                  2,207 kB/s 39s                                                                               Get:24 http://mirrordirector.raspbian.org/raspbian/ jessie/main java-wrappers all 0.1.28 [10.7 kB]
+40% [24 java-wrappers 0 B/10.7 kB 0%] [Waiting for headers]      2,207 kB/s 39s40% [Waiting for headers]                                        2,207 kB/s 39s                                                                               Get:25 http://mirrordirector.raspbian.org/raspbian/ jessie/main libosgi-core-java all 4.3.1-1 [92.1 kB]
+                                                                               40% [25 libosgi-core-java 2,544 B/92.1 kB 3%] [Waiting for headers]                                                                   40% [25 libosgi-core-java 92.1 kB/92.1 kB 100%] [Waiting for headers]                                                                     40% [Waiting for headers]                                        2,207 kB/s 39s                                                                               Get:26 http://mirrordirector.raspbian.org/raspbian/ jessie/main libgeronimo-osgi-support-java all 1.0-2 [17.9 kB]
+                                                                               40% [26 libgeronimo-osgi-support-java 0 B/17.9 kB 0%] [Waiting for headers]                                                                           40% [26 libgeronimo-osgi-support-java 1,097 B/17.9 kB 6%] [Waiting for headers]40% [26 libgeronimo-osgi-support-java 2,545 B/17.9 kB 14%] [Waiting for headers40% [Waiting for headers]                                        2,500 kB/s 34s40% [Waiting for headers] [Waiting for headers]                  2,500 kB/s 34s                                                                               Get:27 http://mirrordirector.raspbian.org/raspbian/ jessie/main libgeronimo-jpa-2.0-spec-java all 1.1-2 [81.0 kB]
+                                                                               40% [27 libgeronimo-jpa-2.0-spec-java 0 B/81.0 kB 0%] [Waiting for headers]                                                                           40% [27 libgeronimo-jpa-2.0-spec-java 27.2 kB/81.0 kB 34%] [Connecting to mirro40% [Waiting for headers]                                        2,500 kB/s 34s40% [Waiting for headers] [Waiting for headers]                  2,500 kB/s 34s                                                                               Get:28 http://mirrordirector.raspbian.org/raspbian/ jessie/main libosgi-foundation-ee-java all 4.2.0-1 [337 kB]
+                                                                               40% [28 libosgi-foundation-ee-java 0 B/337 kB 0%] [Waiting for headers]                                                                       40% [28 libosgi-foundation-ee-java 66.3 kB/337 kB 20%] [Waiting for headers]                                                                            40% [28 libosgi-foundation-ee-java 141 kB/337 kB 42%] [Waiting for headers]40% [28 libosgi-foundation-ee-java 239 kB/337 kB 71%] [Waiting for headers]                                                                           40% [Waiting for headers]                                        2,500 kB/s 34s40% [Waiting for headers] [Waiting for headers]                  2,500 kB/s 34s                                                                               Get:29 http://mirrordirector.raspbian.org/raspbian/ jessie/main libservlet2.5-java all 6.0.41-3 [219 kB]
+40% [29 libservlet2.5-java 0 B/219 kB 0%] [Waiting for headers]  2,500 kB/s 34s                                                                               40% [29 libservlet2.5-java 162 kB/219 kB 74%] [Waiting for headers]                                                                   40% [Waiting for headers]                                        2,500 kB/s 34s                                                                               Get:30 http://mirrordirector.raspbian.org/raspbian/ jessie/main libosgi-compendium-java all 4.3.0-1 [383 kB]
+                                                                               40% [30 libosgi-compendium-java 0 B/383 kB 0%] [Waiting for headers]                                                                    40% [30 libosgi-compendium-java 99.6 kB/383 kB 26%] [Waiting for headers]                                                                         40% [30 libosgi-compendium-java 343 kB/383 kB 90%] [Waiting for headers]                                                                        41% [Waiting for headers]                                        2,500 kB/s 34s                                                                               Get:31 http://mirrordirector.raspbian.org/raspbian/ jessie/main bnd all 1.50.0-8 [1,234 kB]
+41% [31 bnd 0 B/1,234 kB 0%] [Waiting for headers]               2,500 kB/s 34s41% [31 bnd 131 kB/1,234 kB 11%] [Waiting for headers]           2,500 kB/s 34s41% [31 bnd 454 kB/1,234 kB 37%]                                 2,500 kB/s 34s41% [31 bnd 748 kB/1,234 kB 61%] [Waiting for headers]           2,500 kB/s 34s41% [31 bnd 1,180 kB/1,234 kB 96%]                               2,500 kB/s 33s41% [Waiting for headers]                                        2,500 kB/s 33s                                                                               Get:32 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjline-java all 1.0-2 [69.5 kB]
+41% [32 libjline-java 0 B/69.5 kB 0%] [Waiting for headers]      2,500 kB/s 33s41% [Waiting for headers]                                        2,500 kB/s 33s41% [Waiting for headers] [Waiting for headers]                  2,500 kB/s 33s                                                                               Get:33 http://mirrordirector.raspbian.org/raspbian/ jessie/main libbsh-java all 2.0b4-15 [266 kB]
+41% [33 libbsh-java 0 B/266 kB 0%] [Waiting for headers]         2,500 kB/s 33s42% [Waiting for headers]                                        2,500 kB/s 33s42% [Waiting for headers] [Waiting for headers]                  2,500 kB/s 33s                                                                               Get:34 http://mirrordirector.raspbian.org/raspbian/ jessie/main bsh all 2.0b4-15 [7,812 B]
+42% [34 bsh 0 B/7,812 B 0%] [Waiting for headers]                2,500 kB/s 33s42% [Waiting for headers]                                        2,500 kB/s 33s                                                                               Get:35 http://mirrordirector.raspbian.org/raspbian/ jessie/main libcommons-collections3-java all 3.2.1-7 [592 kB]
+                                                                               42% [35 libcommons-collections3-java 0 B/592 kB 0%] [Waiting for headers]                                                                         42% [35 libcommons-collections3-java 215 kB/592 kB 36%] [Waiting for headers]                                                                             42% [Waiting for headers]                                        2,500 kB/s 33s42% [Waiting for headers] [Waiting for headers]                  2,500 kB/s 33s                                                                               Get:36 http://mirrordirector.raspbian.org/raspbian/ jessie/main libapache-pom-java all 10-2 [3,870 B]
+                                                                               42% [36 libapache-pom-java 0 B/3,870 B 0%] [Waiting for headers]                                                                42% [Waiting for headers]                                        2,500 kB/s 33s                                                                               Get:37 http://mirrordirector.raspbian.org/raspbian/ jessie/main libcommons-parent-java all 22-2 [6,786 B]
+                                                                               42% [37 libcommons-parent-java 0 B/6,786 B 0%] [Waiting for headers]                                                                    42% [Waiting for headers]                                        2,500 kB/s 33s                                                                               Get:38 http://mirrordirector.raspbian.org/raspbian/ jessie/main libcommons-logging-java all 1.2-1 [62.1 kB]
+                                                                               42% [38 libcommons-logging-java 0 B/62.1 kB 0%] [Waiting for headers]                                                                     42% [Waiting for headers]                                        2,500 kB/s 33s42% [Waiting for headers] [Waiting for headers]                  2,500 kB/s 33s                                                                               Get:39 http://mirrordirector.raspbian.org/raspbian/ jessie/main libcommons-beanutils-java all 1.9.2-1 [217 kB]
+                                                                               42% [39 libcommons-beanutils-java 0 B/217 kB 0%] [Waiting for headers]                                                                      42% [Waiting for headers]                                        2,500 kB/s 33s                                                                               Get:40 http://mirrordirector.raspbian.org/raspbian/ jessie/main libcommons-lang-java all 2.6-4 [269 kB]
+                                                                               42% [40 libcommons-lang-java 0 B/269 kB 0%] [Waiting for headers]                                                                 42% [40 libcommons-lang-java 82.0 kB/269 kB 30%] [Waiting for headers]                                                                      42% [Waiting for headers]                                        2,500 kB/s 33s                                                                               Get:41 http://mirrordirector.raspbian.org/raspbian/ jessie/main libcommons-cli-java all 1.2-3 [39.2 kB]
+                                                                               42% [41 libcommons-cli-java 0 B/39.2 kB 0%] [Waiting for headers]                                                                 42% [Waiting for headers]                                        2,500 kB/s 33s                                                                               Get:42 http://mirrordirector.raspbian.org/raspbian/ jessie/main libatinject-jsr330-api-java all 1.0+ds1-1 [22.6 kB]
+                                                                               42% [42 libatinject-jsr330-api-java 0 B/22.6 kB 0%] [Waiting for headers]                                                                         42% [Waiting for headers]                                        2,500 kB/s 33s42% [Waiting for headers] [Waiting for headers]                  2,500 kB/s 33s                                                                               Get:43 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjsr305-java all 0.1~+svn49-4 [28.1 kB]
+42% [43 libjsr305-java 0 B/28.1 kB 0%] [Waiting for headers]     2,500 kB/s 33s42% [Waiting for headers]                                        2,500 kB/s 33s                                                                               Get:44 http://mirrordirector.raspbian.org/raspbian/ jessie/main libguava-java all 17.0-1 [1,965 kB]
+42% [44 libguava-java 0 B/1,965 kB 0%] [Waiting for headers]     2,500 kB/s 33s43% [44 libguava-java 115 kB/1,965 kB 6%] [Waiting for headers]  2,500 kB/s 33s                                                                               43% [44 libguava-java 883 kB/1,965 kB 45%] [Waiting for headers]                                                                44% [44 libguava-java 1,572 kB/1,965 kB 80%] [Waiting for headers]                                                                  44% [Waiting for headers]                                     891 kB/s 1min 31s                                                                               Get:45 http://mirrordirector.raspbian.org/raspbian/ jessie/main checkstyle all 5.9-1 [647 kB]
+44% [45 checkstyle 0 B/647 kB 0%] [Waiting for headers]       891 kB/s 1min 31s44% [45 checkstyle 115 kB/647 kB 18%] [Waiting for headers]   891 kB/s 1min 31s44% [Waiting for headers]                                     891 kB/s 1min 30s                                                                               Get:46 http://mirrordirector.raspbian.org/raspbian/ jessie/main openjdk-7-jre armhf 7u79-2.5.6-1~deb8u1+rpi1 [152 kB]
+44% [46 openjdk-7-jre 0 B/152 kB 0%] [Waiting for headers]    891 kB/s 1min 30s44% [Waiting for headers]                                     891 kB/s 1min 30s44% [Waiting for headers] [Waiting for headers]               891 kB/s 1min 30s                                                                               Get:47 http://mirrordirector.raspbian.org/raspbian/ jessie/main libxml-commons-resolver1.1-java all 1.2-7 [91.9 kB]
+                                                                               44% [47 libxml-commons-resolver1.1-java 0 B/91.9 kB 0%] [Waiting for headers]                                                                             44% [Waiting for headers]                                     891 kB/s 1min 30s                                                                               Get:48 http://mirrordirector.raspbian.org/raspbian/ jessie/main libxml-commons-external-java all 1.4.01-2 [245 kB]
+                                                                               44% [48 libxml-commons-external-java 0 B/245 kB 0%] [Waiting for headers]                                                                         45% [48 libxml-commons-external-java 173 kB/245 kB 71%] [Waiting for headers]                                                                             45% [Waiting for headers]                                     891 kB/s 1min 30s                                                                               Get:49 http://mirrordirector.raspbian.org/raspbian/ jessie/main libxerces2-java all 2.11.0-7 [1,365 kB]
+                                                                               45% [49 libxerces2-java 0 B/1,365 kB 0%] [Waiting for headers]                                                              45% [49 libxerces2-java 266 kB/1,365 kB 19%] [Waiting for headers]                                                                  45% [49 libxerces2-java 1,009 kB/1,365 kB 74%] [Waiting for headers]                                                                    46% [Waiting for headers]                                     891 kB/s 1min 28s                                                                               Get:50 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjaxp1.3-java all 1.3.05-2 [450 kB]
+46% [50 libjaxp1.3-java 0 B/450 kB 0%] [Waiting for headers]  891 kB/s 1min 28s                                                                               46% [50 libjaxp1.3-java 205 kB/450 kB 46%] [Waiting for headers]                                                                46% [Waiting for headers]                                     891 kB/s 1min 28s                                                                               Get:51 http://mirrordirector.raspbian.org/raspbian/ jessie/main libxalan2-java all 2.7.1-9 [3,169 kB]
+                                                                               46% [51 libxalan2-java 0 B/3,169 kB 0%] [Waiting for headers]                                                             46% [51 libxalan2-java 213 kB/3,169 kB 7%]                    891 kB/s 1min 27s                                                                               46% [51 libxalan2-java 934 kB/3,169 kB 29%] [Waiting for headers]                                                                 47% [51 libxalan2-java 1,720 kB/3,169 kB 54%] [Waiting for headers]                                                                   48% [51 libxalan2-java 2,470 kB/3,169 kB 78%]                 891 kB/s 1min 25s48% [Waiting for headers]                                     891 kB/s 1min 24s48% [Waiting for headers] [Waiting for headers]               891 kB/s 1min 24s                                                                               Get:52 http://mirrordirector.raspbian.org/raspbian/ jessie/main libbsf-java all 1:2.4.0-5 [72.2 kB]
+48% [52 libbsf-java 0 B/72.2 kB 0%] [Waiting for headers]     891 kB/s 1min 24s48% [Waiting for headers]                                     891 kB/s 1min 24s48% [Waiting for headers] [Waiting for headers]               891 kB/s 1min 24s                                                                               Get:53 http://mirrordirector.raspbian.org/raspbian/ jessie/main libavalon-framework-java all 4.2.0-9 [70.6 kB]
+                                                                               48% [53 libavalon-framework-java 0 B/70.6 kB 0%] [Waiting for headers]                                                                      48% [Waiting for headers]                                     891 kB/s 1min 24s                                                                               Get:54 http://mirrordirector.raspbian.org/raspbian/ jessie/main libcommons-io-java all 2.4-2 [176 kB]
+                                                                               48% [54 libcommons-io-java 0 B/176 kB 0%] [Waiting for headers]                                                               48% [Waiting for headers]                                     891 kB/s 1min 24s48% [Waiting for headers] [Waiting for headers]               891 kB/s 1min 24s                                                                               Get:55 http://mirrordirector.raspbian.org/raspbian/ jessie/main libbatik-java all 1.7+dfsg-5 [2,861 kB]
+48% [55 libbatik-java 0 B/2,861 kB 0%] [Waiting for headers]  891 kB/s 1min 24s                                                                               49% [55 libbatik-java 743 kB/2,861 kB 26%] [Waiting for headers]                                                                49% [55 libbatik-java 1,529 kB/2,861 kB 53%] [Waiting for headers]50% [55 libbatik-java 2,316 kB/2,861 kB 81%] [Waiting for headers]                                                                  50% [Waiting for headers]                                     891 kB/s 1min 20s50% [Waiting for headers]                                     891 kB/s 1min 20s                                                                               Get:56 http://mirrordirector.raspbian.org/raspbian/ jessie/main libxmlgraphics-commons-java all 1.5-4 [549 kB]
+                                                                               50% [56 libxmlgraphics-commons-java 0 B/549 kB 0%] [Waiting for headers]                                                                        51% [Waiting for headers]                                     891 kB/s 1min 20s51% [Waiting for headers] [Waiting for headers]               891 kB/s 1min 20s                                                                               Get:57 http://mirrordirector.raspbian.org/raspbian/ jessie/main libfop-java all 1:1.1.dfsg2-1 [3,199 kB]
+51% [57 libfop-java 0 B/3,199 kB 0%] [Waiting for headers]    891 kB/s 1min 20s                                                                               51% [57 libfop-java 681 kB/3,199 kB 21%] [Waiting for headers]                                                              52% [57 libfop-java 1,533 kB/3,199 kB 48%] [Waiting for headers]52% [57 libfop-java 2,516 kB/3,199 kB 79%] [Waiting for headers]                                                                53% [Waiting for headers]                                     891 kB/s 1min 16s53% [Waiting for headers] [Waiting for headers]               891 kB/s 1min 16s                                                                               Get:58 http://mirrordirector.raspbian.org/raspbian/ jessie/main fop all 1:1.1.dfsg2-1 [21.7 kB]
+53% [58 fop 0 B/21.7 kB 0%] [Waiting for headers]             891 kB/s 1min 16s53% [Waiting for headers]                                     891 kB/s 1min 16s53% [Waiting for headers] [Waiting for headers]               891 kB/s 1min 16s                                                                               Get:59 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjaxen-java all 1.1.6-1 [209 kB]
+53% [59 libjaxen-java 0 B/209 kB 0%] [Waiting for headers]    891 kB/s 1min 16s53% [Waiting for headers]                                     891 kB/s 1min 16s                                                                               Get:60 http://mirrordirector.raspbian.org/raspbian/ jessie/main libisorelax-java all 20041111-8 [63.3 kB]
+                                                                               53% [60 libisorelax-java 0 B/63.3 kB 0%] [Waiting for headers]                                                              53% [60 libisorelax-java 35.8 kB/63.3 kB 57%] [Waiting for headers]                                                                   53% [Waiting for headers]                                        2,288 kB/s 29s53% [Waiting for headers] [Waiting for headers]                  2,288 kB/s 29s                                                                               Get:61 http://mirrordirector.raspbian.org/raspbian/ jessie/main librelaxng-datatype-java all 1.0+ds1-3 [11.7 kB]
+                                                                               53% [61 librelaxng-datatype-java 0 B/11.7 kB 0%] [Waiting for headers]                                                                      53% [Waiting for headers]                                        2,288 kB/s 29s                                                                               Get:62 http://mirrordirector.raspbian.org/raspbian/ jessie/main libmsv-java all 2009.1+dfsg1-4 [788 kB]
+53% [62 libmsv-java 0 B/788 kB 0%] [Waiting for headers]         2,288 kB/s 29s53% [62 libmsv-java 70.6 kB/788 kB 9%] [Waiting for headers]     2,288 kB/s 29s53% [62 libmsv-java 386 kB/788 kB 49%] [Waiting for headers]     2,288 kB/s 29s53% [62 libmsv-java 576 kB/788 kB 73%] [Waiting for headers]     2,288 kB/s 29s54% [Waiting for headers]                                        2,288 kB/s 29s                                                                               Get:63 http://mirrordirector.raspbian.org/raspbian/ jessie/main libxpp2-java all 2.1.10-7 [147 kB]
+54% [63 libxpp2-java 0 B/147 kB 0%] [Waiting for headers]        2,288 kB/s 29s54% [63 libxpp2-java 80.7 kB/147 kB 55%] [Waiting for headers]   2,288 kB/s 29s54% [Waiting for headers]                                        2,288 kB/s 29s                                                                               Get:64 http://mirrordirector.raspbian.org/raspbian/ jessie/main libxpp3-java all 1.1.4c-2 [349 kB]
+54% [64 libxpp3-java 0 B/349 kB 0%] [Waiting for headers]        2,288 kB/s 29s54% [64 libxpp3-java 25.7 kB/349 kB 7%] [Waiting for headers]    2,288 kB/s 29s54% [64 libxpp3-java 160 kB/349 kB 46%] [Waiting for headers]    2,288 kB/s 29s54% [64 libxpp3-java 331 kB/349 kB 95%] [Waiting for headers]    2,288 kB/s 29s54% [Waiting for headers]                                        2,288 kB/s 29s                                                                               Get:65 http://mirrordirector.raspbian.org/raspbian/ jessie/main libdom4j-java all 1.6.1+dfsg.3-2 [353 kB]
+54% [65 libdom4j-java 0 B/353 kB 0%] [Waiting for headers]       2,288 kB/s 29s54% [65 libdom4j-java 48.9 kB/353 kB 14%] [Waiting for headers]  2,288 kB/s 29s54% [65 libdom4j-java 314 kB/353 kB 89%] [Waiting for headers]   2,288 kB/s 29s54% [Waiting for headers]                                        2,288 kB/s 29s                                                                               Get:66 http://mirrordirector.raspbian.org/raspbian/ jessie/main libasm3-java all 3.3.2-2 [670 kB]
+54% [66 libasm3-java 0 B/670 kB 0%] [Waiting for headers]        2,288 kB/s 29s54% [66 libasm3-java 96.7 kB/670 kB 14%] [Waiting for headers]   2,288 kB/s 28s54% [66 libasm3-java 394 kB/670 kB 59%] [Waiting for headers]    2,288 kB/s 28s55% [Waiting for headers]                                        2,288 kB/s 28s55% [Waiting for headers] [Waiting for headers]                  2,288 kB/s 28s                                                                               Get:67 http://mirrordirector.raspbian.org/raspbian/ jessie/main libhamcrest-java all 1.3-5 [387 kB]
+55% [67 libhamcrest-java 0 B/387 kB 0%] [Waiting for headers]    2,288 kB/s 28s                                                                               55% [67 libhamcrest-java 231 kB/387 kB 60%] [Waiting for headers]                                                                 55% [Waiting for headers]                                        2,288 kB/s 28s                                                                               Get:68 http://mirrordirector.raspbian.org/raspbian/ jessie/main junit4 all 4.11-3 [224 kB]
+55% [68 junit4 0 B/224 kB 0%] [Waiting for headers]              2,288 kB/s 28s55% [68 junit4 49.8 kB/224 kB 22%]                               2,288 kB/s 28s55% [Waiting for headers]                                        2,288 kB/s 28s55% [Waiting for headers] [Waiting for headers]                  2,288 kB/s 28s                                                                               Get:69 http://mirrordirector.raspbian.org/raspbian/ jessie/main libmockobjects-java all 0.09-5 [51.5 kB]
+                                                                               55% [69 libmockobjects-java 0 B/51.5 kB 0%] [Waiting for headers]                                                                 55% [Waiting for headers]                                        2,288 kB/s 28s                                                                               Get:70 http://mirrordirector.raspbian.org/raspbian/ jessie/main libregexp-java all 1.5-3 [35.5 kB]
+55% [70 libregexp-java 0 B/35.5 kB 0%] [Waiting for headers]     2,288 kB/s 28s55% [Waiting for headers]                                        2,288 kB/s 28s55% [Waiting for headers] [Waiting for headers]                  2,288 kB/s 28s                                                                               Get:71 http://mirrordirector.raspbian.org/raspbian/ jessie/main libxstream-java all 1.4.7-2 [584 kB]
+55% [71 libxstream-java 0 B/584 kB 0%] [Waiting for headers]     2,288 kB/s 28s                                                                               55% [71 libxstream-java 292 kB/584 kB 50%] [Waiting for headers]                                                                56% [Waiting for headers]                                        2,288 kB/s 28s56% [Waiting for headers] [Waiting for headers]                  2,288 kB/s 28s                                                                               Get:72 http://mirrordirector.raspbian.org/raspbian/ jessie/main ivy all 2.3.0-4 [1,126 kB]
+56% [72 ivy 0 B/1,126 kB 0%] [Waiting for headers]               2,288 kB/s 28s56% [72 ivy 266 kB/1,126 kB 24%] [Waiting for headers]           2,288 kB/s 28s56% [72 ivy 546 kB/1,126 kB 48%] [Waiting for headers]           2,288 kB/s 27s56% [72 ivy 864 kB/1,126 kB 77%] [Waiting for headers]           2,288 kB/s 27s56% [Waiting for headers]                                        2,288 kB/s 27s56% [Waiting for headers] [Waiting for headers]                  2,288 kB/s 27s                                                                               Get:73 http://mirrordirector.raspbian.org/raspbian/ jessie/main libhawtjni-runtime-java all 1.10-1 [55.2 kB]
+                                                                               56% [73 libhawtjni-runtime-java 0 B/55.2 kB 0%] [Waiting for headers]                                                                     56% [Waiting for headers]                                        2,288 kB/s 27s56% [Waiting for headers] [Waiting for headers]                  2,288 kB/s 27s                                                                               Get:74 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjansi-native-java all 1.0-4 [35.5 kB]
+                                                                               56% [74 libjansi-native-java 0 B/35.5 kB 0%] [Waiting for headers]                                                                  56% [Waiting for headers]                                        2,288 kB/s 27s                                                                               Get:75 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjansi-java all 1.4-3 [56.9 kB]
+56% [75 libjansi-java 0 B/56.9 kB 0%] [Waiting for headers]      2,288 kB/s 27s56% [Waiting for headers]                                        2,288 kB/s 27s                                                                               Get:76 http://mirrordirector.raspbian.org/raspbian/ jessie/main groovy all 1.8.6-4 [9,747 kB]
+56% [76 groovy 0 B/9,747 kB 0%] [Waiting for headers]            2,288 kB/s 27s57% [76 groovy 737 kB/9,747 kB 8%] [Waiting for headers]      882 kB/s 1min 10s57% [76 groovy 787 kB/9,747 kB 8%] [Waiting for headers]      882 kB/s 1min 10s57% [76 groovy 1,151 kB/9,747 kB 12%] [Waiting for headers]   882 kB/s 1min 10s57% [76 groovy 1,474 kB/9,747 kB 15%] [Waiting for headers]    882 kB/s 1min 9s58% [76 groovy 1,978 kB/9,747 kB 20%] [Waiting for headers]    882 kB/s 1min 9s58% [76 groovy 2,270 kB/9,747 kB 23%] [Waiting for headers]    882 kB/s 1min 8s58% [76 groovy 2,597 kB/9,747 kB 27%] [Waiting for headers]    882 kB/s 1min 8s58% [76 groovy 2,990 kB/9,747 kB 31%]                          882 kB/s 1min 8s59% [76 groovy 3,381 kB/9,747 kB 35%] [Waiting for headers]    882 kB/s 1min 7s59% [76 groovy 3,772 kB/9,747 kB 39%] [Waiting for headers]    882 kB/s 1min 7s59% [76 groovy 4,241 kB/9,747 kB 44%] [Waiting for headers]    882 kB/s 1min 6s60% [76 groovy 4,684 kB/9,747 kB 48%] [Waiting for headers]    882 kB/s 1min 6s60% [76 groovy 5,192 kB/9,747 kB 53%] [Waiting for headers]    882 kB/s 1min 5s60% [76 groovy 5,678 kB/9,747 kB 58%] [Waiting for headers]    882 kB/s 1min 5s61% [76 groovy 6,202 kB/9,747 kB 64%] [Waiting for headers]    882 kB/s 1min 4s61% [76 groovy 6,853 kB/9,747 kB 70%] [Waiting for headers]    882 kB/s 1min 3s62% [76 groovy 7,536 kB/9,747 kB 77%] [Waiting for headers]    882 kB/s 1min 3s62% [76 groovy 8,197 kB/9,747 kB 84%] [Waiting for headers]    882 kB/s 1min 2s63% [76 groovy 8,889 kB/9,747 kB 91%] [Waiting for headers]    882 kB/s 1min 1s63% [76 groovy 9,452 kB/9,747 kB 97%]                              882 kB/s 60s63% [Waiting for headers]                                          882 kB/s 60s                                                                               Get:77 http://mirrordirector.raspbian.org/raspbian/ jessie/main libasm4-java all 5.0.3-1 [251 kB]
+63% [77 libasm4-java 0 B/251 kB 0%] [Waiting for headers]          882 kB/s 60s63% [77 libasm4-java 152 kB/251 kB 60%] [Waiting for headers]      882 kB/s 60s63% [Waiting for headers]                                          882 kB/s 60s                                                                               Get:78 http://mirrordirector.raspbian.org/raspbian/ jessie/main libcommons-codec-java all 1.9-1 [215 kB]
+                                                                               63% [78 libcommons-codec-java 0 B/215 kB 0%] [Waiting for headers]                                                                  63% [Waiting for headers]                                          882 kB/s 59s63% [Waiting for headers] [Waiting for headers]                    882 kB/s 59s                                                                               Get:79 http://mirrordirector.raspbian.org/raspbian/ jessie/main libhttpcore-java all 4.3.3-1 [539 kB]
+63% [79 libhttpcore-java 0 B/539 kB 0%] [Waiting for headers]      882 kB/s 59s64% [79 libhttpcore-java 223 kB/539 kB 41%] [Waiting for headers]  882 kB/s 59s64% [Waiting for headers]                                          882 kB/s 59s64% [Waiting for headers]                                          882 kB/s 59s                                                                               Get:80 http://mirrordirector.raspbian.org/raspbian/ jessie/main libhttpclient-java all 4.3.5-2 [549 kB]
+64% [80 libhttpclient-java 0 B/549 kB 0%]                          882 kB/s 59s64% [Working]                                                      882 kB/s 58s                                                                               Get:81 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjarjar-java all 1.4+svn142-4 [121 kB]
+64% [81 libjarjar-java 0 B/121 kB 0%]                              882 kB/s 58s64% [Working]                                                      882 kB/s 58s                                                                               Get:82 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjcifs-java all 1.3.17-1 [393 kB]
+64% [82 libjcifs-java 0 B/393 kB 0%]                               882 kB/s 58s65% [Working]                                                      882 kB/s 58s                                                                               Get:83 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjcip-annotations-java all 20060626-5 [12.7 kB]
+65% [83 libjcip-annotations-java 0 B/12.7 kB 0%]                   882 kB/s 58s65% [Working]                                                      882 kB/s 58s                                                                               Get:84 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjzlib-java all 1.1.3-1 [69.9 kB]
+65% [84 libjzlib-java 0 B/69.9 kB 0%]                              882 kB/s 58s65% [Working]                                                      882 kB/s 58s                                                                               Get:85 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjsch-java all 0.1.51-1 [268 kB]
+65% [85 libjsch-java 0 B/268 kB 0%]                              1,835 kB/s 27s65% [Working]                                                    1,835 kB/s 27s                                                                               Get:86 http://mirrordirector.raspbian.org/raspbian/ jessie/main libslf4j-java all 1.7.7-1 [112 kB]
+65% [86 libslf4j-java 0 B/112 kB 0%]                             1,835 kB/s 27s65% [Working]                                                    1,835 kB/s 27s                                                                               Get:87 http://mirrordirector.raspbian.org/raspbian/ jessie/main liblogback-java all 1:1.1.2-1 [624 kB]
+65% [87 liblogback-java 0 B/624 kB 0%]                           1,835 kB/s 27s65% [Working]                                                    1,835 kB/s 27s                                                                               Get:88 http://mirrordirector.raspbian.org/raspbian/ jessie/main libmaven-ant-tasks-java all 2.1.3-3 [1,439 kB]
+65% [88 libmaven-ant-tasks-java 0 B/1,439 kB 0%]                 1,835 kB/s 27s66% [Working]                                                    1,835 kB/s 26s                                                                               Get:89 http://mirrordirector.raspbian.org/raspbian/ jessie/main libnekohtml-java all 1.9.21-2 [120 kB]
+66% [89 libnekohtml-java 0 B/120 kB 0%]                          1,835 kB/s 26s66% [Working]                                                    1,835 kB/s 26s                                                                               Get:90 http://mirrordirector.raspbian.org/raspbian/ jessie/main junit all 3.8.2-8 [107 kB]
+66% [90 junit 0 B/107 kB 0%]                                     1,835 kB/s 26s66% [Working]                                                    1,835 kB/s 26s                                                                               Get:91 http://mirrordirector.raspbian.org/raspbian/ jessie/main libplexus-interpolation-java all 1.19-1 [60.4 kB]
+66% [91 libplexus-interpolation-java 0 B/60.4 kB 0%]             1,835 kB/s 26s66% [Working]                                                    1,835 kB/s 26s                                                                               Get:92 http://mirrordirector.raspbian.org/raspbian/ jessie/main libplexus-utils-java all 1:1.5.15-4 [210 kB]
+66% [92 libplexus-utils-java 0 B/210 kB 0%]                      1,835 kB/s 26s67% [Working]                                                    1,835 kB/s 26s                                                                               Get:93 http://mirrordirector.raspbian.org/raspbian/ jessie/main libclassworlds-java all 1.1-final-5 [39.3 kB]
+67% [93 libclassworlds-java 0 B/39.3 kB 0%]                      1,835 kB/s 26s67% [Working]                                                    1,835 kB/s 26s                                                                               Get:94 http://mirrordirector.raspbian.org/raspbian/ jessie/main libplexus-container-default-java all 1.0-alpha-9-stable-1-7 [150 kB]
+67% [94 libplexus-container-default-java 0 B/150 kB 0%]          1,835 kB/s 26s67% [Working]                                                    1,835 kB/s 26s                                                                               Get:95 http://mirrordirector.raspbian.org/raspbian/ jessie/main libplexus-cipher-java all 1.5-4 [14.8 kB]
+67% [95 libplexus-cipher-java 0 B/14.8 kB 0%]                    1,835 kB/s 26s67% [Working]                                                    1,835 kB/s 26s                                                                               Get:96 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjdom1-java all 1.1.3-1 [150 kB]
+67% [96 libjdom1-java 0 B/150 kB 0%]                             1,835 kB/s 26s67% [Working]                                                    1,835 kB/s 26s                                                                               Get:97 http://mirrordirector.raspbian.org/raspbian/ jessie/main libcommons-configuration-java all 1.10-2 [331 kB]
+67% [97 libcommons-configuration-java 0 B/331 kB 0%]             1,835 kB/s 26s67% [Working]                                                    1,835 kB/s 25s                                                                               Get:98 http://mirrordirector.raspbian.org/raspbian/ jessie/main libitext1-java all 1.4-6 [1,194 kB]
+67% [98 libitext1-java 0 B/1,194 kB 0%]                          1,835 kB/s 25s68% [Working]                                                    1,835 kB/s 25s                                                                               Get:99 http://mirrordirector.raspbian.org/raspbian/ jessie/main liblog4j1.2-java all 1.2.17-5 [386 kB]
+68% [99 liblog4j1.2-java 0 B/386 kB 0%]                          1,835 kB/s 25s68% [Working]                                                    1,835 kB/s 25s                                                                               Get:100 http://mirrordirector.raspbian.org/raspbian/ jessie/main libplexus-classworlds-java all 1.5.0-5 [48.2 kB]
+68% [100 libplexus-classworlds-java 0 B/48.2 kB 0%]              1,835 kB/s 25s68% [Working]                                                    1,835 kB/s 25s                                                                               Get:101 http://mirrordirector.raspbian.org/raspbian/ jessie/main libxbean-java all 4.0-2 [815 kB]
+68% [101 libxbean-java 0 B/815 kB 0%]                            1,835 kB/s 25s69% [Working]                                                    1,835 kB/s 24s                                                                               Get:102 http://mirrordirector.raspbian.org/raspbian/ jessie/main libplexus-containers-java all 1.0~beta3.0.7-7 [183 kB]
+69% [102 libplexus-containers-java 0 B/183 kB 0%]                1,835 kB/s 24s69% [Working]                                                    1,835 kB/s 24s                                                                               Get:103 http://mirrordirector.raspbian.org/raspbian/ jessie/main libplexus-i18n-java all 1.0-beta-10-3 [13.5 kB]
+69% [103 libplexus-i18n-java 0 B/13.5 kB 0%]                     1,835 kB/s 24s69% [Working]                                                    1,835 kB/s 24s                                                                               Get:104 http://mirrordirector.raspbian.org/raspbian/ jessie/main libdoxia-java all 1.1.4-2 [731 kB]
+69% [104 libdoxia-java 0 B/731 kB 0%]                            1,835 kB/s 24s69% [Working]                                                    1,835 kB/s 24s                                                                               Get:105 http://mirrordirector.raspbian.org/raspbian/ jessie/main libplexus-build-api-java all 0.0.7-1 [9,810 B]
+69% [105 libplexus-build-api-java 0 B/9,810 B 0%]                1,835 kB/s 24s69% [Working]                                                    1,835 kB/s 24s                                                                               Get:106 http://mirrordirector.raspbian.org/raspbian/ jessie/main libmodello-java all 1.1-3 [239 kB]
+69% [106 libmodello-java 0 B/239 kB 0%]                          1,835 kB/s 24s70% [Working]                                                    1,835 kB/s 23s                                                                               Get:107 http://mirrordirector.raspbian.org/raspbian/ jessie/main libplexus-ant-factory-java all 1.0~alpha2.1-3 [11.2 kB]
+70% [107 libplexus-ant-factory-java 0 B/11.2 kB 0%]              1,835 kB/s 23s70% [Working]                                                    1,835 kB/s 23s                                                                               Get:108 http://mirrordirector.raspbian.org/raspbian/ jessie/main libplexus-io-java all 1.0~alpha5-2 [44.7 kB]
+70% [108 libplexus-io-java 0 B/44.7 kB 0%]                       1,835 kB/s 23s70% [Working]                                                    1,835 kB/s 23s                                                                               Get:109 http://mirrordirector.raspbian.org/raspbian/ jessie/main libplexus-archiver-java all 1.2-1 [165 kB]
+70% [109 libplexus-archiver-java 0 B/165 kB 0%]                  1,835 kB/s 23s70% [Working]                                                    1,835 kB/s 23s                                                                               Get:110 http://mirrordirector.raspbian.org/raspbian/ jessie/main libplexus-bsh-factory-java all 1.0~alpha7-3 [7,874 B]
+70% [110 libplexus-bsh-factory-java 0 B/7,874 B 0%]              1,835 kB/s 23s70% [Working]                                                    1,835 kB/s 23s                                                                               Get:111 http://mirrordirector.raspbian.org/raspbian/ jessie/main libplexus-interactivity-api-java all 1.0-alpha-6-7 [14.1 kB]
+70% [111 libplexus-interactivity-api-java 0 B/14.1 kB 0%]        1,835 kB/s 23s70% [Working]                                                    1,835 kB/s 23s                                                                               Get:112 http://mirrordirector.raspbian.org/raspbian/ jessie/main libplexus-sec-dispatcher-java all 1.3.1-6 [27.0 kB]
+70% [112 libplexus-sec-dispatcher-java 0 B/27.0 kB 0%]           1,835 kB/s 23s70% [Working]                                                    1,835 kB/s 23s                                                                               Get:113 http://mirrordirector.raspbian.org/raspbian/ jessie/main libcommons-httpclient-java all 3.1-11 [302 kB]
+70% [113 libcommons-httpclient-java 0 B/302 kB 0%]               1,835 kB/s 23s70% [Working]                                                    1,835 kB/s 23s                                                                               Get:114 http://mirrordirector.raspbian.org/raspbian/ jessie/main libcommons-net2-java all 2.2-2 [193 kB]
+70% [114 libcommons-net2-java 0 B/193 kB 0%]                     1,835 kB/s 23s70% [Working]                                                    1,835 kB/s 23s                                                                               Get:115 http://mirrordirector.raspbian.org/raspbian/ jessie/main libcglib3-java all 3.1+dfsg-1 [726 kB]
+70% [115 libcglib3-java 0 B/726 kB 0%]                           1,835 kB/s 23s71% [Working]                                                    1,835 kB/s 23s                                                                               Get:116 http://mirrordirector.raspbian.org/raspbian/ jessie/main libobjenesis-java all 1.2+full-3 [30.3 kB]
+71% [116 libobjenesis-java 0 B/30.3 kB 0%]                       1,431 kB/s 29s71% [Working]                                                    1,431 kB/s 29s                                                                               Get:117 http://mirrordirector.raspbian.org/raspbian/ jessie/main libeasymock-java all 3.2+ds-4 [84.8 kB]
+71% [117 libeasymock-java 0 B/84.8 kB 0%]                        1,431 kB/s 29s71% [Working]                                                    1,431 kB/s 29s                                                                               Get:118 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjetty-java all 6.1.26-4 [781 kB]
+71% [118 libjetty-java 0 B/781 kB 0%]                            1,431 kB/s 29s71% [Working]                                                    1,431 kB/s 29s                                                                               Get:119 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjsoup-java all 1.8.1-1 [292 kB]
+71% [119 libjsoup-java 0 B/292 kB 0%]                            1,431 kB/s 29s71% [Working]                                                    1,431 kB/s 28s                                                                               Get:120 http://mirrordirector.raspbian.org/raspbian/ jessie/main libganymed-ssh2-java all 250-2 [389 kB]
+71% [120 libganymed-ssh2-java 0 B/389 kB 0%]                     1,431 kB/s 28s72% [Working]                                                    1,431 kB/s 28s                                                                               Get:121 http://mirrordirector.raspbian.org/raspbian/ jessie/main libnetbeans-cvsclient-java all 6.5-2 [349 kB]
+72% [121 libnetbeans-cvsclient-java 0 B/349 kB 0%]               1,431 kB/s 28s72% [Working]                                                    1,431 kB/s 28s                                                                               Get:122 http://mirrordirector.raspbian.org/raspbian/ jessie/main libmaven-scm-java all 1.3-5 [894 kB]
+72% [122 libmaven-scm-java 2,543 B/894 kB 0%]                    1,431 kB/s 28s73% [Working]                                                    1,431 kB/s 27s                                                                               Get:123 http://mirrordirector.raspbian.org/raspbian/ jessie/main libwagon-java all 1.0.0-5 [203 kB]
+73% [123 libwagon-java 0 B/203 kB 0%]                            1,431 kB/s 27s73% [Working]                                                    1,431 kB/s 27s                                                                               Get:124 http://mirrordirector.raspbian.org/raspbian/ jessie/main libmaven2-core-java all 2.2.1-17 [697 kB]
+73% [124 libmaven2-core-java 0 B/697 kB 0%]                      1,431 kB/s 27s73% [Working]                                                    1,431 kB/s 27s                                                                               Get:125 http://mirrordirector.raspbian.org/raspbian/ jessie/main libplexus-classworlds2-java all 2.5.2-1 [46.7 kB]
+73% [125 libplexus-classworlds2-java 0 B/46.7 kB 0%]             1,431 kB/s 27s73% [Working]                                                    1,431 kB/s 27s                                                                               Get:126 http://mirrordirector.raspbian.org/raspbian/ jessie/main libplexus-cli-java all 1.2-5 [9,348 B]
+73% [126 libplexus-cli-java 0 B/9,348 B 0%]                      1,431 kB/s 27s73% [Working]                                                    1,431 kB/s 27s                                                                               Get:127 http://mirrordirector.raspbian.org/raspbian/ jessie/main libplexus-utils2-java all 3.0.15-1 [229 kB]
+73% [127 libplexus-utils2-java 0 B/229 kB 0%]                    1,431 kB/s 27s73% [Working]                                                    1,431 kB/s 26s                                                                               Get:128 http://mirrordirector.raspbian.org/raspbian/ jessie/main libqdox-java all 1.12-1 [168 kB]
+73% [128 libqdox-java 0 B/168 kB 0%]                             1,431 kB/s 26s74% [Working]                                                    1,431 kB/s 26s                                                                               Get:129 http://mirrordirector.raspbian.org/raspbian/ jessie/main libplexus-containers1.5-java all 1.5.5-6 [285 kB]
+74% [129 libplexus-containers1.5-java 0 B/285 kB 0%]             1,431 kB/s 26s74% [Working]                                                    1,431 kB/s 26s                                                                               Get:130 http://mirrordirector.raspbian.org/raspbian/ jessie/main libpolyglot-maven-java all 0.8~tobrien+git20120905-3 [76.1 kB]
+74% [130 libpolyglot-maven-java 2,544 B/76.1 kB 3%]              1,431 kB/s 26s74% [Working]                                                    1,431 kB/s 26s                                                                               Get:131 http://mirrordirector.raspbian.org/raspbian/ jessie/main libnetty-java all 1:3.2.6.Final-2 [671 kB]
+74% [131 libnetty-java 0 B/671 kB 0%]                            1,431 kB/s 26s74% [Working]                                                    1,431 kB/s 26s                                                                               Get:132 http://mirrordirector.raspbian.org/raspbian/ jessie/main libasync-http-client-java all 1.6.5-3 [307 kB]
+74% [132 libasync-http-client-java 0 B/307 kB 0%]                1,431 kB/s 26s74% [Working]                                                    1,431 kB/s 25s                                                                               Get:133 http://mirrordirector.raspbian.org/raspbian/ jessie/main libaopalliance-java all 20070526-5 [9,192 B]
+74% [133 libaopalliance-java 0 B/9,192 B 0%]                     1,431 kB/s 25s74% [Working]                                                    1,431 kB/s 25s                                                                               Get:134 http://mirrordirector.raspbian.org/raspbian/ jessie/main libgeronimo-interceptor-3.0-spec-java all 1.0.1-1 [5,028 B]
+74% [134 libgeronimo-interceptor-3.0-spec-java 0 B/5,028 B 0%]   1,431 kB/s 25s74% [Working]                                                    1,431 kB/s 25s                                                                               Get:135 http://mirrordirector.raspbian.org/raspbian/ jessie/main libservlet3.1-java all 8.0.14-1 [389 kB]
+74% [135 libservlet3.1-java 0 B/389 kB 0%]                       1,431 kB/s 25s75% [Working]                                                    1,431 kB/s 25s                                                                               Get:136 http://mirrordirector.raspbian.org/raspbian/ jessie/main libcdi-api-java all 1.0-2 [31.9 kB]
+75% [136 libcdi-api-java 0 B/31.9 kB 0%]                         1,431 kB/s 25s75% [Working]                                                    1,431 kB/s 25s                                                                               Get:137 http://mirrordirector.raspbian.org/raspbian/ jessie/main libsisu-guice-java all 3.2.4-1 [614 kB]
+75% [137 libsisu-guice-java 0 B/614 kB 0%]                       1,431 kB/s 25s75% [Working]                                                    1,431 kB/s 25s                                                                               Get:138 http://mirrordirector.raspbian.org/raspbian/ jessie/main libsisu-ioc-java all 2.3.0-5 [458 kB]
+75% [138 libsisu-ioc-java 3,991 B/458 kB 1%]                     1,431 kB/s 25s75% [Working]                                                    1,431 kB/s 24s                                                                               Get:139 http://mirrordirector.raspbian.org/raspbian/ jessie/main libaether-java all 1.13.1-2 [495 kB]
+75% [139 libaether-java 1,095 B/495 kB 0%]                       1,431 kB/s 24s76% [Working]                                                    1,431 kB/s 24s                                                                               Get:140 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjackrabbit-java all 2.3.6-1+deb8u1 [275 kB]
+76% [140 libjackrabbit-java 2,543 B/275 kB 1%]                   1,431 kB/s 24s76% [Working]                                                    1,431 kB/s 24s                                                                               Get:141 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjsch-agent-proxy-java all 0.0.7-1 [23.1 kB]
+76% [141 libjsch-agent-proxy-java 0 B/23.1 kB 0%]                1,431 kB/s 24s76% [Working]                                                    1,431 kB/s 24s                                                                               Get:142 http://mirrordirector.raspbian.org/raspbian/ jessie/main libmaven-parent-java all 21-2 [5,744 B]
+76% [142 libmaven-parent-java 0 B/5,744 B 0%]                    1,431 kB/s 24s76% [Working]                                                    1,431 kB/s 24s                                                                               Get:143 http://mirrordirector.raspbian.org/raspbian/ jessie/main libwagon2-java all 2.7-1 [2,021 kB]
+76% [143 libwagon2-java 0 B/2,021 kB 0%]                         1,431 kB/s 24s77% [143 libwagon2-java 1,339 kB/2,021 kB 66%]                   1,431 kB/s 23s77% [Working]                                                    1,600 kB/s 20s                                                                               Get:144 http://mirrordirector.raspbian.org/raspbian/ jessie/main maven all 3.0.5-3 [1,281 kB]
+77% [144 maven 0 B/1,281 kB 0%]                                  1,600 kB/s 20s78% [Working]                                                    1,600 kB/s 19s                                                                               Get:145 http://mirrordirector.raspbian.org/raspbian/ jessie/main libgradle-core-java all 1.5-2 [4,000 kB]
+78% [145 libgradle-core-java 0 B/4,000 kB 0%]                    1,600 kB/s 19s79% [145 libgradle-core-java 1,598 kB/4,000 kB 40%]              1,600 kB/s 18s81% [145 libgradle-core-java 3,340 kB/4,000 kB 83%]              1,600 kB/s 17s81% [Working]                                                    1,600 kB/s 17s                                                                               Get:146 http://mirrordirector.raspbian.org/raspbian/ jessie/main libbcprov-java all 1.49+dfsg-3 [1,999 kB]
+81% [146 libbcprov-java 0 B/1,999 kB 0%]                         1,600 kB/s 17s82% [146 libbcprov-java 1,281 kB/1,999 kB 64%]                   1,600 kB/s 16s82% [Working]                                                    1,600 kB/s 15s                                                                               Get:147 http://mirrordirector.raspbian.org/raspbian/ jessie/main libbcpg-java all 1.49+dfsg-3 [234 kB]
+82% [147 libbcpg-java 0 B/234 kB 0%]                             1,600 kB/s 15s83% [Working]                                                    1,600 kB/s 15s                                                                               Get:148 http://mirrordirector.raspbian.org/raspbian/ jessie/main libgmetrics-groovy-java all 0.5-1 [589 kB]
+83% [148 libgmetrics-groovy-java 0 B/589 kB 0%]                  1,600 kB/s 15s83% [Working]                                                    1,600 kB/s 15s                                                                               Get:149 http://mirrordirector.raspbian.org/raspbian/ jessie/main libcodenarc-groovy-java all 0.17-2 [3,517 kB]
+83% [149 libcodenarc-groovy-java 0 B/3,517 kB 0%]                1,600 kB/s 15s84% [149 libcodenarc-groovy-java 1,603 kB/3,517 kB 46%]          1,600 kB/s 14s85% [149 libcodenarc-groovy-java 3,129 kB/3,517 kB 89%]          1,600 kB/s 13s85% [Working]                                                    1,600 kB/s 13s                                                                               Get:150 http://mirrordirector.raspbian.org/raspbian/ jessie/main libecj-java all 3.10.1-1 [1,647 kB]
+85% [150 libecj-java 0 B/1,647 kB 0%]                            1,600 kB/s 13s86% [150 libecj-java 1,481 kB/1,647 kB 90%]                      1,600 kB/s 12s87% [Working]                                                    1,600 kB/s 12s                                                                               Get:151 http://mirrordirector.raspbian.org/raspbian/ jessie/main libgoogle-gson-java all 2.2.4-1 [173 kB]
+87% [151 libgoogle-gson-java 0 B/173 kB 0%]                      1,600 kB/s 12s87% [Working]                                                    1,600 kB/s 12s                                                                               Get:152 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjatl-java all 0.2.2-1 [25.3 kB]
+87% [152 libjatl-java 0 B/25.3 kB 0%]                            1,600 kB/s 12s87% [Working]                                                    1,600 kB/s 12s                                                                               Get:153 http://mirrordirector.raspbian.org/raspbian/ jessie/main libbcel-java all 6.0~rc3-1 [567 kB]
+87% [153 libbcel-java 0 B/567 kB 0%]                             1,600 kB/s 12s87% [Working]                                                     2,288 kB/s 8s                                                                               Get:154 http://mirrordirector.raspbian.org/raspbian/ jessie/main libmx4j-java all 3.0.2-14 [894 kB]
+87% [154 libmx4j-java 0 B/894 kB 0%]                              2,288 kB/s 8s88% [Working]                                                     2,288 kB/s 7s                                                                               Get:155 http://mirrordirector.raspbian.org/raspbian/ jessie/main libmail-java all 1.5.2-3 [601 kB]
+88% [155 libmail-java 0 B/601 kB 0%]                              2,288 kB/s 7s88% [Working]                                                     2,288 kB/s 7s                                                                               Get:156 http://mirrordirector.raspbian.org/raspbian/ jessie/main libcommons-pool-java all 1.6-2 [105 kB]
+88% [156 libcommons-pool-java 0 B/105 kB 0%]                      2,288 kB/s 7s88% [Working]                                                     2,288 kB/s 7s                                                                               Get:157 http://mirrordirector.raspbian.org/raspbian/ jessie/main libcommons-dbcp-java all 1.4-5 [155 kB]
+88% [157 libcommons-dbcp-java 0 B/155 kB 0%]                      2,288 kB/s 7s88% [Working]                                                     2,288 kB/s 7s                                                                               Get:158 http://mirrordirector.raspbian.org/raspbian/ jessie/main libservlet3.0-java all 7.0.56-3 [313 kB]
+88% [158 libservlet3.0-java 0 B/313 kB 0%]                        2,288 kB/s 7s89% [Working]                                                     2,288 kB/s 7s                                                                               Get:159 http://mirrordirector.raspbian.org/raspbian/ jessie/main libtomcat7-java all 7.0.56-3 [3,625 kB]
+89% [159 libtomcat7-java 0 B/3,625 kB 0%]                         2,288 kB/s 7s89% [159 libtomcat7-java 1,336 kB/3,625 kB 37%]                   2,288 kB/s 6s90% [159 libtomcat7-java 2,551 kB/3,625 kB 70%]                   2,288 kB/s 6s91% [Working]                                                     2,288 kB/s 5s                                                                               Get:160 http://mirrordirector.raspbian.org/raspbian/ jessie/main libgeronimo-jta-1.1-spec-java all 1.1.1-3 [12.0 kB]
+91% [160 libgeronimo-jta-1.1-spec-java 0 B/12.0 kB 0%]            2,288 kB/s 5s91% [Working]                                                     2,288 kB/s 5s                                                                               Get:161 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjetty-extra-java all 6.1.26-4 [325 kB]
+91% [161 libjetty-extra-java 0 B/325 kB 0%]                       2,288 kB/s 5s91% [Working]                                                     2,288 kB/s 5s                                                                               Get:162 http://mirrordirector.raspbian.org/raspbian/ jessie/main librhino-java all 1.7R4-3 [1,096 kB]
+91% [162 librhino-java 0 B/1,096 kB 0%]                           2,288 kB/s 5s92% [Working]                                                     2,288 kB/s 5s                                                                               Get:163 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjcommander-java all 1.35-1 [58.1 kB]
+92% [163 libjcommander-java 0 B/58.1 kB 0%]                       2,288 kB/s 5s92% [Working]                                                     2,288 kB/s 5s                                                                               Get:164 http://mirrordirector.raspbian.org/raspbian/ jessie/main testng all 6.8.8-4 [787 kB]
+92% [164 testng 0 B/787 kB 0%]                                    2,288 kB/s 5s93% [Working]                                                     2,288 kB/s 4s                                                                               Get:165 http://mirrordirector.raspbian.org/raspbian/ jessie/main libgradle-plugins-java all 1.5-2 [3,108 kB]
+93% [165 libgradle-plugins-java 0 B/3,108 kB 0%]                  2,288 kB/s 4s94% [165 libgradle-plugins-java 1,369 kB/3,108 kB 44%]            2,288 kB/s 4s95% [165 libgradle-plugins-java 2,984 kB/3,108 kB 96%]            2,288 kB/s 3s95% [Working]                                                     2,288 kB/s 3s                                                                               Get:166 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjffi-jni armhf 1.0.2-11 [22.1 kB]
+95% [166 libjffi-jni 0 B/22.1 kB 0%]                              2,288 kB/s 3s95% [Working]                                                     2,288 kB/s 3s                                                                               Get:167 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjffi-java all 1.0.2-11 [82.0 kB]
+95% [167 libjffi-java 0 B/82.0 kB 0%]                             2,288 kB/s 3s95% [Working]                                                     2,288 kB/s 3s                                                                               Get:168 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjnr-x86asm-java all 0.1-1 [311 kB]
+95% [168 libjnr-x86asm-java 0 B/311 kB 0%]                        2,288 kB/s 3s95% [Working]                                                     2,288 kB/s 3s                                                                               Get:169 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjaffl-java all 0.5.9-5 [368 kB]
+95% [169 libjaffl-java 0 B/368 kB 0%]                             2,288 kB/s 3s95% [Working]                                                     2,288 kB/s 2s                                                                               Get:170 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjna-jni armhf 4.1.0-1 [40.5 kB]
+95% [170 libjna-jni 0 B/40.5 kB 0%]                               2,288 kB/s 2s95% [Working]                                                     2,288 kB/s 2s                                                                               Get:171 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjna-java all 4.1.0-1 [163 kB]
+95% [171 libjna-java 0 B/163 kB 0%]                               2,288 kB/s 2s95% [Working]                                                     2,288 kB/s 2s                                                                               Get:172 http://mirrordirector.raspbian.org/raspbian/ jessie/main libconstantine-java all 0.7-6 [231 kB]
+95% [172 libconstantine-java 0 B/231 kB 0%]                       2,004 kB/s 3s96% [Working]                                                     2,004 kB/s 3s                                                                               Get:173 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjnr-posix-java all 1.1.8-2 [107 kB]
+96% [173 libjnr-posix-java 0 B/107 kB 0%]                         2,004 kB/s 3s96% [Working]                                                     2,004 kB/s 3s                                                                               Get:174 http://mirrordirector.raspbian.org/raspbian/ jessie/main libminlog-java all 1.2-2 [5,288 B]
+96% [174 libminlog-java 0 B/5,288 B 0%]                           2,004 kB/s 3s96% [Working]                                                     2,004 kB/s 3s                                                                               Get:175 http://mirrordirector.raspbian.org/raspbian/ jessie/main libreflectasm-java all 1.05-2 [14.8 kB]
+96% [175 libreflectasm-java 0 B/14.8 kB 0%]                       2,004 kB/s 3s96% [Working]                                                     2,004 kB/s 3s                                                                               Get:176 http://mirrordirector.raspbian.org/raspbian/ jessie/main libkryo-java all 2.20-3 [126 kB]
+96% [176 libkryo-java 0 B/126 kB 0%]                              2,004 kB/s 3s96% [Working]                                                     2,004 kB/s 3s                                                                               Get:177 http://mirrordirector.raspbian.org/raspbian/ jessie/main libnative-platform-jni armhf 0.3~rc2-3 [8,300 B]
+96% [177 libnative-platform-jni 0 B/8,300 B 0%]                   2,004 kB/s 3s96% [Working]                                                     2,004 kB/s 3s                                                                               Get:178 http://mirrordirector.raspbian.org/raspbian/ jessie/main libnative-platform-java all 0.3~rc2-3 [41.0 kB]
+96% [178 libnative-platform-java 0 B/41.0 kB 0%]                  2,004 kB/s 3s96% [Working]                                                     2,004 kB/s 3s                                                                               Get:179 http://mirrordirector.raspbian.org/raspbian/ jessie/main gradle all 1.5-2 [1,000 kB]
+96% [179 gradle 0 B/1,000 kB 0%]                                  2,004 kB/s 3s97% [Working]                                                     2,004 kB/s 2s                                                                               Get:180 http://mirrordirector.raspbian.org/raspbian/ jessie/main icc-profiles-free all 2.0.1+dfsg-1 [552 kB]
+97% [180 icc-profiles-free 0 B/552 kB 0%]                         2,004 kB/s 2s97% [Working]                                                     2,004 kB/s 2s                                                                               Get:181 http://mirrordirector.raspbian.org/raspbian/ jessie/main libbindex-java all 2.2+svn101-1 [60.3 kB]
+97% [181 libbindex-java 0 B/60.3 kB 0%]                           2,004 kB/s 2s97% [Working]                                                     2,004 kB/s 2s                                                                               Get:182 http://mirrordirector.raspbian.org/raspbian/ jessie/main libcommons-digester-java all 1.8.1-4 [169 kB]
+97% [182 libcommons-digester-java 0 B/169 kB 0%]                  2,004 kB/s 2s97% [Working]                                                     2,004 kB/s 2s                                                                               Get:183 http://mirrordirector.raspbian.org/raspbian/ jessie/main libcommons-jexl2-java all 2.1.1-2 [245 kB]
+97% [183 libcommons-jexl2-java 0 B/245 kB 0%]                     2,004 kB/s 2s97% [Working]                                                     2,004 kB/s 2s                                                                               Get:184 http://mirrordirector.raspbian.org/raspbian/ jessie/main libcommons-jxpath-java all 1.3-6 [268 kB]
+97% [184 libcommons-jxpath-java 0 B/268 kB 0%]                    2,004 kB/s 2s97% [Working]                                                     2,004 kB/s 1s                                                                               Get:185 http://mirrordirector.raspbian.org/raspbian/ jessie/main libcommons-vfs-java all 2.0-3 [364 kB]
+97% [185 libcommons-vfs-java 0 B/364 kB 0%]                       2,004 kB/s 1s98% [Working]                                                     2,004 kB/s 1s                                                                               Get:186 http://mirrordirector.raspbian.org/raspbian/ jessie/main libgconf2-4 armhf 3.2.6-3 [358 kB]
+98% [186 libgconf2-4 0 B/358 kB 0%]                               2,004 kB/s 1s98% [Working]                                                     2,004 kB/s 1s                                                                               Get:187 http://mirrordirector.raspbian.org/raspbian/ jessie/main libgnome2-bin armhf 2.32.1-5 [433 kB]
+98% [187 libgnome2-bin 0 B/433 kB 0%]                             2,004 kB/s 1s98% [Working]                                                     2,004 kB/s 1s                                                                               Get:188 http://mirrordirector.raspbian.org/raspbian/ jessie/main libgnome2-0 armhf 2.32.1-5 [429 kB]
+98% [188 libgnome2-0 0 B/429 kB 0%]                               2,004 kB/s 1s99% [Working]                                                     2,004 kB/s 1s                                                                               Get:189 http://mirrordirector.raspbian.org/raspbian/ jessie/main libgnomevfs2-extra armhf 1:2.24.4-6 [351 kB]
+99% [189 libgnomevfs2-extra 0 B/351 kB 0%]                        2,004 kB/s 1s99% [Working]                                                     2,004 kB/s 0s                                                                               Get:190 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjetty-extra armhf 6.1.26-4 [67.9 kB]
+99% [190 libjetty-extra 0 B/67.9 kB 0%]                           2,004 kB/s 0s99% [Working]                                                     2,004 kB/s 0s                                                                               Get:191 http://mirrordirector.raspbian.org/raspbian/ jessie/main libsaxon-java all 1:6.5.5-10 [1,076 kB]
+99% [191 libsaxon-java 0 B/1,076 kB 0%]                           2,004 kB/s 0s100% [Working]                                                    2,004 kB/s 0s                                                                               Get:192 http://mirrordirector.raspbian.org/raspbian/ jessie/main libxom-java all 1.2.10-1 [170 kB]
+100% [192 libxom-java 0 B/170 kB 0%]                              2,004 kB/s 0s100% [Working]                                                    2,004 kB/s 0s                                                                               Get:193 http://mirrordirector.raspbian.org/raspbian/ jessie/main rhino all 1.7R4-3 [17.8 kB]
+100% [193 rhino 0 B/17.8 kB 0%]                                   2,004 kB/s 0s100% [Working]                                                    2,004 kB/s 0s                                                                               Get:194 http://mirrordirector.raspbian.org/raspbian/ jessie/main icedtea-7-jre-jamvm armhf 7u79-2.5.6-1~deb8u1+rpi1 [475 kB]
+100% [194 icedtea-7-jre-jamvm 0 B/475 kB 0%]                      2,004 kB/s 0s100% [Working]                                                    2,004 kB/s 0s                                                                               Fetched 145 MB in 1min 17s (1,865 kB/s)
+Extracting templates from packages: 15%Extracting templates from packages: 30%Extracting templates from packages: 46%Extracting templates from packages: 61%Extracting templates from packages: 77%Extracting templates from packages: 92%Extracting templates from packages: 100%
+Selecting previously unselected package libatk-wrapper-java.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 117871 files and directories currently installed.)
+Preparing to unpack .../libatk-wrapper-java_0.30.5-1_all.deb ...
+Unpacking libatk-wrapper-java (0.30.5-1) ...
+Selecting previously unselected package libatk-wrapper-java-jni:armhf.
+Preparing to unpack .../libatk-wrapper-java-jni_0.30.5-1_armhf.deb ...
+Unpacking libatk-wrapper-java-jni:armhf (0.30.5-1) ...
+Selecting previously unselected package libbonobo2-common.
+Preparing to unpack .../libbonobo2-common_2.32.1-3_all.deb ...
+Unpacking libbonobo2-common (2.32.1-3) ...
+Selecting previously unselected package liborbit-2-0:armhf.
+Preparing to unpack .../liborbit-2-0_1%3a2.14.19-0.3_armhf.deb ...
+Unpacking liborbit-2-0:armhf (1:2.14.19-0.3) ...
+Selecting previously unselected package libbonobo2-0:armhf.
+Preparing to unpack .../libbonobo2-0_2.32.1-3_armhf.deb ...
+Unpacking libbonobo2-0:armhf (2.32.1-3) ...
+Selecting previously unselected package libcanberra0:armhf.
+Preparing to unpack .../libcanberra0_0.30-2.1_armhf.deb ...
+Unpacking libcanberra0:armhf (0.30-2.1) ...
+Selecting previously unselected package gnome-mime-data.
+Preparing to unpack .../gnome-mime-data_2.18.0-1_all.deb ...
+Unpacking gnome-mime-data (2.18.0-1) ...
+Selecting previously unselected package libgnomevfs2-common.
+Preparing to unpack .../libgnomevfs2-common_1%3a2.24.4-6_all.deb ...
+Unpacking libgnomevfs2-common (1:2.24.4-6) ...
+Selecting previously unselected package libgnomevfs2-0:armhf.
+Preparing to unpack .../libgnomevfs2-0_1%3a2.24.4-6_armhf.deb ...
+Unpacking libgnomevfs2-0:armhf (1:2.24.4-6) ...
+Selecting previously unselected package libgnome2-common.
+Preparing to unpack .../libgnome2-common_2.32.1-5_all.deb ...
+Unpacking libgnome2-common (2.32.1-5) ...
+Selecting previously unselected package libgnome-2-0:armhf.
+Preparing to unpack .../libgnome-2-0_2.32.1-5_armhf.deb ...
+Unpacking libgnome-2-0:armhf (2.32.1-5) ...
+Selecting previously unselected package default-jre-headless.
+Preparing to unpack .../default-jre-headless_2%3a1.7-52_armhf.deb ...
+Unpacking default-jre-headless (2:1.7-52) ...
+Selecting previously unselected package ca-certificates-java.
+Preparing to unpack .../ca-certificates-java_20140324_all.deb ...
+Unpacking ca-certificates-java (20140324) ...
+Selecting previously unselected package tzdata-java.
+Preparing to unpack .../tzdata-java_2015f-0+deb8u1_all.deb ...
+Unpacking tzdata-java (2015f-0+deb8u1) ...
+Selecting previously unselected package openjdk-7-jre-headless:armhf.
+Preparing to unpack .../openjdk-7-jre-headless_7u79-2.5.6-1~deb8u1+rpi1_armhf.deb ...
+Unpacking openjdk-7-jre-headless:armhf (7u79-2.5.6-1~deb8u1+rpi1) ...
+Selecting previously unselected package libyaml-snake-java.
+Preparing to unpack .../libyaml-snake-java_1.12-2_all.deb ...
+Unpacking libyaml-snake-java (1.12-2) ...
+Selecting previously unselected package ant.
+Preparing to unpack .../archives/ant_1.9.4-3_all.deb ...
+Unpacking ant (1.9.4-3) ...
+Selecting previously unselected package ant-optional.
+Preparing to unpack .../ant-optional_1.9.4-3_all.deb ...
+Unpacking ant-optional (1.9.4-3) ...
+Selecting previously unselected package libantlr-java.
+Preparing to unpack .../libantlr-java_2.7.7+dfsg-6_all.deb ...
+Unpacking libantlr-java (2.7.7+dfsg-6) ...
+Selecting previously unselected package antlr.
+Preparing to unpack .../antlr_2.7.7+dfsg-6_all.deb ...
+Unpacking antlr (2.7.7+dfsg-6) ...
+Selecting previously unselected package libaspectj-java.
+Preparing to unpack .../libaspectj-java_1.8.3-2_all.deb ...
+Unpacking libaspectj-java (1.8.3-2) ...
+Selecting previously unselected package aspectj.
+Preparing to unpack .../aspectj_1.8.3-2_all.deb ...
+Unpacking aspectj (1.8.3-2) ...
+Selecting previously unselected package java-wrappers.
+Preparing to unpack .../java-wrappers_0.1.28_all.deb ...
+Unpacking java-wrappers (0.1.28) ...
+Selecting previously unselected package libosgi-core-java.
+Preparing to unpack .../libosgi-core-java_4.3.1-1_all.deb ...
+Unpacking libosgi-core-java (4.3.1-1) ...
+Selecting previously unselected package libgeronimo-osgi-support-java.
+Preparing to unpack .../libgeronimo-osgi-support-java_1.0-2_all.deb ...
+Unpacking libgeronimo-osgi-support-java (1.0-2) ...
+Selecting previously unselected package libgeronimo-jpa-2.0-spec-java.
+Preparing to unpack .../libgeronimo-jpa-2.0-spec-java_1.1-2_all.deb ...
+Unpacking libgeronimo-jpa-2.0-spec-java (1.1-2) ...
+Selecting previously unselected package libosgi-foundation-ee-java.
+Preparing to unpack .../libosgi-foundation-ee-java_4.2.0-1_all.deb ...
+Unpacking libosgi-foundation-ee-java (4.2.0-1) ...
+Selecting previously unselected package libservlet2.5-java.
+Preparing to unpack .../libservlet2.5-java_6.0.41-3_all.deb ...
+Unpacking libservlet2.5-java (6.0.41-3) ...
+Selecting previously unselected package libosgi-compendium-java.
+Preparing to unpack .../libosgi-compendium-java_4.3.0-1_all.deb ...
+Unpacking libosgi-compendium-java (4.3.0-1) ...
+Selecting previously unselected package bnd.
+Preparing to unpack .../archives/bnd_1.50.0-8_all.deb ...
+Unpacking bnd (1.50.0-8) ...
+Selecting previously unselected package libjline-java.
+Preparing to unpack .../libjline-java_1.0-2_all.deb ...
+Unpacking libjline-java (1.0-2) ...
+Selecting previously unselected package libbsh-java.
+Preparing to unpack .../libbsh-java_2.0b4-15_all.deb ...
+Unpacking libbsh-java (2.0b4-15) ...
+Selecting previously unselected package bsh.
+Preparing to unpack .../archives/bsh_2.0b4-15_all.deb ...
+Unpacking bsh (2.0b4-15) ...
+Selecting previously unselected package libcommons-collections3-java.
+Preparing to unpack .../libcommons-collections3-java_3.2.1-7_all.deb ...
+Unpacking libcommons-collections3-java (3.2.1-7) ...
+Selecting previously unselected package libapache-pom-java.
+Preparing to unpack .../libapache-pom-java_10-2_all.deb ...
+Unpacking libapache-pom-java (10-2) ...
+Selecting previously unselected package libcommons-parent-java.
+Preparing to unpack .../libcommons-parent-java_22-2_all.deb ...
+Unpacking libcommons-parent-java (22-2) ...
+Selecting previously unselected package libcommons-logging-java.
+Preparing to unpack .../libcommons-logging-java_1.2-1_all.deb ...
+Unpacking libcommons-logging-java (1.2-1) ...
+Selecting previously unselected package libcommons-beanutils-java.
+Preparing to unpack .../libcommons-beanutils-java_1.9.2-1_all.deb ...
+Unpacking libcommons-beanutils-java (1.9.2-1) ...
+Selecting previously unselected package libcommons-lang-java.
+Preparing to unpack .../libcommons-lang-java_2.6-4_all.deb ...
+Unpacking libcommons-lang-java (2.6-4) ...
+Selecting previously unselected package libcommons-cli-java.
+Preparing to unpack .../libcommons-cli-java_1.2-3_all.deb ...
+Unpacking libcommons-cli-java (1.2-3) ...
+Selecting previously unselected package libatinject-jsr330-api-java.
+Preparing to unpack .../libatinject-jsr330-api-java_1.0+ds1-1_all.deb ...
+Unpacking libatinject-jsr330-api-java (1.0+ds1-1) ...
+Selecting previously unselected package libjsr305-java.
+Preparing to unpack .../libjsr305-java_0.1~+svn49-4_all.deb ...
+Unpacking libjsr305-java (0.1~+svn49-4) ...
+Selecting previously unselected package libguava-java.
+Preparing to unpack .../libguava-java_17.0-1_all.deb ...
+Unpacking libguava-java (17.0-1) ...
+Selecting previously unselected package checkstyle.
+Preparing to unpack .../checkstyle_5.9-1_all.deb ...
+Unpacking checkstyle (5.9-1) ...
+Selecting previously unselected package openjdk-7-jre:armhf.
+Preparing to unpack .../openjdk-7-jre_7u79-2.5.6-1~deb8u1+rpi1_armhf.deb ...
+Unpacking openjdk-7-jre:armhf (7u79-2.5.6-1~deb8u1+rpi1) ...
+Selecting previously unselected package default-jre.
+Preparing to unpack .../default-jre_2%3a1.7-52_armhf.deb ...
+Unpacking default-jre (2:1.7-52) ...
+Selecting previously unselected package libxml-commons-resolver1.1-java.
+Preparing to unpack .../libxml-commons-resolver1.1-java_1.2-7_all.deb ...
+Unpacking libxml-commons-resolver1.1-java (1.2-7) ...
+Selecting previously unselected package libxml-commons-external-java.
+Preparing to unpack .../libxml-commons-external-java_1.4.01-2_all.deb ...
+Unpacking libxml-commons-external-java (1.4.01-2) ...
+Selecting previously unselected package libxerces2-java.
+Preparing to unpack .../libxerces2-java_2.11.0-7_all.deb ...
+Unpacking libxerces2-java (2.11.0-7) ...
+Selecting previously unselected package libjaxp1.3-java.
+Preparing to unpack .../libjaxp1.3-java_1.3.05-2_all.deb ...
+Unpacking libjaxp1.3-java (1.3.05-2) ...
+Selecting previously unselected package libxalan2-java.
+Preparing to unpack .../libxalan2-java_2.7.1-9_all.deb ...
+Unpacking libxalan2-java (2.7.1-9) ...
+Selecting previously unselected package libbsf-java.
+Preparing to unpack .../libbsf-java_1%3a2.4.0-5_all.deb ...
+Unpacking libbsf-java (1:2.4.0-5) ...
+Selecting previously unselected package libavalon-framework-java.
+Preparing to unpack .../libavalon-framework-java_4.2.0-9_all.deb ...
+Unpacking libavalon-framework-java (4.2.0-9) ...
+Selecting previously unselected package libcommons-io-java.
+Preparing to unpack .../libcommons-io-java_2.4-2_all.deb ...
+Unpacking libcommons-io-java (2.4-2) ...
+Selecting previously unselected package libbatik-java.
+Preparing to unpack .../libbatik-java_1.7+dfsg-5_all.deb ...
+Unpacking libbatik-java (1.7+dfsg-5) ...
+Selecting previously unselected package libxmlgraphics-commons-java.
+Preparing to unpack .../libxmlgraphics-commons-java_1.5-4_all.deb ...
+Unpacking libxmlgraphics-commons-java (1.5-4) ...
+Selecting previously unselected package libfop-java.
+Preparing to unpack .../libfop-java_1%3a1.1.dfsg2-1_all.deb ...
+Unpacking libfop-java (1:1.1.dfsg2-1) ...
+Selecting previously unselected package fop.
+Preparing to unpack .../fop_1%3a1.1.dfsg2-1_all.deb ...
+Unpacking fop (1:1.1.dfsg2-1) ...
+Selecting previously unselected package libjaxen-java.
+Preparing to unpack .../libjaxen-java_1.1.6-1_all.deb ...
+Unpacking libjaxen-java (1.1.6-1) ...
+Selecting previously unselected package libisorelax-java.
+Preparing to unpack .../libisorelax-java_20041111-8_all.deb ...
+Unpacking libisorelax-java (20041111-8) ...
+Selecting previously unselected package librelaxng-datatype-java.
+Preparing to unpack .../librelaxng-datatype-java_1.0+ds1-3_all.deb ...
+Unpacking librelaxng-datatype-java (1.0+ds1-3) ...
+Selecting previously unselected package libmsv-java.
+Preparing to unpack .../libmsv-java_2009.1+dfsg1-4_all.deb ...
+Unpacking libmsv-java (2009.1+dfsg1-4) ...
+Selecting previously unselected package libxpp2-java.
+Preparing to unpack .../libxpp2-java_2.1.10-7_all.deb ...
+Unpacking libxpp2-java (2.1.10-7) ...
+Selecting previously unselected package libxpp3-java.
+Preparing to unpack .../libxpp3-java_1.1.4c-2_all.deb ...
+Unpacking libxpp3-java (1.1.4c-2) ...
+Selecting previously unselected package libdom4j-java.
+Preparing to unpack .../libdom4j-java_1.6.1+dfsg.3-2_all.deb ...
+Unpacking libdom4j-java (1.6.1+dfsg.3-2) ...
+Selecting previously unselected package libasm3-java.
+Preparing to unpack .../libasm3-java_3.3.2-2_all.deb ...
+Unpacking libasm3-java (3.3.2-2) ...
+Selecting previously unselected package libhamcrest-java.
+Preparing to unpack .../libhamcrest-java_1.3-5_all.deb ...
+Unpacking libhamcrest-java (1.3-5) ...
+Selecting previously unselected package junit4.
+Preparing to unpack .../archives/junit4_4.11-3_all.deb ...
+Unpacking junit4 (4.11-3) ...
+Selecting previously unselected package libmockobjects-java.
+Preparing to unpack .../libmockobjects-java_0.09-5_all.deb ...
+Unpacking libmockobjects-java (0.09-5) ...
+Selecting previously unselected package libregexp-java.
+Preparing to unpack .../libregexp-java_1.5-3_all.deb ...
+Unpacking libregexp-java (1.5-3) ...
+Selecting previously unselected package libxstream-java.
+Preparing to unpack .../libxstream-java_1.4.7-2_all.deb ...
+Unpacking libxstream-java (1.4.7-2) ...
+Selecting previously unselected package ivy.
+Preparing to unpack .../archives/ivy_2.3.0-4_all.deb ...
+Unpacking ivy (2.3.0-4) ...
+Selecting previously unselected package libhawtjni-runtime-java.
+Preparing to unpack .../libhawtjni-runtime-java_1.10-1_all.deb ...
+Unpacking libhawtjni-runtime-java (1.10-1) ...
+Selecting previously unselected package libjansi-native-java.
+Preparing to unpack .../libjansi-native-java_1.0-4_all.deb ...
+Unpacking libjansi-native-java (1.0-4) ...
+Selecting previously unselected package libjansi-java.
+Preparing to unpack .../libjansi-java_1.4-3_all.deb ...
+Unpacking libjansi-java (1.4-3) ...
+Selecting previously unselected package groovy.
+Preparing to unpack .../groovy_1.8.6-4_all.deb ...
+Unpacking groovy (1.8.6-4) ...
+Selecting previously unselected package libasm4-java.
+Preparing to unpack .../libasm4-java_5.0.3-1_all.deb ...
+Unpacking libasm4-java (5.0.3-1) ...
+Selecting previously unselected package libcommons-codec-java.
+Preparing to unpack .../libcommons-codec-java_1.9-1_all.deb ...
+Unpacking libcommons-codec-java (1.9-1) ...
+Selecting previously unselected package libhttpcore-java.
+Preparing to unpack .../libhttpcore-java_4.3.3-1_all.deb ...
+Unpacking libhttpcore-java (4.3.3-1) ...
+Selecting previously unselected package libhttpclient-java.
+Preparing to unpack .../libhttpclient-java_4.3.5-2_all.deb ...
+Unpacking libhttpclient-java (4.3.5-2) ...
+Selecting previously unselected package libjarjar-java.
+Preparing to unpack .../libjarjar-java_1.4+svn142-4_all.deb ...
+Unpacking libjarjar-java (1.4+svn142-4) ...
+Selecting previously unselected package libjcifs-java.
+Preparing to unpack .../libjcifs-java_1.3.17-1_all.deb ...
+Unpacking libjcifs-java (1.3.17-1) ...
+Selecting previously unselected package libjcip-annotations-java.
+Preparing to unpack .../libjcip-annotations-java_20060626-5_all.deb ...
+Unpacking libjcip-annotations-java (20060626-5) ...
+Selecting previously unselected package libjzlib-java.
+Preparing to unpack .../libjzlib-java_1.1.3-1_all.deb ...
+Unpacking libjzlib-java (1.1.3-1) ...
+Selecting previously unselected package libjsch-java.
+Preparing to unpack .../libjsch-java_0.1.51-1_all.deb ...
+Unpacking libjsch-java (0.1.51-1) ...
+Selecting previously unselected package libslf4j-java.
+Preparing to unpack .../libslf4j-java_1.7.7-1_all.deb ...
+Unpacking libslf4j-java (1.7.7-1) ...
+Selecting previously unselected package liblogback-java.
+Preparing to unpack .../liblogback-java_1%3a1.1.2-1_all.deb ...
+Unpacking liblogback-java (1:1.1.2-1) ...
+Selecting previously unselected package libmaven-ant-tasks-java.
+Preparing to unpack .../libmaven-ant-tasks-java_2.1.3-3_all.deb ...
+Unpacking libmaven-ant-tasks-java (2.1.3-3) ...
+Selecting previously unselected package libnekohtml-java.
+Preparing to unpack .../libnekohtml-java_1.9.21-2_all.deb ...
+Unpacking libnekohtml-java (1.9.21-2) ...
+Selecting previously unselected package junit.
+Preparing to unpack .../archives/junit_3.8.2-8_all.deb ...
+Unpacking junit (3.8.2-8) ...
+Selecting previously unselected package libplexus-interpolation-java.
+Preparing to unpack .../libplexus-interpolation-java_1.19-1_all.deb ...
+Unpacking libplexus-interpolation-java (1.19-1) ...
+Selecting previously unselected package libplexus-utils-java.
+Preparing to unpack .../libplexus-utils-java_1%3a1.5.15-4_all.deb ...
+Unpacking libplexus-utils-java (1:1.5.15-4) ...
+Selecting previously unselected package libclassworlds-java.
+Preparing to unpack .../libclassworlds-java_1.1-final-5_all.deb ...
+Unpacking libclassworlds-java (1.1-final-5) ...
+Selecting previously unselected package libplexus-container-default-java.
+Preparing to unpack .../libplexus-container-default-java_1.0-alpha-9-stable-1-7_all.deb ...
+Unpacking libplexus-container-default-java (1.0-alpha-9-stable-1-7) ...
+Selecting previously unselected package libplexus-cipher-java.
+Preparing to unpack .../libplexus-cipher-java_1.5-4_all.deb ...
+Unpacking libplexus-cipher-java (1.5-4) ...
+Selecting previously unselected package libjdom1-java.
+Preparing to unpack .../libjdom1-java_1.1.3-1_all.deb ...
+Unpacking libjdom1-java (1.1.3-1) ...
+Selecting previously unselected package libcommons-configuration-java.
+Preparing to unpack .../libcommons-configuration-java_1.10-2_all.deb ...
+Unpacking libcommons-configuration-java (1.10-2) ...
+Selecting previously unselected package libitext1-java.
+Preparing to unpack .../libitext1-java_1.4-6_all.deb ...
+Unpacking libitext1-java (1.4-6) ...
+Selecting previously unselected package liblog4j1.2-java.
+Preparing to unpack .../liblog4j1.2-java_1.2.17-5_all.deb ...
+Unpacking liblog4j1.2-java (1.2.17-5) ...
+Selecting previously unselected package libplexus-classworlds-java.
+Preparing to unpack .../libplexus-classworlds-java_1.5.0-5_all.deb ...
+Unpacking libplexus-classworlds-java (1.5.0-5) ...
+Selecting previously unselected package libxbean-java.
+Preparing to unpack .../libxbean-java_4.0-2_all.deb ...
+Unpacking libxbean-java (4.0-2) ...
+Selecting previously unselected package libplexus-containers-java.
+Preparing to unpack .../libplexus-containers-java_1.0~beta3.0.7-7_all.deb ...
+Unpacking libplexus-containers-java (1.0~beta3.0.7-7) ...
+Selecting previously unselected package libplexus-i18n-java.
+Preparing to unpack .../libplexus-i18n-java_1.0-beta-10-3_all.deb ...
+Unpacking libplexus-i18n-java (1.0-beta-10-3) ...
+Selecting previously unselected package libdoxia-java.
+Preparing to unpack .../libdoxia-java_1.1.4-2_all.deb ...
+Unpacking libdoxia-java (1.1.4-2) ...
+Selecting previously unselected package libplexus-build-api-java.
+Preparing to unpack .../libplexus-build-api-java_0.0.7-1_all.deb ...
+Unpacking libplexus-build-api-java (0.0.7-1) ...
+Selecting previously unselected package libmodello-java.
+Preparing to unpack .../libmodello-java_1.1-3_all.deb ...
+Unpacking libmodello-java (1.1-3) ...
+Selecting previously unselected package libplexus-ant-factory-java.
+Preparing to unpack .../libplexus-ant-factory-java_1.0~alpha2.1-3_all.deb ...
+Unpacking libplexus-ant-factory-java (1.0~alpha2.1-3) ...
+Selecting previously unselected package libplexus-io-java.
+Preparing to unpack .../libplexus-io-java_1.0~alpha5-2_all.deb ...
+Unpacking libplexus-io-java (1.0~alpha5-2) ...
+Selecting previously unselected package libplexus-archiver-java.
+Preparing to unpack .../libplexus-archiver-java_1.2-1_all.deb ...
+Unpacking libplexus-archiver-java (1.2-1) ...
+Selecting previously unselected package libplexus-bsh-factory-java.
+Preparing to unpack .../libplexus-bsh-factory-java_1.0~alpha7-3_all.deb ...
+Unpacking libplexus-bsh-factory-java (1.0~alpha7-3) ...
+Selecting previously unselected package libplexus-interactivity-api-java.
+Preparing to unpack .../libplexus-interactivity-api-java_1.0-alpha-6-7_all.deb ...
+Unpacking libplexus-interactivity-api-java (1.0-alpha-6-7) ...
+Selecting previously unselected package libplexus-sec-dispatcher-java.
+Preparing to unpack .../libplexus-sec-dispatcher-java_1.3.1-6_all.deb ...
+Unpacking libplexus-sec-dispatcher-java (1.3.1-6) ...
+Selecting previously unselected package libcommons-httpclient-java.
+Preparing to unpack .../libcommons-httpclient-java_3.1-11_all.deb ...
+Unpacking libcommons-httpclient-java (3.1-11) ...
+Selecting previously unselected package libcommons-net2-java.
+Preparing to unpack .../libcommons-net2-java_2.2-2_all.deb ...
+Unpacking libcommons-net2-java (2.2-2) ...
+Selecting previously unselected package libcglib3-java.
+Preparing to unpack .../libcglib3-java_3.1+dfsg-1_all.deb ...
+Unpacking libcglib3-java (3.1+dfsg-1) ...
+Selecting previously unselected package libobjenesis-java.
+Preparing to unpack .../libobjenesis-java_1.2+full-3_all.deb ...
+Unpacking libobjenesis-java (1.2+full-3) ...
+Selecting previously unselected package libeasymock-java.
+Preparing to unpack .../libeasymock-java_3.2+ds-4_all.deb ...
+Unpacking libeasymock-java (3.2+ds-4) ...
+Selecting previously unselected package libjetty-java.
+Preparing to unpack .../libjetty-java_6.1.26-4_all.deb ...
+Unpacking libjetty-java (6.1.26-4) ...
+Selecting previously unselected package libjsoup-java.
+Preparing to unpack .../libjsoup-java_1.8.1-1_all.deb ...
+Unpacking libjsoup-java (1.8.1-1) ...
+Selecting previously unselected package libganymed-ssh2-java.
+Preparing to unpack .../libganymed-ssh2-java_250-2_all.deb ...
+Unpacking libganymed-ssh2-java (250-2) ...
+Selecting previously unselected package libnetbeans-cvsclient-java.
+Preparing to unpack .../libnetbeans-cvsclient-java_6.5-2_all.deb ...
+Unpacking libnetbeans-cvsclient-java (6.5-2) ...
+Selecting previously unselected package libmaven-scm-java.
+Preparing to unpack .../libmaven-scm-java_1.3-5_all.deb ...
+Unpacking libmaven-scm-java (1.3-5) ...
+Selecting previously unselected package libwagon-java.
+Preparing to unpack .../libwagon-java_1.0.0-5_all.deb ...
+Unpacking libwagon-java (1.0.0-5) ...
+Selecting previously unselected package libmaven2-core-java.
+Preparing to unpack .../libmaven2-core-java_2.2.1-17_all.deb ...
+Unpacking libmaven2-core-java (2.2.1-17) ...
+Selecting previously unselected package libplexus-classworlds2-java.
+Preparing to unpack .../libplexus-classworlds2-java_2.5.2-1_all.deb ...
+Unpacking libplexus-classworlds2-java (2.5.2-1) ...
+Selecting previously unselected package libplexus-cli-java.
+Preparing to unpack .../libplexus-cli-java_1.2-5_all.deb ...
+Unpacking libplexus-cli-java (1.2-5) ...
+Selecting previously unselected package libplexus-utils2-java.
+Preparing to unpack .../libplexus-utils2-java_3.0.15-1_all.deb ...
+Unpacking libplexus-utils2-java (3.0.15-1) ...
+Selecting previously unselected package libqdox-java.
+Preparing to unpack .../libqdox-java_1.12-1_all.deb ...
+Unpacking libqdox-java (1.12-1) ...
+Selecting previously unselected package libplexus-containers1.5-java.
+Preparing to unpack .../libplexus-containers1.5-java_1.5.5-6_all.deb ...
+Unpacking libplexus-containers1.5-java (1.5.5-6) ...
+Selecting previously unselected package libpolyglot-maven-java.
+Preparing to unpack .../libpolyglot-maven-java_0.8~tobrien+git20120905-3_all.deb ...
+Unpacking libpolyglot-maven-java (0.8~tobrien+git20120905-3) ...
+Selecting previously unselected package libnetty-java.
+Preparing to unpack .../libnetty-java_1%3a3.2.6.Final-2_all.deb ...
+Unpacking libnetty-java (1:3.2.6.Final-2) ...
+Selecting previously unselected package libasync-http-client-java.
+Preparing to unpack .../libasync-http-client-java_1.6.5-3_all.deb ...
+Unpacking libasync-http-client-java (1.6.5-3) ...
+Selecting previously unselected package libaopalliance-java.
+Preparing to unpack .../libaopalliance-java_20070526-5_all.deb ...
+Unpacking libaopalliance-java (20070526-5) ...
+Selecting previously unselected package libgeronimo-interceptor-3.0-spec-java.
+Preparing to unpack .../libgeronimo-interceptor-3.0-spec-java_1.0.1-1_all.deb ...
+Unpacking libgeronimo-interceptor-3.0-spec-java (1.0.1-1) ...
+Selecting previously unselected package libservlet3.1-java.
+Preparing to unpack .../libservlet3.1-java_8.0.14-1_all.deb ...
+Unpacking libservlet3.1-java (8.0.14-1) ...
+Selecting previously unselected package libcdi-api-java.
+Preparing to unpack .../libcdi-api-java_1.0-2_all.deb ...
+Unpacking libcdi-api-java (1.0-2) ...
+Selecting previously unselected package libsisu-guice-java.
+Preparing to unpack .../libsisu-guice-java_3.2.4-1_all.deb ...
+Unpacking libsisu-guice-java (3.2.4-1) ...
+Selecting previously unselected package libsisu-ioc-java.
+Preparing to unpack .../libsisu-ioc-java_2.3.0-5_all.deb ...
+Unpacking libsisu-ioc-java (2.3.0-5) ...
+Selecting previously unselected package libaether-java.
+Preparing to unpack .../libaether-java_1.13.1-2_all.deb ...
+Unpacking libaether-java (1.13.1-2) ...
+Selecting previously unselected package libjackrabbit-java.
+Preparing to unpack .../libjackrabbit-java_2.3.6-1+deb8u1_all.deb ...
+Unpacking libjackrabbit-java (2.3.6-1+deb8u1) ...
+Selecting previously unselected package libjsch-agent-proxy-java.
+Preparing to unpack .../libjsch-agent-proxy-java_0.0.7-1_all.deb ...
+Unpacking libjsch-agent-proxy-java (0.0.7-1) ...
+Selecting previously unselected package libmaven-parent-java.
+Preparing to unpack .../libmaven-parent-java_21-2_all.deb ...
+Unpacking libmaven-parent-java (21-2) ...
+Selecting previously unselected package libwagon2-java.
+Preparing to unpack .../libwagon2-java_2.7-1_all.deb ...
+Unpacking libwagon2-java (2.7-1) ...
+Selecting previously unselected package maven.
+Preparing to unpack .../archives/maven_3.0.5-3_all.deb ...
+Unpacking maven (3.0.5-3) ...
+Selecting previously unselected package libgradle-core-java.
+Preparing to unpack .../libgradle-core-java_1.5-2_all.deb ...
+Unpacking libgradle-core-java (1.5-2) ...
+Selecting previously unselected package libbcprov-java.
+Preparing to unpack .../libbcprov-java_1.49+dfsg-3_all.deb ...
+Unpacking libbcprov-java (1.49+dfsg-3) ...
+Selecting previously unselected package libbcpg-java.
+Preparing to unpack .../libbcpg-java_1.49+dfsg-3_all.deb ...
+Unpacking libbcpg-java (1.49+dfsg-3) ...
+Selecting previously unselected package libgmetrics-groovy-java.
+Preparing to unpack .../libgmetrics-groovy-java_0.5-1_all.deb ...
+Unpacking libgmetrics-groovy-java (0.5-1) ...
+Selecting previously unselected package libcodenarc-groovy-java.
+Preparing to unpack .../libcodenarc-groovy-java_0.17-2_all.deb ...
+Unpacking libcodenarc-groovy-java (0.17-2) ...
+Selecting previously unselected package libecj-java.
+Preparing to unpack .../libecj-java_3.10.1-1_all.deb ...
+Unpacking libecj-java (3.10.1-1) ...
+Selecting previously unselected package libgoogle-gson-java.
+Preparing to unpack .../libgoogle-gson-java_2.2.4-1_all.deb ...
+Unpacking libgoogle-gson-java (2.2.4-1) ...
+Selecting previously unselected package libjatl-java.
+Preparing to unpack .../libjatl-java_0.2.2-1_all.deb ...
+Unpacking libjatl-java (0.2.2-1) ...
+Selecting previously unselected package libbcel-java.
+Preparing to unpack .../libbcel-java_6.0~rc3-1_all.deb ...
+Unpacking libbcel-java (6.0~rc3-1) ...
+Selecting previously unselected package libmx4j-java.
+Preparing to unpack .../libmx4j-java_3.0.2-14_all.deb ...
+Unpacking libmx4j-java (3.0.2-14) ...
+Selecting previously unselected package libmail-java.
+Preparing to unpack .../libmail-java_1.5.2-3_all.deb ...
+Unpacking libmail-java (1.5.2-3) ...
+Selecting previously unselected package libcommons-pool-java.
+Preparing to unpack .../libcommons-pool-java_1.6-2_all.deb ...
+Unpacking libcommons-pool-java (1.6-2) ...
+Selecting previously unselected package libcommons-dbcp-java.
+Preparing to unpack .../libcommons-dbcp-java_1.4-5_all.deb ...
+Unpacking libcommons-dbcp-java (1.4-5) ...
+Selecting previously unselected package libservlet3.0-java.
+Preparing to unpack .../libservlet3.0-java_7.0.56-3_all.deb ...
+Unpacking libservlet3.0-java (7.0.56-3) ...
+Selecting previously unselected package libtomcat7-java.
+Preparing to unpack .../libtomcat7-java_7.0.56-3_all.deb ...
+Unpacking libtomcat7-java (7.0.56-3) ...
+Selecting previously unselected package libgeronimo-jta-1.1-spec-java.
+Preparing to unpack .../libgeronimo-jta-1.1-spec-java_1.1.1-3_all.deb ...
+Unpacking libgeronimo-jta-1.1-spec-java (1.1.1-3) ...
+Selecting previously unselected package libjetty-extra-java.
+Preparing to unpack .../libjetty-extra-java_6.1.26-4_all.deb ...
+Unpacking libjetty-extra-java (6.1.26-4) ...
+Selecting previously unselected package librhino-java.
+Preparing to unpack .../librhino-java_1.7R4-3_all.deb ...
+Unpacking librhino-java (1.7R4-3) ...
+Selecting previously unselected package libjcommander-java.
+Preparing to unpack .../libjcommander-java_1.35-1_all.deb ...
+Unpacking libjcommander-java (1.35-1) ...
+Selecting previously unselected package testng.
+Preparing to unpack .../testng_6.8.8-4_all.deb ...
+Unpacking testng (6.8.8-4) ...
+Selecting previously unselected package libgradle-plugins-java.
+Preparing to unpack .../libgradle-plugins-java_1.5-2_all.deb ...
+Unpacking libgradle-plugins-java (1.5-2) ...
+Selecting previously unselected package libjffi-jni.
+Preparing to unpack .../libjffi-jni_1.0.2-11_armhf.deb ...
+Unpacking libjffi-jni (1.0.2-11) ...
+Selecting previously unselected package libjffi-java.
+Preparing to unpack .../libjffi-java_1.0.2-11_all.deb ...
+Unpacking libjffi-java (1.0.2-11) ...
+Selecting previously unselected package libjnr-x86asm-java.
+Preparing to unpack .../libjnr-x86asm-java_0.1-1_all.deb ...
+Unpacking libjnr-x86asm-java (0.1-1) ...
+Selecting previously unselected package libjaffl-java.
+Preparing to unpack .../libjaffl-java_0.5.9-5_all.deb ...
+Unpacking libjaffl-java (0.5.9-5) ...
+Selecting previously unselected package libjna-jni.
+Preparing to unpack .../libjna-jni_4.1.0-1_armhf.deb ...
+Unpacking libjna-jni (4.1.0-1) ...
+Selecting previously unselected package libjna-java.
+Preparing to unpack .../libjna-java_4.1.0-1_all.deb ...
+Unpacking libjna-java (4.1.0-1) ...
+Selecting previously unselected package libconstantine-java.
+Preparing to unpack .../libconstantine-java_0.7-6_all.deb ...
+Unpacking libconstantine-java (0.7-6) ...
+Selecting previously unselected package libjnr-posix-java.
+Preparing to unpack .../libjnr-posix-java_1.1.8-2_all.deb ...
+Unpacking libjnr-posix-java (1.1.8-2) ...
+Selecting previously unselected package libminlog-java.
+Preparing to unpack .../libminlog-java_1.2-2_all.deb ...
+Unpacking libminlog-java (1.2-2) ...
+Selecting previously unselected package libreflectasm-java.
+Preparing to unpack .../libreflectasm-java_1.05-2_all.deb ...
+Unpacking libreflectasm-java (1.05-2) ...
+Selecting previously unselected package libkryo-java.
+Preparing to unpack .../libkryo-java_2.20-3_all.deb ...
+Unpacking libkryo-java (2.20-3) ...
+Selecting previously unselected package libnative-platform-jni.
+Preparing to unpack .../libnative-platform-jni_0.3~rc2-3_armhf.deb ...
+Unpacking libnative-platform-jni (0.3~rc2-3) ...
+Selecting previously unselected package libnative-platform-java.
+Preparing to unpack .../libnative-platform-java_0.3~rc2-3_all.deb ...
+Unpacking libnative-platform-java (0.3~rc2-3) ...
+Selecting previously unselected package gradle.
+Preparing to unpack .../archives/gradle_1.5-2_all.deb ...
+Unpacking gradle (1.5-2) ...
+Selecting previously unselected package icc-profiles-free.
+Preparing to unpack .../icc-profiles-free_2.0.1+dfsg-1_all.deb ...
+Unpacking icc-profiles-free (2.0.1+dfsg-1) ...
+Selecting previously unselected package libbindex-java.
+Preparing to unpack .../libbindex-java_2.2+svn101-1_all.deb ...
+Unpacking libbindex-java (2.2+svn101-1) ...
+Selecting previously unselected package libcommons-digester-java.
+Preparing to unpack .../libcommons-digester-java_1.8.1-4_all.deb ...
+Unpacking libcommons-digester-java (1.8.1-4) ...
+Selecting previously unselected package libcommons-jexl2-java.
+Preparing to unpack .../libcommons-jexl2-java_2.1.1-2_all.deb ...
+Unpacking libcommons-jexl2-java (2.1.1-2) ...
+Selecting previously unselected package libcommons-jxpath-java.
+Preparing to unpack .../libcommons-jxpath-java_1.3-6_all.deb ...
+Unpacking libcommons-jxpath-java (1.3-6) ...
+Selecting previously unselected package libcommons-vfs-java.
+Preparing to unpack .../libcommons-vfs-java_2.0-3_all.deb ...
+Unpacking libcommons-vfs-java (2.0-3) ...
+Selecting previously unselected package libgconf2-4:armhf.
+Preparing to unpack .../libgconf2-4_3.2.6-3_armhf.deb ...
+Unpacking libgconf2-4:armhf (3.2.6-3) ...
+Selecting previously unselected package libgnome2-bin.
+Preparing to unpack .../libgnome2-bin_2.32.1-5_armhf.deb ...
+Unpacking libgnome2-bin (2.32.1-5) ...
+Selecting previously unselected package libgnome2-0:armhf.
+Preparing to unpack .../libgnome2-0_2.32.1-5_armhf.deb ...
+Unpacking libgnome2-0:armhf (2.32.1-5) ...
+Selecting previously unselected package libgnomevfs2-extra:armhf.
+Preparing to unpack .../libgnomevfs2-extra_1%3a2.24.4-6_armhf.deb ...
+Unpacking libgnomevfs2-extra:armhf (1:2.24.4-6) ...
+Selecting previously unselected package libjetty-extra.
+Preparing to unpack .../libjetty-extra_6.1.26-4_armhf.deb ...
+Unpacking libjetty-extra (6.1.26-4) ...
+Selecting previously unselected package libsaxon-java.
+Preparing to unpack .../libsaxon-java_1%3a6.5.5-10_all.deb ...
+Unpacking libsaxon-java (1:6.5.5-10) ...
+Selecting previously unselected package libxom-java.
+Preparing to unpack .../libxom-java_1.2.10-1_all.deb ...
+Unpacking libxom-java (1.2.10-1) ...
+Selecting previously unselected package rhino.
+Preparing to unpack .../archives/rhino_1.7R4-3_all.deb ...
+Unpacking rhino (1.7R4-3) ...
+Selecting previously unselected package icedtea-7-jre-jamvm:armhf.
+Preparing to unpack .../icedtea-7-jre-jamvm_7u79-2.5.6-1~deb8u1+rpi1_armhf.deb ...
+Unpacking icedtea-7-jre-jamvm:armhf (7u79-2.5.6-1~deb8u1+rpi1) ...
+Processing triggers for man-db (2.7.0.2-5) ...
+Processing triggers for gconf2 (3.2.6-3) ...
+Processing triggers for ca-certificates (20141019) ...
+Updating certificates in /etc/ssl/certs... 0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d....done.
+Processing triggers for gnome-menus (3.13.3-6) ...
+Processing triggers for desktop-file-utils (0.22-1) ...
+Processing triggers for mime-support (3.58) ...
+Processing triggers for hicolor-icon-theme (0.13-1) ...
+Setting up libatk-wrapper-java (0.30.5-1) ...
+Setting up libatk-wrapper-java-jni:armhf (0.30.5-1) ...
+Setting up libbonobo2-common (2.32.1-3) ...
+Setting up liborbit-2-0:armhf (1:2.14.19-0.3) ...
+Setting up libbonobo2-0:armhf (2.32.1-3) ...
+Setting up libcanberra0:armhf (0.30-2.1) ...
+Setting up gnome-mime-data (2.18.0-1) ...
+Setting up libgnomevfs2-common (1:2.24.4-6) ...
+Setting up libgnomevfs2-0:armhf (1:2.24.4-6) ...
+Setting up libgnome2-common (2.32.1-5) ...
+Setting up libgnome-2-0:armhf (2.32.1-5) ...
+Setting up ca-certificates-java (20140324) ...
+Adding debian:A-Trust-nQual-03.pem
+Adding debian:Microsec_e-Szigno_Root_CA_2009.pem
+Adding debian:ACCVRAIZ1.pem
+Adding debian:Juur-SK.pem
+Adding debian:Visa_eCommerce_Root.pem
+Adding debian:WoSign_China.pem
+Adding debian:ComSign_CA.pem
+Adding debian:QuoVadis_Root_CA_2_G3.pem
+Adding debian:COMODO_ECC_Certification_Authority.pem
+Adding debian:Certinomis_-_Autorité_Racine.pem
+Adding debian:QuoVadis_Root_CA_1_G3.pem
+Adding debian:GeoTrust_Global_CA_2.pem
+Adding debian:Deutsche_Telekom_Root_CA_2.pem
+Adding debian:DigiCert_Assured_ID_Root_G3.pem
+Adding debian:D-TRUST_Root_Class_3_CA_2_EV_2009.pem
+Adding debian:Verisign_Class_3_Public_Primary_Certification_Authority_2.pem
+Adding debian:TURKTRUST_Certificate_Services_Provider_Root_2007.pem
+Adding debian:Secure_Global_CA.pem
+Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2011.pem
+Adding debian:Staat_der_Nederlanden_Root_CA_-_G2.pem
+Adding debian:GlobalSign_Root_CA_-_R2.pem
+Adding debian:Buypass_Class_2_CA_1.pem
+Adding debian:Sonera_Class_1_Root_CA.pem
+Adding debian:Starfield_Root_Certificate_Authority_-_G2.pem
+Adding debian:UTN_USERFirst_Hardware_Root_CA.pem
+Adding debian:thawte_Primary_Root_CA_-_G2.pem
+Adding debian:DigiCert_Global_Root_G2.pem
+Adding debian:ACEDICOM_Root.pem
+Adding debian:AffirmTrust_Premium_ECC.pem
+Adding debian:TURKTRUST_Certificate_Services_Provider_Root_1.pem
+Adding debian:AddTrust_External_Root.pem
+Adding debian:SwissSign_Silver_CA_-_G2.pem
+Adding debian:DigiCert_Assured_ID_Root_G2.pem
+Adding debian:America_Online_Root_Certification_Authority_1.pem
+Adding debian:SecureSign_RootCA11.pem
+Adding debian:E-Guven_Kok_Elektronik_Sertifika_Hizmet_Saglayicisi.pem
+Adding debian:AffirmTrust_Networking.pem
+Adding debian:TC_TrustCenter_Class_3_CA_II.pem
+Adding debian:Verisign_Class_4_Public_Primary_Certification_Authority_-_G3.pem
+Adding debian:CA_Disig_Root_R2.pem
+Adding debian:Security_Communication_Root_CA.pem
+Adding debian:SecureTrust_CA.pem
+Adding debian:Verisign_Class_1_Public_Primary_Certification_Authority.pem
+Adding debian:XRamp_Global_CA_Root.pem
+Adding debian:America_Online_Root_Certification_Authority_2.pem
+Adding debian:TÜBİTAK_UEKAE_Kök_Sertifika_Hizmet_Sağlayıcısı_-_Sürüm_3.pem
+Adding debian:COMODO_Certification_Authority.pem
+Adding debian:AffirmTrust_Commercial.pem
+Adding debian:Izenpe.com.pem
+Adding debian:DigiCert_Global_Root_CA.pem
+Adding debian:Hongkong_Post_Root_CA_1.pem
+Adding debian:CNNIC_ROOT.pem
+Adding debian:Verisign_Class_2_Public_Primary_Certification_Authority_-_G3.pem
+Adding debian:VeriSign_Class_3_Public_Primary_Certification_Authority_-_G4.pem
+Adding debian:Certum_Root_CA.pem
+Adding debian:VeriSign_Universal_Root_Certification_Authority.pem
+Adding debian:GeoTrust_Primary_Certification_Authority_-_G3.pem
+Adding debian:UTN_DATACorp_SGC_Root_CA.pem
+Adding debian:AddTrust_Low-Value_Services_Root.pem
+Adding debian:Equifax_Secure_eBusiness_CA_1.pem
+Adding debian:GeoTrust_Universal_CA.pem
+Adding debian:Taiwan_GRCA.pem
+Adding debian:Starfield_Class_2_CA.pem
+Adding debian:S-TRUST_Authentication_and_Encryption_Root_CA_2005_PN.pem
+Adding debian:IGC_A.pem
+Adding debian:QuoVadis_Root_CA_3_G3.pem
+Adding debian:Buypass_Class_2_Root_CA.pem
+Adding debian:Cybertrust_Global_Root.pem
+Adding debian:GlobalSign_Root_CA_-_R3.pem
+Adding debian:Verisign_Class_3_Public_Primary_Certification_Authority.pem
+Adding debian:certSIGN_ROOT_CA.pem
+Adding debian:AddTrust_Qualified_Certificates_Root.pem
+Adding debian:E-Tugra_Certification_Authority.pem
+Adding debian:DigiCert_Trusted_Root_G4.pem
+Adding debian:Verisign_Class_3_Public_Primary_Certification_Authority_-_G2.pem
+Adding debian:StartCom_Certification_Authority_2.pem
+Adding debian:StartCom_Certification_Authority_G2.pem
+Adding debian:WoSign.pem
+Adding debian:thawte_Primary_Root_CA.pem
+Adding debian:T-TeleSec_GlobalRoot_Class_3.pem
+Adding debian:TC_TrustCenter_Class_2_CA_II.pem
+Adding debian:AC_Raíz_Certicámara_S.A..pem
+Adding debian:Certigna.pem
+Adding debian:Swisscom_Root_CA_1.pem
+Adding debian:DigiCert_Assured_ID_Root_CA.pem
+Adding debian:spi-cacert-2008.pem
+Adding debian:Buypass_Class_3_CA_1.pem
+Adding debian:Baltimore_CyberTrust_Root.pem
+Adding debian:EBG_Elektronik_Sertifika_Hizmet_Sağlayıcısı.pem
+Adding debian:Verisign_Class_1_Public_Primary_Certification_Authority_-_G3.pem
+Adding debian:GeoTrust_Primary_Certification_Authority.pem
+Adding debian:Camerfirma_Chambers_of_Commerce_Root.pem
+Adding debian:TURKTRUST_Certificate_Services_Provider_Root_2.pem
+Adding debian:China_Internet_Network_Information_Center_EV_Certificates_Root.pem
+Adding debian:Certplus_Class_2_Primary_CA.pem
+Adding debian:D-TRUST_Root_Class_3_CA_2_2009.pem
+Adding debian:Global_Chambersign_Root_-_2008.pem
+Adding debian:Atos_TrustedRoot_2011.pem
+Adding debian:T-TeleSec_GlobalRoot_Class_2.pem
+Adding debian:Trustis_FPS_Root_CA.pem
+Adding debian:QuoVadis_Root_CA_2.pem
+Adding debian:Verisign_Class_1_Public_Primary_Certification_Authority_-_G2.pem
+Adding debian:GeoTrust_Universal_CA_2.pem
+Adding debian:WellsSecure_Public_Root_Certificate_Authority.pem
+Adding debian:SwissSign_Platinum_CA_-_G2.pem
+Adding debian:Security_Communication_RootCA2.pem
+Adding debian:ComSign_Secured_CA.pem
+Adding debian:Comodo_Trusted_Services_root.pem
+Adding debian:Verisign_Class_3_Public_Primary_Certification_Authority_-_G3.pem
+Adding debian:PSCProcert.pem
+Adding debian:TWCA_Global_Root_CA.pem
+Adding debian:Equifax_Secure_Global_eBusiness_CA.pem
+Adding debian:CA_Disig.pem
+Adding debian:EC-ACC.pem
+Adding debian:GeoTrust_Primary_Certification_Authority_-_G2.pem
+Adding debian:VeriSign_Class_3_Public_Primary_Certification_Authority_-_G5.pem
+Adding debian:Verisign_Class_2_Public_Primary_Certification_Authority_-_G2.pem
+Adding debian:AffirmTrust_Premium.pem
+Adding debian:GlobalSign_Root_CA.pem
+Adding debian:DST_ACES_CA_X6.pem
+Adding debian:DigiCert_Global_Root_G3.pem
+Adding debian:ePKI_Root_Certification_Authority.pem
+Adding debian:thawte_Primary_Root_CA_-_G3.pem
+Adding debian:Go_Daddy_Root_Certificate_Authority_-_G2.pem
+Adding debian:OISTE_WISeKey_Global_Root_GA_CA.pem
+Adding debian:SG_TRUST_SERVICES_RACINE.pem
+Adding debian:CA_Disig_Root_R1.pem
+Adding debian:Microsec_e-Szigno_Root_CA.pem
+Adding debian:QuoVadis_Root_CA_3.pem
+Adding debian:Actalis_Authentication_Root_CA.pem
+Adding debian:Staat_der_Nederlanden_Root_CA.pem
+Adding debian:GeoTrust_Global_CA.pem
+Adding debian:NetLock_Arany_=Class_Gold=_Főtanúsítvány.pem
+Adding debian:Thawte_Premium_Server_CA.pem
+Adding debian:Entrust.net_Premium_2048_Secure_Server_CA.pem
+Adding debian:TC_TrustCenter_Universal_CA_I.pem
+Adding debian:Swisscom_Root_EV_CA_2.pem
+Adding debian:UTN_USERFirst_Email_Root_CA.pem
+Adding debian:NetLock_Express_=Class_C=_Root.pem
+Adding debian:Go_Daddy_Class_2_CA.pem
+Adding debian:Swisscom_Root_CA_2.pem
+Adding debian:Certum_Trusted_Network_CA.pem
+Adding debian:SwissSign_Gold_CA_-_G2.pem
+Adding debian:Chambers_of_Commerce_Root_-_2008.pem
+Adding debian:Digital_Signature_Trust_Co._Global_CA_1.pem
+Adding debian:RSA_Security_2048_v3.pem
+Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem
+Adding debian:Starfield_Services_Root_Certificate_Authority_-_G2.pem
+Adding debian:Comodo_Secure_Services_root.pem
+Adding debian:Comodo_AAA_Services_root.pem
+Adding debian:Entrust_Root_Certification_Authority.pem
+Adding debian:NetLock_Notary_=Class_A=_Root.pem
+Adding debian:Thawte_Server_CA.pem
+Adding debian:ApplicationCA_-_Japanese_Government.pem
+Adding debian:TeliaSonera_Root_CA_v1.pem
+Adding debian:StartCom_Certification_Authority.pem
+Adding debian:DST_Root_CA_X3.pem
+Adding debian:Security_Communication_EV_RootCA1.pem
+Adding debian:Sonera_Class_2_Root_CA.pem
+Adding debian:NetLock_Qualified_=Class_QA=_Root.pem
+Adding debian:DigiCert_High_Assurance_EV_Root_CA.pem
+Adding debian:QuoVadis_Root_CA.pem
+Adding debian:Equifax_Secure_CA.pem
+Adding debian:Digital_Signature_Trust_Co._Global_CA_3.pem
+Adding debian:GTE_CyberTrust_Global_Root.pem
+Adding debian:NetLock_Business_=Class_B=_Root.pem
+Adding debian:TWCA_Root_Certification_Authority.pem
+Adding debian:AddTrust_Public_Services_Root.pem
+Adding debian:Buypass_Class_3_Root_CA.pem
+Adding debian:Camerfirma_Global_Chambersign_Root.pem
+Adding debian:Root_CA_Generalitat_Valenciana.pem
+Adding debian:Network_Solutions_Certificate_Authority.pem
+Adding debian:EE_Certification_Centre_Root_CA.pem
+done.
+Setting up tzdata-java (2015f-0+deb8u1) ...
+Setting up libyaml-snake-java (1.12-2) ...
+Setting up ant (1.9.4-3) ...
+Setting up ant-optional (1.9.4-3) ...
+Setting up libantlr-java (2.7.7+dfsg-6) ...
+Setting up antlr (2.7.7+dfsg-6) ...
+Setting up libaspectj-java (1.8.3-2) ...
+Setting up aspectj (1.8.3-2) ...
+Setting up java-wrappers (0.1.28) ...
+Setting up libosgi-core-java (4.3.1-1) ...
+Setting up libosgi-foundation-ee-java (4.2.0-1) ...
+Setting up libservlet2.5-java (6.0.41-3) ...
+Setting up libjline-java (1.0-2) ...
+Setting up libbsh-java (2.0b4-15) ...
+Setting up bsh (2.0b4-15) ...
+Setting up libcommons-collections3-java (3.2.1-7) ...
+Setting up libapache-pom-java (10-2) ...
+Setting up libcommons-parent-java (22-2) ...
+Setting up libcommons-logging-java (1.2-1) ...
+Setting up libcommons-beanutils-java (1.9.2-1) ...
+Setting up libcommons-lang-java (2.6-4) ...
+Setting up libcommons-cli-java (1.2-3) ...
+Setting up libatinject-jsr330-api-java (1.0+ds1-1) ...
+Setting up libjsr305-java (0.1~+svn49-4) ...
+Setting up libguava-java (17.0-1) ...
+Setting up checkstyle (5.9-1) ...
+Setting up libxml-commons-resolver1.1-java (1.2-7) ...
+Setting up libxml-commons-external-java (1.4.01-2) ...
+Setting up libxerces2-java (2.11.0-7) ...
+Setting up libjaxp1.3-java (1.3.05-2) ...
+Setting up libxalan2-java (2.7.1-9) ...
+Setting up libbsf-java (1:2.4.0-5) ...
+Setting up libavalon-framework-java (4.2.0-9) ...
+Setting up libcommons-io-java (2.4-2) ...
+Setting up libbatik-java (1.7+dfsg-5) ...
+Setting up libxmlgraphics-commons-java (1.5-4) ...
+Setting up libfop-java (1:1.1.dfsg2-1) ...
+Setting up fop (1:1.1.dfsg2-1) ...
+Setting up libjaxen-java (1.1.6-1) ...
+Setting up libisorelax-java (20041111-8) ...
+Setting up librelaxng-datatype-java (1.0+ds1-3) ...
+Setting up libmsv-java (2009.1+dfsg1-4) ...
+Setting up libxpp2-java (2.1.10-7) ...
+Setting up libxpp3-java (1.1.4c-2) ...
+Setting up libdom4j-java (1.6.1+dfsg.3-2) ...
+Setting up libasm3-java (3.3.2-2) ...
+Setting up libhamcrest-java (1.3-5) ...
+Setting up libmockobjects-java (0.09-5) ...
+Setting up libregexp-java (1.5-3) ...
+Setting up libxstream-java (1.4.7-2) ...
+Setting up ivy (2.3.0-4) ...
+Setting up libhawtjni-runtime-java (1.10-1) ...
+Setting up libjansi-native-java (1.0-4) ...
+Setting up libjansi-java (1.4-3) ...
+Setting up libasm4-java (5.0.3-1) ...
+Setting up libcommons-codec-java (1.9-1) ...
+Setting up libhttpcore-java (4.3.3-1) ...
+Setting up libhttpclient-java (4.3.5-2) ...
+Setting up libjarjar-java (1.4+svn142-4) ...
+Setting up libjcifs-java (1.3.17-1) ...
+Setting up libjcip-annotations-java (20060626-5) ...
+Setting up libjzlib-java (1.1.3-1) ...
+Setting up libjsch-java (0.1.51-1) ...
+Setting up libslf4j-java (1.7.7-1) ...
+Setting up liblogback-java (1:1.1.2-1) ...
+Setting up libmaven-ant-tasks-java (2.1.3-3) ...
+Setting up libnekohtml-java (1.9.21-2) ...
+Setting up junit (3.8.2-8) ...
+Setting up libplexus-interpolation-java (1.19-1) ...
+Setting up libplexus-utils-java (1:1.5.15-4) ...
+Setting up libclassworlds-java (1.1-final-5) ...
+Setting up libplexus-container-default-java (1.0-alpha-9-stable-1-7) ...
+Setting up libplexus-cipher-java (1.5-4) ...
+Setting up libjdom1-java (1.1.3-1) ...
+Setting up libcommons-configuration-java (1.10-2) ...
+Setting up libitext1-java (1.4-6) ...
+Setting up liblog4j1.2-java (1.2.17-5) ...
+Setting up libplexus-classworlds-java (1.5.0-5) ...
+Setting up libxbean-java (4.0-2) ...
+Setting up libplexus-containers-java (1.0~beta3.0.7-7) ...
+Setting up libplexus-i18n-java (1.0-beta-10-3) ...
+Setting up libdoxia-java (1.1.4-2) ...
+Setting up libplexus-build-api-java (0.0.7-1) ...
+Setting up libmodello-java (1.1-3) ...
+Setting up libplexus-ant-factory-java (1.0~alpha2.1-3) ...
+Setting up libplexus-io-java (1.0~alpha5-2) ...
+Setting up libplexus-archiver-java (1.2-1) ...
+Setting up libplexus-bsh-factory-java (1.0~alpha7-3) ...
+Setting up libplexus-interactivity-api-java (1.0-alpha-6-7) ...
+Setting up libplexus-sec-dispatcher-java (1.3.1-6) ...
+Setting up libcommons-httpclient-java (3.1-11) ...
+Setting up libcommons-net2-java (2.2-2) ...
+Setting up libcglib3-java (3.1+dfsg-1) ...
+Setting up libobjenesis-java (1.2+full-3) ...
+Setting up libjetty-java (6.1.26-4) ...
+Setting up libjsoup-java (1.8.1-1) ...
+Setting up libganymed-ssh2-java (250-2) ...
+Setting up libnetbeans-cvsclient-java (6.5-2) ...
+Setting up libplexus-classworlds2-java (2.5.2-1) ...
+Setting up libplexus-cli-java (1.2-5) ...
+Setting up libplexus-utils2-java (3.0.15-1) ...
+Setting up libqdox-java (1.12-1) ...
+Setting up libpolyglot-maven-java (0.8~tobrien+git20120905-3) ...
+Setting up libnetty-java (1:3.2.6.Final-2) ...
+Setting up libasync-http-client-java (1.6.5-3) ...
+Setting up libaopalliance-java (20070526-5) ...
+Setting up libservlet3.1-java (8.0.14-1) ...
+Setting up libsisu-guice-java (3.2.4-1) ...
+Setting up libjackrabbit-java (2.3.6-1+deb8u1) ...
+Setting up libjsch-agent-proxy-java (0.0.7-1) ...
+Setting up libmaven-parent-java (21-2) ...
+Setting up libbcprov-java (1.49+dfsg-3) ...
+Setting up libbcpg-java (1.49+dfsg-3) ...
+Setting up libecj-java (3.10.1-1) ...
+Setting up libgoogle-gson-java (2.2.4-1) ...
+Setting up libjatl-java (0.2.2-1) ...
+Setting up libbcel-java (6.0~rc3-1) ...
+Setting up libmx4j-java (3.0.2-14) ...
+Setting up libmail-java (1.5.2-3) ...
+Setting up libcommons-pool-java (1.6-2) ...
+Setting up libcommons-dbcp-java (1.4-5) ...
+Setting up libservlet3.0-java (7.0.56-3) ...
+Setting up libtomcat7-java (7.0.56-3) ...
+Setting up libgeronimo-jta-1.1-spec-java (1.1.1-3) ...
+Setting up libjetty-extra-java (6.1.26-4) ...
+Setting up librhino-java (1.7R4-3) ...
+Setting up libjcommander-java (1.35-1) ...
+Setting up testng (6.8.8-4) ...
+Setting up libjffi-jni (1.0.2-11) ...
+Setting up libjffi-java (1.0.2-11) ...
+Setting up libjnr-x86asm-java (0.1-1) ...
+Setting up libjaffl-java (0.5.9-5) ...
+Setting up libjna-jni (4.1.0-1) ...
+Setting up libjna-java (4.1.0-1) ...
+Setting up libconstantine-java (0.7-6) ...
+Setting up libjnr-posix-java (1.1.8-2) ...
+Setting up libminlog-java (1.2-2) ...
+Setting up libreflectasm-java (1.05-2) ...
+Setting up libkryo-java (2.20-3) ...
+Setting up libnative-platform-jni (0.3~rc2-3) ...
+Setting up libnative-platform-java (0.3~rc2-3) ...
+Setting up icc-profiles-free (2.0.1+dfsg-1) ...
+Setting up libbindex-java (2.2+svn101-1) ...
+Setting up libcommons-digester-java (1.8.1-4) ...
+Setting up libcommons-jexl2-java (2.1.1-2) ...
+Setting up libcommons-jxpath-java (1.3-6) ...
+Setting up libgconf2-4:armhf (3.2.6-3) ...
+Setting up libgnome2-bin (2.32.1-5) ...
+Setting up libgnome2-0:armhf (2.32.1-5) ...
+Setting up libgnomevfs2-extra:armhf (1:2.24.4-6) ...
+Setting up libjetty-extra (6.1.26-4) ...
+Setting up libsaxon-java (1:6.5.5-10) ...
+Setting up libxom-java (1.2.10-1) ...
+Processing triggers for ca-certificates (20141019) ...
+Updating certificates in /etc/ssl/certs... 0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d....
+done.
+done.
+Setting up openjdk-7-jre-headless:armhf (7u79-2.5.6-1~deb8u1+rpi1) ...
+update-alternatives: using /usr/lib/jvm/java-7-openjdk-armhf/jre/bin/rmid to provide /usr/bin/rmid (rmid) in auto mode
+update-alternatives: using /usr/lib/jvm/java-7-openjdk-armhf/jre/bin/java to provide /usr/bin/java (java) in auto mode
+update-alternatives: using /usr/lib/jvm/java-7-openjdk-armhf/jre/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode
+update-alternatives: using /usr/lib/jvm/java-7-openjdk-armhf/jre/bin/pack200 to provide /usr/bin/pack200 (pack200) in auto mode
+update-alternatives: using /usr/lib/jvm/java-7-openjdk-armhf/jre/bin/rmiregistry to provide /usr/bin/rmiregistry (rmiregistry) in auto mode
+update-alternatives: using /usr/lib/jvm/java-7-openjdk-armhf/jre/bin/unpack200 to provide /usr/bin/unpack200 (unpack200) in auto mode
+update-alternatives: using /usr/lib/jvm/java-7-openjdk-armhf/jre/bin/orbd to provide /usr/bin/orbd (orbd) in auto mode
+update-alternatives: using /usr/lib/jvm/java-7-openjdk-armhf/jre/bin/servertool to provide /usr/bin/servertool (servertool) in auto mode
+update-alternatives: using /usr/lib/jvm/java-7-openjdk-armhf/jre/bin/tnameserv to provide /usr/bin/tnameserv (tnameserv) in auto mode
+update-alternatives: using /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode
+Setting up default-jre-headless (2:1.7-52) ...
+Setting up openjdk-7-jre:armhf (7u79-2.5.6-1~deb8u1+rpi1) ...
+update-alternatives: using /usr/lib/jvm/java-7-openjdk-armhf/jre/bin/policytool to provide /usr/bin/policytool (policytool) in auto mode
+Setting up default-jre (2:1.7-52) ...
+Setting up junit4 (4.11-3) ...
+Setting up groovy (1.8.6-4) ...
+update-alternatives: using /usr/share/groovy/bin/groovy to provide /usr/bin/groovy (groovy) in auto mode
+update-alternatives: using /usr/share/groovy/bin/groovyc to provide /usr/bin/groovyc (groovyc) in auto mode
+update-alternatives: using /usr/share/groovy/bin/grape to provide /usr/bin/grape (grape) in auto mode
+update-alternatives: using /usr/share/groovy/bin/startGroovy to provide /usr/bin/startGroovy (startGroovy) in auto mode
+update-alternatives: using /usr/share/groovy/bin/groovysh to provide /usr/
