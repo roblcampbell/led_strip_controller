@@ -3,6 +3,7 @@
 import hyperion
 import time
 import colorsys
+from ledutils import *
 
 off = bytearray([0, 0, 0])
 colors = []
@@ -17,7 +18,8 @@ for i in range(1,10):
 
 bulbSize = hyperion.args.get('bulbSize', 2)
 gapWidth = hyperion.args.get('gapWidth', 2)
-interval = hyperion.args.get('changeInterval', 1)
+interval = hyperion.args.get('changeInterval', 1.0)
+fadeTime = hyperion.args.get('fadeCycleTime', 2.0)
 
 ledData = []
 # init all arrays to empty
@@ -53,7 +55,18 @@ for i in range(hyperion.ledCount):
 # Start the write data loop
 # switch led array every wake time to go to next color set
 colorIndex = 0
+
+ledObjects = [XMasBulb()]
+
+#30 fps sleep time
+sleepTime = 1.0 / 30.0
+lastTime = current_millis();
 while not hyperion.abort():
-    hyperion.setColor(ledData[colorIndex])
-    colorIndex = (colorIndex + 1) % len(ledData)
-    time.sleep(interval)
+    # hyperion.setColor(ledData[colorIndex])
+    # colorIndex = (colorIndex + 1) % len(ledData)
+    now = current_millis()
+    elapsed = now - lastTime
+    lastTime = now
+    for ledObject in ledObjects:
+        ledObject.update(elapsed)
+    time.sleep(sleepTime)

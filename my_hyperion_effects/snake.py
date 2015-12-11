@@ -1,9 +1,6 @@
 import hyperion
 import time
 import colorsys
-from snake_utils import Snake
-
-snake1 = Snake(hyperion.ledCount, 15, [0, 255, 0], 25)
 
 # Get the parameters
 rotationTime = float(hyperion.args.get('rotation-time', 10.0))
@@ -18,7 +15,7 @@ percentage = max(1, min(percentage, 100))
 factor = percentage/100.0
 hsv = colorsys.rgb_to_hsv(color[0]/255.0, color[1]/255.0, color[2]/255.0)
 
-# Initialize the led data for the whole scene
+# Initialize the led data
 snakeLeds = max(1, int(hyperion.ledCount*factor))
 ledData = bytearray()
 
@@ -39,7 +36,6 @@ while sleepTime < 0.05:
 	increment *= 2
 	sleepTime *= 2
 increment %= hyperion.ledCount
-
 # Start the write data loop
 while not hyperion.abort():
 	hyperion.setColor(ledData)
