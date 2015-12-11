@@ -7,7 +7,7 @@ class Snake:
     color = [255, 0, 0]
     percentage = 25
     snakeLeds = 0
-    # the array of all leds in the scene
+    # the array of the leds for the scene, with black for all leds but the snake itself
     ledData = bytearray()
 
     def __init__(self, ledLength, rotationTime, color, percentage):
@@ -33,4 +33,13 @@ class Snake:
             rgb = colorsys.hsv_to_rgb(hsv[0], hsv[1],
                                       hsv[2]*(self.snakeLeds-i)/self.snakeLeds)
             self.ledData += bytearray((int(rgb[0]*255), int(rgb[1]*255), int(rgb[2]*255)))
+
+    # called every time the animation timer ticks
+    def update(self):
+        # find time difference
+
+        # determine change in color, brightness, location, etc
+
+        # change led array properties accordingly
+        pass
 
