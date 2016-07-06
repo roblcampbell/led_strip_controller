@@ -1,0 +1,18 @@
+{
+	"name" : "Christmas Lights Fade",
+	"script" : "christmas-fade.py",
+	"args" :
+	{
+		"color1" : [255, 0, 0],
+		"color2" : [0, 255, 0],
+		"color3" : [0, 0, 255],
+		"color4" : [255, 255, 0],
+		"fadeSpeed1" : 4.0,
+		"fadeSpeed2" : 6.0,
+		"fadeSpeed3" : 5.0,
+		"fadeSpeed4" : 7.0,
+		"fadeRandom" : 0.4,
+		"bulbSize" : 2,
+		"gapWidth" : 5
+	}
+}

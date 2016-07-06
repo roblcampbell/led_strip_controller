@@ -1,0 +1,15 @@
+{
+	"name" : "Bouncy Ball 1",
+	"script" : "bouncyball-1.py",
+	"args" :
+	{
+		"color1" : [0, 255, 0],
+		"color2" : [0, 0, 255],
+		"color3" : [0, 0, 255],
+		"bouncyBallSize" : 4,
+		"bouncyBallVelocity" : 100,
+		"bouncyBallBlockSizeLeft" : 5,
+		"bouncyBallBlockSizeRight" : 5,
+		"bouncyBallVelocityIncrement" : 3
+	}
+}

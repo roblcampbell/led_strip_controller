@@ -2,6 +2,8 @@ import hyperion
 import time 
 import colorsys
 
+print "Knight Rider!"
+
 # Get the parameters
 speed = float(hyperion.args.get('speed', 1.0))
 fadeFactor = float(hyperion.args.get('fadeFactor', 0.7))

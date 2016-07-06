@@ -76,7 +76,7 @@ class LedObject(object):
 
         distance = (elapsedTime / 1000.0) * self.velocity * self.direction
         self.baseLocation += distance
-        if self.baseLocation >= hyperion.ledCount:
+        if self.baseLocation >= hyperion.ledCount - 1:
             self.baseLocation = 0
         elif self.baseLocation < 0:
             self.baseLocation = hyperion.ledCount - 1
@@ -94,15 +94,15 @@ class LedObject(object):
         ledArray[ledArrayStart + 2] = color[2]
 
 
-class XMasBulb(LedObject):
+class ColorBlob(LedObject):
     color = [255, 0, 0]
-    bulbSize = 2
+    blobSize = 2
 
     def __init__(self, color):
         self.color = color
 
     def update(self, elapsedTime):
-        super(XMasBulb, self).update(elapsedTime)
+        super(ColorBlob, self).update(elapsedTime)
         # print "Bulb.update(%d)" % elapsedTime
 
     def paint(self, ledSceneArray):
@@ -110,15 +110,15 @@ class XMasBulb(LedObject):
         locationStart = int(self.baseLocation) * 3
         # print "location %d" % locationStart
         # print "led scene size %d" % len(ledSceneArray)
-        for i in range(self.bulbSize):
+        for i in range(self.blobSize):
             # ledSceneArray[locationStart] = self.color[0]
             # ledSceneArray[locationStart + 1] = self.color[1]
             # ledSceneArray[locationStart + 2] = self.color[2]
-            super(XMasBulb, self).setLedColor(ledSceneArray, locationStart, self.color)
+            super(ColorBlob, self).setLedColor(ledSceneArray, locationStart, self.color)
             locationStart += 3
 
 
-class FadingXmasBulb(XMasBulb):
+class FadingColorBlob(ColorBlob):
     baseColor = [0, 0, 0]
     fadeSpeed = 0.0
     currentBrightness = 1.0
@@ -130,7 +130,7 @@ class FadingXmasBulb(XMasBulb):
         self.baseColor = color
 
     def update(self, elapsedTime):
-        super(FadingXmasBulb, self).update(elapsedTime)
+        super(FadingColorBlob, self).update(elapsedTime)
         self.currentBrightness += (self.fadeSpeed * self.fadeDirection)
         if self.currentBrightness <= 0:
             self.currentBrightness = 0
@@ -176,3 +176,93 @@ class LedScene(object):
     def updateObjects(self, elapsed):
         for ledObject in self.ledObjects:
             ledObject.update(elapsed)
+        self.updateComplete()
+
+    def updateComplete(self):
+        pass
+
+class BouncyBallScene(LedScene):
+    colors = getColorArgs()
+    fades = getFades()
+    ledIndex = 0
+    colorIndex = 0
+    ballSize = hyperion.args.get('bouncyBallSize', 2)
+    startVelocity = hyperion.args.get('bouncyBallVelocity', 50)
+    blockSizeLeft = hyperion.args.get('bouncyBallBlockSizeLeft', 5)
+    blockSizeRight = hyperion.args.get('bouncyBallBlockSizeRight', 5)
+    velocityIncrement = hyperion.args.get('bouncyBallVelocityIncrement', 0)
+
+    leftBlocks = []
+    rightBlocks = []
+
+    ball = ColorBlob(colors[0])
+    ball.baseLocation = blockSizeLeft + 100
+    ball.blobSize = ballSize
+    ball.velocity = startVelocity
+    LedScene.ledObjects.append(ball)
+
+    def getLeftBound(self):
+        if not self.leftBlocks:
+            return 1
+        leftBlock = self.leftBlocks[-1]
+        return leftBlock.baseLocation + leftBlock.blobSize + 1
+
+    def getRightBound(self):
+        if not self.rightBlocks:
+            return hyperion.ledCount - 2
+        rightBlock = self.rightBlocks[-1]
+        return rightBlock.baseLocation
+
+    def updateComplete(self):
+        if self.ball.baseLocation + self.ballSize > self.getRightBound():
+            self.collision(False)
+        elif self.ball.baseLocation < self.getLeftBound():
+            self.collision(True)
+
+    def collision(self, leftSide):
+        if self.getRightBound() - self.getLeftBound() < self.blockSizeLeft + self.blockSizeRight + self.ballSize + 1:
+            self.doCompletion()
+            return
+
+        self.ball.direction = -self.ball.direction
+        self.ball.velocity += self.velocityIncrement
+
+        if leftSide:
+            block = ColorBlob(self.colors[2])
+            LedScene.ledObjects.append(block)
+            block.blobSize = self.blockSizeRight
+            block.baseLocation = self.rightBlocks[-1].baseLocation - self.blockSizeRight
+            self.rightBlocks.append(block)
+            self.ball.baseLocation = self.getLeftBound()
+        else:
+            block = ColorBlob(self.colors[1])
+            LedScene.ledObjects.append(block)
+            block.blobSize = self.blockSizeLeft
+            block.baseLocation = self.leftBlocks[-1].baseLocation + self.blockSizeLeft
+            self.leftBlocks.append(block)
+            self.ball.baseLocation = self.getRightBound() - self.blockSizeLeft
+
+    def doCompletion(self):
+        LedScene.ledObjects = []
+        lBlock = ColorBlob(self.colors[1])
+        lBlock.baseLocation = 0
+        lBlock.blobSize = self.blockSizeLeft
+        LedScene.ledObjects.append(lBlock)
+        self.leftBlocks.append(lBlock)
+
+        rBlock = ColorBlob(self.colors[2])
+        rBlock.baseLocation = hyperion.ledCount - self.blockSizeRight
+        rBlock.blobSize = self.blockSizeRight
+        LedScene.ledObjects.append(rBlock)
+        self.rightBlocks.append(rBlock)
+
+        self.ball.velocity = self.startVelocity
+        LedScene.ledObjects.append(self.ball)
+
+        self.leftBlocks = [lBlock]
+        self.rightBlocks = [rBlock]
+
+
+ballScene = BouncyBallScene()
+ballScene.doCompletion()
+ballScene.runScene()

@@ -22,6 +22,18 @@ def getColorArgs():
     return colors
 
 
+def getNumberedArgs(prefix):
+    args = []
+    for i in range(1, 10):
+        name = "%s%d" % (prefix, i)
+        arg = hyperion.args.get(name)
+        if arg is not None:
+            args.append(arg)
+        else:
+            break
+    return args
+
+
 def getFades():
     fades = []
     fadeRandom = hyperion.args.get("fadeRandom")
@@ -76,7 +88,7 @@ class LedObject(object):
 
         distance = (elapsedTime / 1000.0) * self.velocity * self.direction
         self.baseLocation += distance
-        if self.baseLocation >= hyperion.ledCount:
+        if self.baseLocation >= hyperion.ledCount - 1:
             self.baseLocation = 0
         elif self.baseLocation < 0:
             self.baseLocation = hyperion.ledCount - 1
@@ -94,15 +106,15 @@ class LedObject(object):
         ledArray[ledArrayStart + 2] = color[2]
 
 
-class XMasBulb(LedObject):
+class ColorBlob(LedObject):
     color = [255, 0, 0]
-    bulbSize = 2
+    blobSize = 2
 
     def __init__(self, color):
         self.color = color
 
     def update(self, elapsedTime):
-        super(XMasBulb, self).update(elapsedTime)
+        super(ColorBlob, self).update(elapsedTime)
         # print "Bulb.update(%d)" % elapsedTime
 
     def paint(self, ledSceneArray):
@@ -110,15 +122,15 @@ class XMasBulb(LedObject):
         locationStart = int(self.baseLocation) * 3
         # print "location %d" % locationStart
         # print "led scene size %d" % len(ledSceneArray)
-        for i in range(self.bulbSize):
+        for i in range(self.blobSize):
             # ledSceneArray[locationStart] = self.color[0]
             # ledSceneArray[locationStart + 1] = self.color[1]
             # ledSceneArray[locationStart + 2] = self.color[2]
-            super(XMasBulb, self).setLedColor(ledSceneArray, locationStart, self.color)
+            super(ColorBlob, self).setLedColor(ledSceneArray, locationStart, self.color)
             locationStart += 3
 
 
-class FadingXmasBulb(XMasBulb):
+class FadingColorBlob(ColorBlob):
     baseColor = [0, 0, 0]
     fadeSpeed = 0.0
     currentBrightness = 1.0
@@ -130,7 +142,7 @@ class FadingXmasBulb(XMasBulb):
         self.baseColor = color
 
     def update(self, elapsedTime):
-        super(FadingXmasBulb, self).update(elapsedTime)
+        super(FadingColorBlob, self).update(elapsedTime)
         self.currentBrightness += (self.fadeSpeed * self.fadeDirection)
         if self.currentBrightness <= 0:
             self.currentBrightness = 0
@@ -176,3 +188,61 @@ class LedScene(object):
     def updateObjects(self, elapsed):
         for ledObject in self.ledObjects:
             ledObject.update(elapsed)
+        self.updateComplete()
+
+    def updateComplete(self):
+        pass
+
+
+class TetrisScene(LedScene):
+    colors = getColorArgs()
+    sizes = getNumberedArgs("pieceSize")
+    startVelocity = hyperion.args.get('tetrisStartVelocity', 75)
+    piecesPerLine = hyperion.args.get('tetrisPiecesPerLine', 4)
+    lineLikelihood = hyperion.args.get('tetrisLineLikelihood', 0.5)
+    flashes = hyperion.args.get('tetrisFlashesOnLine', 5)
+    flashInterval = hyperion.args.get('tetrisFlashInterval', 7)
+    pieceGap = hyperion.args.get('tetrisPieceGap', 3)
+
+    currentPiece = None
+    pieces = []
+
+    def __init__(self):
+        self.createNewPiece()
+
+    def getRightBound(self):
+        if not self.pieces:
+            return hyperion.ledCount - 2
+        lastPiece = self.pieces[-1]
+        return lastPiece.baseLocation - self.pieceGap
+
+    def updateComplete(self):
+        if self.currentPiece.baseLocation + self.currentPiece.blobSize > self.getRightBound():
+            self.collision()
+
+    def collision(self):
+        self.currentPiece.velocity = 0
+        self.currentPiece.baseLocation = self.getRightBound() - self.currentPiece.blobSize
+        self.pieces.append(self.currentPiece)
+        if self.currentPiece.baseLocation < self.currentPiece.blobSize + 1:
+            self.doCompletion()
+            return
+        self.createNewPiece()
+
+    def createNewPiece(self):
+        colorIndex = random.randint(0, len(self.colors) - 1)
+        color = self.colors[colorIndex]
+        size = self.sizes[colorIndex]
+        self.currentPiece = ColorBlob(color)
+        self.currentPiece.blobSize = size
+        self.currentPiece.velocity = self.startVelocity
+        LedScene.ledObjects.append(self.currentPiece)
+
+    def doCompletion(self):
+        LedScene.ledObjects = []
+        self.pieces = []
+        self.createNewPiece()
+
+
+tetrisScene = TetrisScene()
+tetrisScene.runScene()

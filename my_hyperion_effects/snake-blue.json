@@ -1,0 +1,10 @@
+{
+	"name" : "Snake Blue",
+	"script" : "snake.py",
+	"args" :
+	{
+		"rotation-time" : 18.0,
+		"color" : [0, 0, 255],
+		"percentage" : 90
+	}
+}

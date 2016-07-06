@@ -18,9 +18,19 @@ hsv = colorsys.rgb_to_hsv(color[0]/255.0, color[1]/255.0, color[2]/255.0)
 # Initialize the led data
 snakeLeds = max(1, int(hyperion.ledCount*factor))
 ledData = bytearray()
+myledData = bytearray()
 
 for i in range(hyperion.ledCount-snakeLeds):
 	ledData += bytearray((0, 0, 0))
+	
+for i in range(hyperion.ledCount):
+	myledData += bytearray([0, 0, 0])
+	
+myledData[100] = 255
+myledData[150] = 255
+myledData[200] = 255
+myledData[250] = 255
+myledData[300] = 255
 
 for i in range(1,snakeLeds+1):
 	rgb = colorsys.hsv_to_rgb(hsv[0], hsv[1],
@@ -37,7 +47,22 @@ while sleepTime < 0.05:
 	sleepTime *= 2
 increment %= hyperion.ledCount
 # Start the write data loop
+count = 1
 while not hyperion.abort():
-	hyperion.setColor(ledData)
+	if count % 30 == 0:
+		hyperion.setColor(ledData)
+	else:
+		hyperion.setColor(ledData)
+	#hyperion.setColor(myledData)
 	ledData = ledData[increment:] + ledData[:increment]
-	time.sleep(sleepTime)
+    	#time.sleep(sleepTime)
+	
+    	#myledData = bytearray()
+	#myledData += bytearray((0, 0, 0))
+	#myledData += bytearray((0, 0, 0))
+    	#myledData += bytearray((255, 255, 255))
+    	#myledData += bytearray((255, 255, 255))
+    	#hyperion.setColor(myledData)
+    	time.sleep(sleepTime)
+	count += 1
+		 

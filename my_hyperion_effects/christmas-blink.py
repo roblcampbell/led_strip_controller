@@ -2,11 +2,25 @@
 # Simple christmas light blinker which reads n colors and blinks one color set at a time over a specified interval
 import hyperion
 import time
-import ledutils
 import colorsys
 
+fps = 30
+current_millis = lambda: int(round(time.time() * 1000))
 off = bytearray([0, 0, 0])
-colors = ledutils.getColorArgs()
+
+def getColorArgs():
+    colors = []
+    for i in range(1,10):
+        colorName = "color%d" % i
+        colorArg = hyperion.args.get(colorName)
+        if colorArg is not None:
+            color = bytearray(colorArg)
+            # color = colorArg
+            colors.append(color)
+        else:
+            break
+    return colors
+
 # for i in range(1,10):
 #     colorName = "color%d" % i
 #     colorArg = hyperion.args.get(colorName)
@@ -21,6 +35,7 @@ gapWidth = hyperion.args.get('gapWidth', 2)
 interval = hyperion.args.get('changeInterval', 1)
 
 ledData = []
+colors = getColorArgs()
 # init all arrays to empty
 for i in range(len(colors)):
     leds = bytearray()

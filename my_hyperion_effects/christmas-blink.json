@@ -1,0 +1,14 @@
+{
+	"name" : "Christmas Blinks",
+	"script" : "christmas-blink.py",
+	"args" :
+	{
+		"color1" : [255, 0, 0],
+		"color2" : [0, 255, 0],
+		"color3" : [0, 0, 255],
+		"color4" : [255, 255, 0],
+		"bulbSize" : 1,
+		"gapWidth" : 1,
+		"changeInterval" : 0.6
+	}
+}

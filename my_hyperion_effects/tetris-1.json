@@ -1,0 +1,28 @@
+{
+	"name" : "Tetris",
+	"script" : "tetris-1.py",
+	"args" :
+	{
+    "tetrisStartVelocity" : 50,
+    "color1" : [255, 0, 0],
+    "color2" : [0, 255, 0],
+    "color3" : [0, 0, 255],
+    "color4" : [255, 255, 0],
+    "color5" : [255, 0, 255],
+    "color6" : [0, 255, 255],
+    "color7" : [255, 125, 0],
+    "pieceSize1" : 6,
+    "pieceSize2" : 6,
+    "pieceSize3" : 6,
+    "pieceSize4" : 4,
+    "pieceSize5" : 6,
+    "pieceSize6" : 8,
+    "pieceSize7" : 6,
+    "tetrisPieceSize" : 6,
+    "tetrisPiecesPerLine" : 4,
+    "tetrisLineLikelihood" : 0.5,
+    "tetrisFlashesOnLine" : 5,
+    "tetrisFlashInterval" : 7,
+	"tetrisPieceGap" : 4
+	}
+}
