@@ -8,8 +8,8 @@ Created on 27.11.2014
 from Tkinter import *
 import hyperion
 
-_led_height = 7
-_led_width = 7
+_led_height = 8
+_led_width = 8
 
 master = Tk()
 
@@ -86,6 +86,59 @@ def createWindow():
     master.after(33, update_leds, canvas, leds_with_offset)
     mainloop()
 
+
+def createMatrixWindow():
+    # 2 pixels per square block, splitting it vertically
+    h = 40
+    w = 40
+    grid_width = 6
+    grid_height = 6
+    spacing = 5
+
+    # the empty window
+    window_width = grid_width * w + (grid_width / 2 * spacing)
+    window_height = grid_height * h + (grid_height * spacing)
+    canvas = Canvas(master, width=window_width, height=window_height)
+    canvas.pack()
+
+    # list for the led representing rectangles
+    leds_without_offset = []
+
+    # LED pixel matrix location
+    ledX = grid_width - 1
+    ledY = grid_height - 1
+
+    direction = -1
+    while ledY >= 0:
+        xLoc = (ledX * w) + (ledX * spacing)
+        yLoc = (ledY * h) + (ledY * spacing)
+        rect = canvas.create_rectangle(xLoc, yLoc, xLoc + w, yLoc + h, fill="black", outline="black")
+        leds_without_offset.append(rect)
+        ledX += direction
+        if ledX < 0:
+            ledX = 0
+            direction = -direction
+            ledY = ledY - 1
+        elif ledX >= grid_width:
+            ledX = grid_width - 1
+            direction = -direction
+            ledY = ledY - 1
+
+    # Handle offset and counterclockwise led arrangement
+    leds_with_direction = leds_without_offset[:]
+    if not hyperion.clockwise_direction:
+        # Reverse list but keep first entry (this is how hypercon does it)
+        leds_with_direction = leds_without_offset[len(leds_without_offset):0:-1]
+        leds_with_direction.insert(0, leds_without_offset[0])
+
+    offset = hyperion.first_led_offset % hyperion.ledCount
+
+    leds_with_offset = leds_with_direction[offset:]
+    leds_with_offset.extend(leds_with_direction[:offset])
+
+    # Call master which recalls itself to update the gui in the mainloop
+    master.after(33, update_leds, canvas, leds_with_offset)
+    mainloop()
 
 def update_leds(canvas, leds_with_offset):
     for i in range(len(leds_with_offset)):

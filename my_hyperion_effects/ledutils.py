@@ -1,3 +1,5 @@
+# collection of utility functions to handle things like color mixing, brightness fading, color
+#  morphing, timed fade cycles, etc
 import hyperion
 import time
 import colorsys
@@ -7,7 +9,8 @@ fps = 30
 current_millis = lambda: int(round(time.time() * 1000))
 off = bytearray([0, 0, 0])
 
-
+# in the config, it will read all values like color1, color2, color3 and
+#   return an array of the colors
 def getColorArgs():
     colors = []
     for i in range(1, 10):
@@ -21,7 +24,7 @@ def getColorArgs():
             break
     return colors
 
-
+# reads N number of fades, and must match the length of color args
 def getFades():
     fades = []
     fadeRandom = hyperion.args.get("fadeRandom")
@@ -92,6 +95,30 @@ class LedObject(object):
         ledArray[ledArrayStart] = color[0]
         ledArray[ledArrayStart + 1] = color[1]
         ledArray[ledArrayStart + 2] = color[2]
+
+# create a 2d array which maps from x,y location to linear LED #
+#   the order starts at bottom right, and snakes back and forth to the top
+def createMappingMatrix(width, height) :
+    ledX = width - 1
+    ledY = height - 1
+
+    matrix = [[0]*6 for i in range(6)]
+    print matrix
+
+    direction = -1
+    ledNumber = 0
+    while ledY >= 0:
+        matrix[ledX][ledY] = ledNumber
+        ledNumber = ledNumber + 1
+        ledX += direction
+        if ledX < 0:
+            ledX = 0
+            direction = -direction
+            ledY = ledY - 1
+        elif ledX >= width:
+            ledX = width - 1
+            direction = -direction
+            ledY = ledY - 1
 
 
 class XMasBulb(LedObject):
@@ -176,3 +203,9 @@ class LedScene(object):
     def updateObjects(self, elapsed):
         for ledObject in self.ledObjects:
             ledObject.update(elapsed)
+
+# ------------------END OF LED_UTILS MANUAL IMPORT--------------------------
+
+matrix = createMappingMatrix(6, 6)
+print matrix[0][0]
+
