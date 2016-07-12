@@ -26,11 +26,6 @@ for i in range(hyperion.ledCount-snakeLeds):
 for i in range(hyperion.ledCount):
 	myledData += bytearray([0, 0, 0])
 	
-myledData[100] = 255
-myledData[150] = 255
-myledData[200] = 255
-myledData[250] = 255
-myledData[300] = 255
 
 for i in range(1,snakeLeds+1):
 	rgb = colorsys.hsv_to_rgb(hsv[0], hsv[1],

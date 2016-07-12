@@ -97,13 +97,13 @@ class LedObject(object):
         ledArray[ledArrayStart + 2] = color[2]
 
 # create a 2d array which maps from x,y location to linear LED #
-#   the order starts at bottom right, and snakes back and forth to the top
+#   the linear order starts at bottom right, and snakes back and forth to the top
+#   the matrix order is defined as 0,0 being the top left, as in GUI canvas drawing
 def createMappingMatrix(width, height) :
     ledX = width - 1
     ledY = height - 1
 
     matrix = [[0]*6 for i in range(6)]
-    print matrix
 
     direction = -1
     ledNumber = 0
@@ -119,6 +119,7 @@ def createMappingMatrix(width, height) :
             ledX = width - 1
             direction = -direction
             ledY = ledY - 1
+    return matrix
 
 
 class XMasBulb(LedObject):
@@ -205,7 +206,3 @@ class LedScene(object):
             ledObject.update(elapsed)
 
 # ------------------END OF LED_UTILS MANUAL IMPORT--------------------------
-
-matrix = createMappingMatrix(6, 6)
-print matrix[0][0]
-

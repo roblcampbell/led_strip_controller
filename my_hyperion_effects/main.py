@@ -26,8 +26,8 @@ hyperion_port = 19444
 #horizontal_led_num = 139
 #vertical_led_num = 0
 
-# Deck LED setup (6x6 matrix, 32 blocks, 72 RGB 'pixels', 3 leds/pixel, 2 pixels per block, 216 physical LEDs ) :
-horizontal_led_num = 36
+# Deck LED setup (6x6 matrix, 36 addressable pixels, 3 leds/pixel, 108 physical LEDs ) :
+horizontal_led_num = 18
 vertical_led_num = 0
 
 first_led_offset_num = 0
@@ -39,12 +39,10 @@ def run_effect():
     Runs the module effect. Copy any hyperion effect code in this module or create your own.
     Note that effects that call hyperion.setColor(r, g, b) or hyperion.setImage(img) are not supported.
     """
-    #runpy.run_module("effect")
-    #runpy.run_module("christmaslights")
-    #runpy.run_module("randomBalls")
-    # runpy.run_module("bicolor")
-    runpy.run_module("mood-blobs")
-
+    # runpy.run_module("randomBalls")
+    # runpy.run_module("mood-blobs")
+    # runpy.run_module("snake")
+    runpy.run_module("matrixTester1")
 
 def main():
     hyperion.init(horizontal_led_num, vertical_led_num, first_led_offset_num, leds_in_clockwise_direction,
