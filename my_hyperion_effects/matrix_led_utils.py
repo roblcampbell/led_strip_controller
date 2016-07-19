@@ -3,10 +3,26 @@ from ledutils import *
 
 ################### matrix_led_utils import start #############################
 
+def getAvailableRandomXYLocation(xSize, ySize, currentObjects) :
+    while 1 == 1:
+        loc = getRandomXYLocation(xSize, ySize)
+        occupied = 0
+        for obj in currentObjects:
+            if obj.xLocation == loc[0] and obj.yLocation == loc[1]:
+                occupied = 1
+        if not occupied:
+            return loc
+    return [0, 0]
+
+
+def getRandomXYLocation(xSize, ySize):
+    return [random.randint(0, xSize - 1), random.randint(0, ySize - 1)]
+
+
 # create a 2d array which maps from x,y location to linear LED #
 #   the linear order starts at bottom right, and snakes back and forth to the top
 #   the matrix order is defined as 0,0 being the top left, as in GUI canvas drawing
-def createMappingMatrix(width, height) :
+def createMappingMatrix(width, height):
     ledX = width - 1
     ledY = height - 1
 
@@ -120,12 +136,20 @@ class FadingMatrixBulb(MatrixBulb):
         if self.currentBrightness <= 0:
             self.currentBrightness = 0
             self.fadeDirection = -self.fadeDirection
+            self.minBrightnessReached()
 
         if self.currentBrightness >= 1.0:
             self.currentBrightness = 1.0
             self.fadeDirection = -self.fadeDirection
+            self.maxBrightnessReached()
 
         self.color = adjustRgbBrightness(self.baseColor, self.currentBrightness)
+
+    def maxBrightnessReached(self):
+        pass
+
+    def minBrightnessReached(self):
+        pass
 
 
 class MatrixLedScene(object):
@@ -163,5 +187,28 @@ class MatrixLedScene(object):
         for ledObject in self.ledObjects:
             ledObject.update(elapsed)
 
+# objs = []
+# bulb = MatrixBulb([255, 0, 0])
+# bulb.setLocation(0, 0)
+# objs.append(bulb)
+# bulb = MatrixBulb([255, 0, 0])
+# bulb.setLocation(1, 1)
+# objs.append(bulb)
+# bulb = MatrixBulb([255, 0, 0])
+# bulb.setLocation(2, 2)
+# objs.append(bulb)
+# bulb = MatrixBulb([255, 0, 0])
+# bulb.setLocation(3, 3)
+# objs.append(bulb)
+# bulb = MatrixBulb([255, 0, 0])
+# bulb.setLocation(4, 4)
+# objs.append(bulb)
+# bulb = MatrixBulb([255, 0, 0])
+# bulb.setLocation(5, 5)
+# objs.append(bulb)
+#
+# for i in range(100):
+#     rdm = getAvailableRandomXYLocation(6, 6, objs)
+#     print "%d, %d" % (rdm[0], rdm[1])
 
 ################### matrix_led_utils import end #############################

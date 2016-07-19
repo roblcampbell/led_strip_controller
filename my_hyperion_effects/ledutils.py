@@ -9,6 +9,9 @@ fps = 30
 current_millis = lambda: int(round(time.time() * 1000))
 off = bytearray([0, 0, 0])
 
+def getRandomColor():
+    return [random.randint(0, 255), random.randint(0, 255),random.randint(0, 255)]
+
 def getNumberedArgs(prefix):
     args = []
     for i in range(1, 10):

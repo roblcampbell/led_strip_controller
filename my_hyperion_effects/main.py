@@ -41,8 +41,9 @@ def run_effect():
     """
     # runpy.run_module("randomBalls")
     # runpy.run_module("mood-blobs")
-    runpy.run_module("snake")
+    # runpy.run_module("snake")
     # runpy.run_module("matrixTester1")
+    runpy.run_module("matrix_random_fades")
 
 def main():
     hyperion.init(horizontal_led_num, vertical_led_num, first_led_offset_num, leds_in_clockwise_direction,
@@ -70,4 +71,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 

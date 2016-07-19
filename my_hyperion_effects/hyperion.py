@@ -19,23 +19,35 @@ corner_leds = False
 # the dictionary the hyperion effect will access
 args = {
     #snake
-    "rotation-time" : 8.0,
-    "color" : [0, 255, 0],
-    "percentage" : 100,
+    # "rotation-time" : 8.0,
+    # "color" : [0, 255, 0],
+    # "percentage" : 100,
+
     #christmaslights
+    # "color1" : [255, 0, 0],
+    # "color2" : [0, 255, 0],
+    # "color3" : [255, 255, 0],
+    # "color4" : [0, 0, 255],
+    # "color5" : [0, 255, 255],
+    # "bulbSize" : 1,
+    # "gapWidth" : 0,
+    # "changeInterval" : 0.5,
+
+    #christmaslights2
+    # "fadeCycleTime" : 3.0,
+
+    #randomBalls
+    # "ballSize" : 1,
+    # "ballCount" : 3
+
+    #random matrix fades
     "color1" : [255, 0, 0],
     "color2" : [0, 255, 0],
     "color3" : [255, 255, 0],
     "color4" : [0, 0, 255],
     "color5" : [0, 255, 255],
-    "bulbSize" : 1,
-    "gapWidth" : 0,
-    "changeInterval" : 0.5,
-    #christmaslights2
-    "fadeCycleTime" : 3.0,
-    #randomBalls
-    "ballSize" : 1,
-    "ballCount" : 3
+    "fadeSpeed1" : 8,
+    "fadeRandom" : 4
 
 }
 
