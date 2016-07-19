@@ -1,2 +1,4 @@
-.gradle/2.2/taskArtifacts/*
+*.pyc
 build
+my_hyperion_effects/.idea/*
+

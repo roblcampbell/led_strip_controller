@@ -19,9 +19,9 @@ corner_leds = False
 # the dictionary the hyperion effect will access
 args = {
     #snake
-    "rotation-time" : 25.0,
+    "rotation-time" : 8.0,
     "color" : [0, 255, 0],
-    "percentage" : 90,
+    "percentage" : 100,
     #christmaslights
     "color1" : [255, 0, 0],
     "color2" : [0, 255, 0],
