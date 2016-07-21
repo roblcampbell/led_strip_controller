@@ -41,12 +41,18 @@ args = {
     # "ballCount" : 3
 
     #random matrix fades
-    "color1" : [255, 0, 0],
-    "color2" : [0, 255, 0],
-    "color3" : [255, 255, 0],
-    "color4" : [0, 0, 255],
-    "color5" : [0, 255, 255],
-    "fadeSpeed1" : 8,
+    "blockCount" : 28,
+    "color1" : [0, 255, 255],
+    # "color1" : [255, 0, 0],
+    # "color2" : [0, 255, 0],
+    # "color3" : [255, 255, 0],
+    # "color4" : [0, 0, 255],
+    # "color5" : [0, 255, 255],
+    # "color6" : [255, 0, 255],
+    # "color7" : [255, 255, 255],
+
+    # "randomColor" : "True",
+    "fadeSpeed" : 8,
     "fadeRandom" : 4
 
 }

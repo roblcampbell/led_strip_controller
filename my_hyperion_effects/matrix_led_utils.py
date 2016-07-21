@@ -126,9 +126,12 @@ class FadingMatrixBulb(MatrixBulb):
     fadeDirection = -1
 
     def __init__(self, color, fadeCycleSeconds):
-        super(self.__class__, self).__init__(color)
+        MatrixBulb.__init__(self, color)
         self.fadeSpeed = 1.0 / (fps * (fadeCycleSeconds / 2))
         self.baseColor = color
+
+    def setFadeCycleSeconds(self, seconds):
+        self.fadeSpeed = 1.0 / (fps * (seconds / 2))
 
     def update(self, elapsedTime):
         super(FadingMatrixBulb, self).update(elapsedTime)
@@ -161,7 +164,7 @@ class MatrixLedScene(object):
         sleepTime = 1.0 / fps
         lastTime = current_millis();
         while not hyperion.abort():
-            # hyperion.setColor(ledData[colorIndex])
+            # hyperion.setColor(ledData[colorIndex])block = MatrixMovingRandomBlock(color, cycleSeconds)
             # colorIndex = (colorIndex + 1) % len(ledData)
             now = current_millis()
             elapsed = now - lastTime

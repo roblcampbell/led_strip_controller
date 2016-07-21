@@ -7,28 +7,33 @@ from matrix_led_utils import *
 #          colors[1..n]
 #          blockCount
 
-class MatrixMovingRandomBlock(FadingMatrixBulb):
-    def __init__(self, color, fadeCycleSeconds):
-        super(self.__class__, self).__init__(color, fadeCycleSeconds)
+class MatrixMovingRandomBlock(FadingMatrixBulb, MatrixBulb):
+    allObjects = []
 
-    def maxBrightnessReached(self):
-        print "max"
+    def __init__(self, color, fadeCycleSeconds, objs):
+        FadingMatrixBulb.__init__(self, color, fadeCycleSeconds)
+        self.allObjects = objs
 
     def minBrightnessReached(self):
-        print "min"
+        loc = getAvailableRandomXYLocation(6, 6, self.allObjects)
+        self.setLocation(loc[0], loc[1])
+        randomArg = hyperion.args.get("randomColor")
+        if randomArg is not None:
+            self.baseColor = getRandomColor()
+        self.setFadeCycleSeconds(random.uniform(fadeBase - fadeRandom, fadeBase + fadeRandom))
+
 
 class MatrixScene(MatrixLedScene):
     colors = getColorArgs()
     fades = getFades()
     ledIndex = 0
     colorIndex = 0
-    blockCount = 6
+    blockCount = hyperion.args.get("blockCount")
 
     for i in range(blockCount):
-        cycleSeconds = fades[i % len(fades)]
-        color = getRandomColor()
-        # colors[i % len(colors)]
-        block = MatrixMovingRandomBlock(color, cycleSeconds)
+        cycleSeconds = random.uniform(fadeBase - fadeRandom, fadeBase + fadeRandom)
+        color = colors[i % len(colors)]
+        block = MatrixMovingRandomBlock(color, cycleSeconds, MatrixLedScene.ledObjects)
         block.fadeDirection = 1
         block.currentBrightness = random.uniform(.1, .9)
         loc = getRandomXYLocation(5, 5)

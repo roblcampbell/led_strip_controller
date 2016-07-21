@@ -42,7 +42,7 @@ def run_effect():
     # runpy.run_module("randomBalls")
     # runpy.run_module("mood-blobs")
     # runpy.run_module("snake")
-    # runpy.run_module("matrixTester1")
+    # runpy.run_module("matrixTster1")
     runpy.run_module("matrix_random_fades")
 
 def main():

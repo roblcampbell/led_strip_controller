@@ -8,6 +8,8 @@ import random
 fps = 30
 current_millis = lambda: int(round(time.time() * 1000))
 off = bytearray([0, 0, 0])
+fadeBase = hyperion.args.get("fadeSpeed")
+fadeRandom = hyperion.args.get("fadeRandom")
 
 def getRandomColor():
     return [random.randint(0, 255), random.randint(0, 255),random.randint(0, 255)]
@@ -41,7 +43,6 @@ def getColorArgs():
 # reads N number of fades, and must match the length of color args
 def getFades():
     fades = []
-    fadeRandom = hyperion.args.get("fadeRandom")
     for i in range(1, 10):
         fadeName = "fadeSpeed%d" % i
         fadeArg = hyperion.args.get(fadeName)
@@ -55,6 +56,7 @@ def adjustRgbBrightness(color, brightness):
     rgb = colorsys.hsv_to_rgb(hsv[0], hsv[1], hsv[2] * brightness)
     adjusted = ((int(rgb[0] * 255), int(rgb[1] * 255), int(rgb[2] * 255)))
     return adjusted
+
 
 
 # ------------------END OF LED_UTILS MANUAL IMPORT--------------------------
