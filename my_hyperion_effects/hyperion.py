@@ -42,14 +42,25 @@ args = {
 
     #random matrix fades
     "blockCount" : 28,
-    "color1" : [0, 255, 255],
-    # "color1" : [255, 0, 0],
+    # "color1" : [0, 255, 255],
+    "color1" : [255, 0, 0],
     # "color2" : [0, 255, 0],
-    # "color3" : [255, 255, 0],
+    "color2" : [255, 255, 0],
+    "color3" : [255, 129, 0],
     # "color4" : [0, 0, 255],
     # "color5" : [0, 255, 255],
     # "color6" : [255, 0, 255],
     # "color7" : [255, 255, 255],
+
+    # warm matrix fade colors (red, orange, yellow)
+    # "color1" : [255, 0, 0],
+    # "color2" : [255, 255, 0],
+    # "color3" : [255, 129, 0],
+
+    # cold matrix fade colors (blue, cyan, white)
+    "color1" : [0, 0, 255],
+    "color2" : [0, 255, 255],
+    "color3" : [255, 255, 255],
 
     # "randomColor" : "True",
     "fadeSpeed" : 8,

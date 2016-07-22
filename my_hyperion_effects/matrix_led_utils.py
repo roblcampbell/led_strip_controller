@@ -127,7 +127,10 @@ class FadingMatrixBulb(MatrixBulb):
 
     def __init__(self, color, fadeCycleSeconds):
         MatrixBulb.__init__(self, color)
-        self.fadeSpeed = 1.0 / (fps * (fadeCycleSeconds / 2))
+        if fadeCycleSeconds == 0:
+            self.fadeSpeed = 0
+        else:
+            self.fadeSpeed = 1.0 / (fps * (fadeCycleSeconds / 2))
         self.baseColor = color
 
     def setFadeCycleSeconds(self, seconds):
